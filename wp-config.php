@@ -45,7 +45,7 @@ define('ADMIN_COOKIE_PATH', '/');
 define('COOKIE_DOMAIN', '');
 define('COOKIEPATH', '');
 define('SITECOOKIEPATH', '');
-
+define('FS_METHOD','direct');
 
 # That's It. Pencils down
 if ( !defined('ABSPATH') )
@@ -53,3 +53,4 @@ if ( !defined('ABSPATH') )
 require_once(ABSPATH . 'wp-settings.php');
 
 $_wpe_preamble_path = null; if(false){}
+
