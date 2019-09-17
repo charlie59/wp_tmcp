@@ -22,11 +22,8 @@ define('NONCE_SALT',       'r:um)3QM?0L^Na0^[.,y+h+26(|Lf)vzDR$1%qNSg@5:U,(r#[H;
 # Localized Language Stuff
 
 define( 'WP_CACHE', TRUE );
-
 define( 'WP_AUTO_UPDATE_CORE', true );
-
 define('WPLANG','');
-
 define('WP_DEBUG', FALSE);
 
 # WP Engine ID
@@ -34,12 +31,12 @@ define('WP_DEBUG', FALSE);
 
 # WP Engine Settings
 
-define('MULTISITE', true);
-define('SUBDOMAIN_INSTALL', true);
-define('DOMAIN_CURRENT_SITE', 'sites.tmcp.com');
-define('PATH_CURRENT_SITE', '/');
-define('SITE_ID_CURRENT_SITE', 1);
-define('BLOG_ID_CURRENT_SITE', 1);
+#define('MULTISITE', true);
+#define('SUBDOMAIN_INSTALL', true);
+#define('DOMAIN_CURRENT_SITE', 'www.hereishouston.com');
+#define('PATH_CURRENT_SITE', '/');
+#define('SITE_ID_CURRENT_SITE', 1);
+#define('BLOG_ID_CURRENT_SITE', 1);
 
 define('ADMIN_COOKIE_PATH', '/');
 define('COOKIE_DOMAIN', '');

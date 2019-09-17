@@ -39,12 +39,12 @@ $loop = new WP_Query( $args );
 
   <div class="cb-mask" style="background-color:#eabf00;">
 
-    <a href="http://ridetexas.sites.tmcp.com/wild-wild-texas/"><img src="http://ridetexas.sites.tmcp.com/wp-content/uploads/sites/3/2017/06/Marfa-FIlm-Festival_-360x240.jpg" class="attachment-cb-360-240 size-cb-360-240 wp-post-image" alt="Marfa Film Festival" height="240" width="360"></a>
+    <a href="wild-wild-texas/"><img src="/wp-content/uploads/sites/3/2017/06/Marfa-FIlm-Festival_-360x240.jpg" class="attachment-cb-360-240 size-cb-360-240 wp-post-image" alt="Marfa Film Festival" height="240" width="360"></a>
   </div>
 
   <div class="cb-meta">
 
-      <h2 class="cb-post-title"><a href="http://ridetexas.sites.tmcp.com/wild-wild-texas/">Wild, Wild Texas</a></h2>
+      <h2 class="cb-post-title"><a href="/wild-wild-texas/">Wild, Wild Texas</a></h2>
       <div class="cb-byline cb-font-header"> <div class="cb-date cb-byline-element"><i class="fa fa-clock-o"></i> <time datetime="2017-06-23">June 23, 2017</time></div></div>      <div class="cb-excerpt">
 
 
