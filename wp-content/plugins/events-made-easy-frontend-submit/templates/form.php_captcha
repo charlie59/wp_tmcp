@@ -1,0 +1,114 @@
+<div id="new_event_form">
+			
+	<form id="new_post" name="new_post" method="post" action="<?php the_permalink(); ?>">
+	
+		<h2><?php _e('Event Information','events-made-easy-frontend-submit'); ?></h2>
+		
+		<div class="input">
+			<label for="title"><?php _e('Event Name','events-made-easy-frontend-submit'); ?> <small><?php _e('required','events-made-easy-frontend-submit'); ?></small></label><br />
+			<?php EMEFS::field('event_name'); ?>
+			<?php EMEFS::error('event_name'); ?>
+		</div>
+		
+		<?php
+		if (get_option('eme_categories_enabled')) { ?>
+		<div class="input select">
+			<label for="event_category_ids"><?php _e('Select the Event Category','events-made-easy-frontend-submit'); ?> <small><?php _e('required','events-made-easy-frontend-submit'); ?></small></label><br/>
+			<?php EMEFS::field('event_category_ids'); ?>
+			<?php EMEFS::error('event_category_ids'); ?>
+		</div>
+		<?php } ?>
+		
+		<fieldset>
+		
+			<legend><?php _e('Date & Time','events-made-easy-frontend-submit'); ?></legend>
+		
+			<fieldset id="event_start">
+				<legend><?php _e('Start','events-made-easy-frontend-submit'); ?> <small><?php _e('required','events-made-easy-frontend-submit'); ?></small></legend>
+				<div class="input">
+					<label for="event_start_date"><?php _e('Date','events-made-easy-frontend-submit'); ?></label>
+					<?php EMEFS::field('event_start_date'); ?>
+					<?php EMEFS::error('event_start_date'); ?>
+				</div>
+				<div class="input">
+					<label for="event_start_time"><?php _e('Time','events-made-easy-frontend-submit'); ?></label> 
+					<?php EMEFS::field('event_start_time'); ?>
+					<?php EMEFS::error('event_start_time'); ?>
+				</div>
+			</fieldset>
+			
+			<fieldset id="event_end">
+				<legend><?php _e('End','events-made-easy-frontend-submit'); ?></legend>
+				<div class="input">
+					<label for="event_end_date"><?php _e('Date','events-made-easy-frontend-submit'); ?></label>
+					<?php EMEFS::field('event_end_date'); ?>
+					<?php EMEFS::error('event_end_date'); ?>
+				</div>
+				<div class="input">
+					<label for="event_end_time"><?php _e('Time','events-made-easy-frontend-submit'); ?></label> 
+					<?php EMEFS::field('event_end_time'); ?>
+					<?php EMEFS::error('event_end_time'); ?>
+				</div>
+			</fieldset>
+			
+			<?php EMEFS::error('event_time'); ?>
+		
+		</fieldset>
+		
+		<div class="input">
+			<label for="event_description"><?php _e('Description','events-made-easy-frontend-submit'); ?> <small><?php _e('required','events-made-easy-frontend-submit'); ?></small></label><br />
+			<?php EMEFS::field('event_notes'); ?>
+			<?php EMEFS::error('event_notes'); ?>
+		</div>
+		
+		<div class="input">
+			<label for="event_contactperson_email_body"><?php _e('Contact E-mail Body','events-made-easy-frontend-submit'); ?></label><br />
+			<?php EMEFS::field('event_contactperson_email_body','textarea'); ?>
+			<?php EMEFS::error('event_contactperson_email_body'); ?>
+		</div>
+		
+		<div class="input">
+			<label for="event_url"><?php _e('Event External URL','events-made-easy-frontend-submit'); ?></label><br />
+			<?php EMEFS::field('event_url'); ?>
+			<?php EMEFS::error('event_url'); ?>
+		</div>
+		
+		<h3><?php _e('Location Information','events-made-easy-frontend-submit'); ?></h3>
+		
+		<div class="input">
+			<label for="location_name"><?php _e('Name','events-made-easy-frontend-submit'); ?></label>
+			<?php EMEFS::field('location_name'); ?>
+			<?php EMEFS::error('location_name'); ?>
+		</div>
+		
+		<div class="input">
+			<label for="location_address"><?php _e('Address','events-made-easy-frontend-submit'); ?></label>
+			<?php EMEFS::field('location_address1'); ?>
+			<?php EMEFS::error('location_address1'); ?>
+		</div>
+		
+		<div class="input">
+			<label for="location_city"><?php _e('City or Town','events-made-easy-frontend-submit'); ?></label>
+			<?php EMEFS::field('location_city'); ?>
+			<?php EMEFS::error('location_city'); ?>
+		</div>
+		
+		<div class="map">
+			<div id="event-map"></div>
+			<?php EMEFS::field('location_latitude'); ?>
+			<?php EMEFS::field('location_longitude'); ?>
+		</div>
+		
+		<div class="input">
+			<label for="captcha">Please enter the code shown</label>
+			<?php EMEFS::field('captcha'); ?>
+			<?php EMEFS::error('captcha'); ?>
+		</div>
+		
+		<p class="submit">
+			<?php EMEFS::end_form(__('Submit Event','events-made-easy-frontend-submit')); ?>
+		</p>
+		
+	</form>
+
+</div>

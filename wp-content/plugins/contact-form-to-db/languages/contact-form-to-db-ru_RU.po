@@ -1,0 +1,620 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: contact-form-to-db\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-26 15:50+0300\n"
+"PO-Revision-Date: 2017-05-26 15:50+0300\n"
+"Last-Translator: plugin@bestwebsoft.com <plugin@bestwebsoft.com>\n"
+"Language-Team: bestwebsoft.com <plugin@bestwebsoft.com>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n%10==1 && n%100!=11) ? 3 : "
+"((n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20)) ? 1 : 2);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: contact_form_to_db.php:256
+msgid "Letter"
+msgstr "Письмо"
+
+#: contact_form_to_db.php:257
+msgid "Spam!"
+msgstr "Спам!"
+
+#: contact_form_to_db.php:258 contact_form_to_db.php:1720
+msgid "in Trash"
+msgstr "в Корзине"
+
+#: contact_form_to_db.php:259
+msgid "Status was not changed"
+msgstr "Статус не был изменён"
+
+#: contact_form_to_db.php:294
+msgid "Settings saved."
+msgstr "Опции сохранены."
+
+#: contact_form_to_db.php:304
+msgid "All plugin settings were restored."
+msgstr "Все настройки плагина восстановлены."
+
+#: contact_form_to_db.php:317 contact_form_to_db.php:319
+#: contact_form_to_db.php:1935 contact_form_to_db.php:1951
+msgid "Settings"
+msgstr "Настройки"
+
+#: contact_form_to_db.php:320
+msgid "Go PRO"
+msgstr "Перейти на PRO версию"
+
+#: contact_form_to_db.php:335
+msgid "Save messages to database"
+msgstr "Сохранять сообщения в базу данных"
+
+#: contact_form_to_db.php:341
+msgid "Download messages in"
+msgstr "Сохранять сообщения в "
+
+#: contact_form_to_db.php:348
+msgid "format"
+msgstr "формате"
+
+#: contact_form_to_db.php:350
+msgid "Input symbols for separator and enclosure"
+msgstr "Введите символы для разделителя и ограничителя"
+
+#: contact_form_to_db.php:356
+msgid " separator"
+msgstr "разделитель"
+
+#: contact_form_to_db.php:362
+msgid " enclosure"
+msgstr "ограничитель"
+
+#: contact_form_to_db.php:370
+msgid "Close"
+msgstr "Закрыть"
+
+#: contact_form_to_db.php:374
+msgid "Save attachments"
+msgstr "Сохранять прикрепленные файлы"
+
+#: contact_form_to_db.php:381
+msgid "Save attachments to database."
+msgstr "Сохранять прикреплённые файлы в базу данных."
+
+#: contact_form_to_db.php:383
+msgid "Save attachments to \"Uploads\"."
+msgstr "Сохранять в папку \"Uploads\"."
+
+#: contact_form_to_db.php:389
+msgid "Periodically delete old messages"
+msgstr "Периодически удалять старые сообщения"
+
+#: contact_form_to_db.php:394
+msgid "every 24 hours"
+msgstr "каждые 24 часа"
+
+#: contact_form_to_db.php:395
+msgid "every 3 days"
+msgstr "каждые 3 дня"
+
+#: contact_form_to_db.php:396
+msgid "every 1 week"
+msgstr "каждую неделю"
+
+#: contact_form_to_db.php:397
+msgid "every 2 weeks"
+msgstr "каждые 2 недели"
+
+#: contact_form_to_db.php:398
+msgid "every 1 month"
+msgstr "каждый месяц"
+
+#: contact_form_to_db.php:399
+msgid "every 6 months"
+msgstr "каждые 6 месяцев"
+
+#: contact_form_to_db.php:400
+msgid "every 1 year"
+msgstr "раз в год"
+
+#: contact_form_to_db.php:402
+msgid ""
+"(All messages older than the specified period will be deleted at the end of "
+"the same period)"
+msgstr ""
+"(Bсе сообщения старше указанного периода будут удалены по истечении того же "
+"периода)"
+
+#: contact_form_to_db.php:407
+msgid "Show attachments"
+msgstr "Отображать прикреплённые файлы"
+
+#: contact_form_to_db.php:411
+msgid "Use fancybox to image view"
+msgstr "Использовать fancybox для просмотра изображений"
+
+#: contact_form_to_db.php:416
+msgid "If you upgrade to Pro version all your settings will be saved."
+msgstr "При переходе на Pro версию все ваши настройки сохраняются."
+
+#: contact_form_to_db.php:422
+msgid "Learn More"
+msgstr "Подробнее"
+
+#: contact_form_to_db.php:429
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+#: contact_form_to_db.php:858
+msgid "Contact from to DB"
+msgstr "Contact from to DB"
+
+#: contact_form_to_db.php:868
+msgid "This message was re-sent from "
+msgstr "Это сообщение было переслано с сайта "
+
+#: contact_form_to_db.php:871
+msgid "Name"
+msgstr "Имя"
+
+#: contact_form_to_db.php:876
+msgid "Address"
+msgstr "Адрес"
+
+#: contact_form_to_db.php:881
+msgid "Email"
+msgstr "Email"
+
+#: contact_form_to_db.php:886
+msgid "Phone"
+msgstr "Телефон"
+
+#: contact_form_to_db.php:891
+msgid "Subject"
+msgstr "Тема"
+
+#: contact_form_to_db.php:894 contact_form_to_db.php:1484
+msgid "Message"
+msgstr "Сообщение"
+
+#: contact_form_to_db.php:897
+msgid "Site"
+msgstr "Сайт"
+
+#: contact_form_to_db.php:927
+msgid "Sent from (ip address)"
+msgstr "Отправлено от (ip адрес)"
+
+#: contact_form_to_db.php:932
+msgid "Date/Time"
+msgstr "Дата/Время"
+
+#: contact_form_to_db.php:937 contact_form_to_db.php:943
+msgid "Sent from (referer)"
+msgstr "Пришло из (реферер)"
+
+#: contact_form_to_db.php:956 contact_form_to_db.php:958
+msgid "From: "
+msgstr "От: "
+
+#: contact_form_to_db.php:959
+msgid "To: "
+msgstr "Кому: "
+
+#: contact_form_to_db.php:960
+msgid "Subject: "
+msgstr "Тема: "
+
+#: contact_form_to_db.php:961
+msgid "Date/Time: "
+msgstr "Дата/Время "
+
+#: contact_form_to_db.php:1057
+msgid "Sent from (ip address): "
+msgstr "Отправлено от (ip адрес): "
+
+#: contact_form_to_db.php:1101
+msgid "Can not create XML-files."
+msgstr "Невозможно создать XML-файл."
+
+#: contact_form_to_db.php:1105
+msgid "Can not create ZIP-archive."
+msgstr "Невозможно создать ZIP-архив."
+
+#: contact_form_to_db.php:1109
+msgid "Unknown format."
+msgstr "Неизвестный формат."
+
+#: contact_form_to_db.php:1129
+msgid "One message was deleted successfully."
+msgstr "Одно сообщение было успешно удалено."
+
+#: contact_form_to_db.php:1129
+msgid "messages were deleted successfully."
+msgstr "сообщения (сообщений) были успешно удалены."
+
+#: contact_form_to_db.php:1131
+msgid "There are some problems while deleting message."
+msgstr "Возникли проблемы во время удаления сообщений. "
+
+#: contact_form_to_db.php:1150 contact_form_to_db.php:1226
+#: contact_form_to_db.php:1908
+msgid "One message was marked as Spam."
+msgstr "Одно сообщение было отмечено как спам."
+
+#: contact_form_to_db.php:1150
+msgid "messages were marked as Spam."
+msgstr "сообщения (сообщений) были отмечены как спам."
+
+#: contact_form_to_db.php:1151 contact_form_to_db.php:1173
+#: contact_form_to_db.php:1226 contact_form_to_db.php:1229
+#: contact_form_to_db.php:1908 contact_form_to_db.php:1911
+msgid "Undo"
+msgstr "Отменить"
+
+#: contact_form_to_db.php:1153
+msgid "Problems while marking messages as Spam."
+msgstr "Ошибка при попытке отметить сообщения как Спам."
+
+#: contact_form_to_db.php:1172
+msgid "One message was moved to Trash."
+msgstr "Одно сообщение было перемещено в корзину."
+
+#: contact_form_to_db.php:1172
+msgid "messages were moved to Trash."
+msgstr "сообщения (сообщений) были перемещены в корзину."
+
+#: contact_form_to_db.php:1175
+msgid "Problems while moving messages to Trash."
+msgstr "Возникли проблемы во время перемещения сообщений в корзину."
+
+#: contact_form_to_db.php:1175 contact_form_to_db.php:1846
+msgid "Please, try it later."
+msgstr "Пожалуйста, попробуйте позже."
+
+#: contact_form_to_db.php:1191 contact_form_to_db.php:1207
+msgid "One message was restored."
+msgstr "Одно сообщение было восстановлено."
+
+#: contact_form_to_db.php:1191 contact_form_to_db.php:1207
+msgid "messages were restored."
+msgstr "сообщения (сообщений) были восстановлены."
+
+#: contact_form_to_db.php:1193 contact_form_to_db.php:1209
+msgid "Problems during the restoration messages"
+msgstr "Возникли проблемы во время восстановления сообщений."
+
+#: contact_form_to_db.php:1223 contact_form_to_db.php:1905
+msgid "One message was marked as Normal."
+msgstr "Одно сообщение было промаркировано как Нормальное."
+
+#: contact_form_to_db.php:1229 contact_form_to_db.php:1911
+msgid "One message was marked as Trash."
+msgstr "Одно сообщение было перемещено в козину."
+
+#: contact_form_to_db.php:1232 contact_form_to_db.php:1914
+msgid "Unknown result."
+msgstr "Неизвестный результат."
+
+#: contact_form_to_db.php:1236
+msgid "Problems while changing status of message."
+msgstr "Возникли проблемы во время изменения статуса сообщений."
+
+#: contact_form_to_db.php:1245
+msgid "Unknown action."
+msgstr "Неизвестное действие."
+
+#: contact_form_to_db.php:1341
+msgid ""
+"Can not handle request. May be you need choose some messages to handle them."
+msgstr ""
+"Нельзя обработать запрос. Возможно, Вам необходимо Выбрать некоторые "
+"сообщения для их обработки."
+
+#: contact_form_to_db.php:1402
+msgid "message"
+msgstr "сообщение"
+
+#: contact_form_to_db.php:1403
+msgid "messages"
+msgstr "сообщения"
+
+#: contact_form_to_db.php:1440
+msgid "No messages that have been sent."
+msgstr "Отсутствуют отосланные сообщения"
+
+#: contact_form_to_db.php:1442
+msgid "No messages that have not been sent."
+msgstr "Отсутствуют неотосланные сообщения."
+
+#: contact_form_to_db.php:1444
+msgid "No messages that have was read."
+msgstr "Отсутствуют прочтённые сообщения."
+
+#: contact_form_to_db.php:1446
+msgid "No messages that have was not read."
+msgstr "Отсутствуют непрочтённые сообщения."
+
+#: contact_form_to_db.php:1448
+msgid "No messages that have attachments."
+msgstr "Отсутствуют сообщения с прикреплёнными файлами."
+
+#: contact_form_to_db.php:1450
+msgid "No messages that was marked as Spam."
+msgstr "Отсутствуют сообщения, помеченные как Спам."
+
+#: contact_form_to_db.php:1452
+msgid "No messages that was marked as Trash."
+msgstr "Отсутствуют сообщения в корзине."
+
+#: contact_form_to_db.php:1454
+msgid "No messages found."
+msgstr "Сообщения не найдены."
+
+#: contact_form_to_db.php:1483
+msgid "From"
+msgstr "От"
+
+#: contact_form_to_db.php:1485
+msgid "Attachment"
+msgstr "Прикрепленный файл"
+
+#: contact_form_to_db.php:1486
+msgid "Send Counter"
+msgstr "Счетчик отправок"
+
+#: contact_form_to_db.php:1487
+msgid "Date"
+msgstr "Дата"
+
+#: contact_form_to_db.php:1491
+msgid "Department"
+msgstr "Отдел"
+
+#: contact_form_to_db.php:1523
+msgid "All"
+msgstr "Все"
+
+#: contact_form_to_db.php:1524
+msgid "Sent"
+msgstr "Отосланные"
+
+#: contact_form_to_db.php:1525
+msgid "Not sent"
+msgstr "Неотосланные"
+
+#: contact_form_to_db.php:1526
+msgid "Read"
+msgstr "Прочтённые"
+
+#: contact_form_to_db.php:1527
+msgid "Unread"
+msgstr "Непрочтённые"
+
+#: contact_form_to_db.php:1528
+msgid "Has attachments"
+msgstr "С прикреплениями"
+
+#: contact_form_to_db.php:1529 contact_form_to_db.php:1624
+msgid "Spam"
+msgstr "Спам"
+
+#: contact_form_to_db.php:1530 contact_form_to_db.php:1625
+#: contact_form_to_db.php:1634
+msgid "Trash"
+msgstr "Корзина"
+
+#: contact_form_to_db.php:1573
+msgid "Filter by department"
+msgstr "Фильтр по отделу"
+
+#: contact_form_to_db.php:1575
+msgid "All departments"
+msgstr "Все отделы"
+
+#: contact_form_to_db.php:1580
+msgid "Filter"
+msgstr "Фильтр"
+
+#: contact_form_to_db.php:1592
+msgid "Download messages"
+msgstr "Скачать сообщения"
+
+#: contact_form_to_db.php:1593 contact_form_to_db.php:1716
+msgid "Mark as Spam"
+msgstr "Отметить как Спам"
+
+#: contact_form_to_db.php:1596
+msgid "Not Spam"
+msgstr "Не Спам"
+
+#: contact_form_to_db.php:1598 contact_form_to_db.php:1630
+msgid "Restore"
+msgstr "Восстановить"
+
+#: contact_form_to_db.php:1600 contact_form_to_db.php:1632
+msgid "Delete Permanently"
+msgstr "Удалить безвозвратно"
+
+#: contact_form_to_db.php:1602 contact_form_to_db.php:1718
+msgid "Mark as Trash"
+msgstr "Переместить в корзину"
+
+#: contact_form_to_db.php:1604
+msgid "Re-send messages"
+msgstr "Отправить еще раз"
+
+#: contact_form_to_db.php:1605
+msgid "Download attachments"
+msgstr "Скачать файлы"
+
+#: contact_form_to_db.php:1621 contact_form_to_db.php:1767
+#: contact_form_to_db.php:1768 contact_form_to_db.php:1774
+#: contact_form_to_db.php:1884 contact_form_to_db.php:1885
+msgid "This option is available in Pro version"
+msgstr "Данная опция доступна в Pro версии плагина"
+
+#: contact_form_to_db.php:1621
+msgid "Re-send Message"
+msgstr "Перевыслать сообщение"
+
+#: contact_form_to_db.php:1623
+msgid "Download Message"
+msgstr "Скачать сообщение"
+
+#: contact_form_to_db.php:1628
+msgid "Not spam"
+msgstr "Не Спам"
+
+#: contact_form_to_db.php:1722
+msgid "unknown status"
+msgstr "неизвестный статус"
+
+#: contact_form_to_db.php:1732
+msgid "Unknown name"
+msgstr "Неизвестное имя"
+
+#: contact_form_to_db.php:1757
+msgid "No text in this message"
+msgstr "Текст сообщения отсутствует"
+
+#: contact_form_to_db.php:1767
+msgid "Download"
+msgstr "Скачать"
+
+#: contact_form_to_db.php:1768
+msgid "View"
+msgstr "Просмотреть"
+
+#: contact_form_to_db.php:1781
+msgid "The number of dispatches"
+msgstr "Количество пересылок"
+
+#: contact_form_to_db.php:1783
+msgid "This message was not sent"
+msgstr "Это сообщение не было отослано"
+
+#: contact_form_to_db.php:1816
+msgid "Letters per page"
+msgstr "Сообщений на странице"
+
+#: contact_form_to_db.php:1842 contact_form_to_db.php:1846
+#: contact_form_to_db.php:1914 contact_form_to_db.php:1918
+#: contact_form_to_db.php:1992
+msgid "WARNING:"
+msgstr "Внимание:"
+
+#: contact_form_to_db.php:1842
+msgid "For fully-functional work of plugin, please, enable javascript."
+msgstr "Для полноценной работы плагина, пожалуйста, включите javascript."
+
+#: contact_form_to_db.php:1848
+#, php-format
+msgid "Search results for &#8220;%s&#8221;"
+msgstr "Результаты запроса для &#8220;%s&#8221;"
+
+#: contact_form_to_db.php:1853
+msgid "Search mails"
+msgstr "Поиск по письмам"
+
+#: contact_form_to_db.php:1885
+msgid "Can not display thumbnail"
+msgstr "Невозможно отобразить миниатюру"
+
+#: contact_form_to_db.php:1918
+msgid "Problems while changing status of message. Please, try it later."
+msgstr ""
+"Возникли проблемы во время изменения статуса сообщения. Пожалуйста, "
+"попробуйте позже."
+
+#: contact_form_to_db.php:1952
+msgid "FAQ"
+msgstr "FAQ"
+
+#: contact_form_to_db.php:1953
+msgid "Support"
+msgstr "Поддержка"
+
+#: contact_form_to_db.php:1974
+msgid ""
+"Contact Form Plugin is not found.</br>You need install and activate this "
+"plugin for correct  work with Contact Form to DB plugin.</br>You can "
+"download Contact Form Plugin from "
+msgstr ""
+"Плагин Contact Form не найден.</br>Вам необходимо установить и активировать "
+"этот плагин для корректной работы с плагином  Contact Form To DB. </br>Вы "
+"можете скачать плагин Contact Form с "
+
+#: contact_form_to_db.php:1974
+msgid "Developers website"
+msgstr "сайта разработчиков "
+
+#: contact_form_to_db.php:1974
+msgid "website of plugin Authors "
+msgstr "сайта авторов плагина "
+
+#: contact_form_to_db.php:1974
+msgid "or "
+msgstr "или "
+
+#: contact_form_to_db.php:1974
+msgid "WordPress."
+msgstr "WordPress."
+
+#: contact_form_to_db.php:1978
+msgid ""
+"Contact Form Plugin is not active.</br>You need activate this plugin for "
+"correct work with Contact Form to DB plugin."
+msgstr ""
+"Плагин Contact Form не активирован.</br>Вам необходимо активировать этот "
+"плагин для корректной работы с плагином Contact Form To DB."
+
+#: contact_form_to_db.php:1980
+msgid "Activate plugin"
+msgstr "Активировать плагин"
+
+#: contact_form_to_db.php:1985
+msgid ""
+"Contact Form Plugin has old version.</br>You need update this plugin for "
+"correct work with Contact Form to DB plugin."
+msgstr ""
+"Плагин Contact Form имеет слишком старую версию.</br>Вам необходимо обновить "
+"этот плагин для корректной работы с плагином Contact Form To DB."
+
+#: contact_form_to_db.php:1987
+msgid "Update plugin"
+msgstr "Обновить плагин"
+
+#: contact_form_to_db.php:2025
+msgid "Notice:"
+msgstr "Внимание:"
+
+#: contact_form_to_db.php:2025
+msgid ""
+"Option \"Save messages to database\" was disabled on the plugin settings "
+"page."
+msgstr ""
+"Опция  \"Сохранять сообщения в базу данных \" была отключена на странице "
+"настроек плагина."
+
+#: contact_form_to_db.php:2025
+msgid "Enable it for saving messages from Contact Form"
+msgstr "Включите ее для сохранения сообщений Contact Form"
+
+#~ msgid "This setting is available in Pro version"
+#~ msgstr "Данные настройки доступны в PRO версии плагина"
+
+#~ msgid "User guide"
+#~ msgstr "Руководство пользователя"
+
+#~ msgid "Unlock premium options by upgrading to Pro version"
+#~ msgstr "Активируйте премиум опции обновившись до Pro версии"
+
+#~ msgid "User Guide"
+#~ msgstr "Руководство пользователя"

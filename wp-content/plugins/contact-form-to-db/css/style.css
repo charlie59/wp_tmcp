@@ -1,0 +1,212 @@
+#adminmenu #toplevel_page_cntctfrmtdb_manager.current .wp-menu-image img {
+	opacity: 1;
+}
+/*
+* styles for manager page
+*/
+.cntctfrmtdb th#message {
+	display: table-cell !important;
+}
+.cntctfrmtdb-preloader {
+	position: absolute;
+	width: 32px;
+	height: 32px; 
+	z-index: 1000;
+	margin-top: 30px;
+}
+.cntctfrmtdb_hidden {
+	display: none;
+}
+.cntctfrmtdb .wp-list-table i {
+	color: #999;
+}
+.cntctfrmtdb .wp-list-table .manage-column {
+	vertical-align: middle!important;
+}
+.cntctfrmtdb .wp-list-table .column-status div {
+	cursor: pointer;
+}
+.cntctfrmtdb .wp-list-table .not-sent-message {
+	background: #ffebe8;
+}
+.cntctfrmtdb .wp-list-table .not-sent-message th,
+.cntctfrmtdb .wp-list-table .not-sent-message td {
+	border-top-color: #ffebe8;
+}
+.cntctfrmtdb .wp-list-table .column-status .cntctfrmtdb-letter {
+	margin-top: 3px;
+	width: 16px;
+	height: 12px;
+	background: url('../images/status-icons.png') 0px -16px;
+	display: inline-block;
+	color: transparent;
+}
+.cntctfrmtdb .wp-list-table .column-status .cntctfrmtdb-letter:hover {
+	background: url('../images/status-icons.png') -16px -16px;
+}
+.cntctfrmtdb .wp-list-table .column-status .cntctfrmtdb-spam {
+	width: 16px;
+	height: 16px;
+	background: url('../images/status-icons.png') 0px -28px;
+	text-indent: 9999px;
+	display: inline-block;
+}
+.cntctfrmtdb .wp-list-table .column-status .cntctfrmtdb-spam:hover {
+	background: url('../images/status-icons.png') -16px -28px;
+}
+.cntctfrmtdb .wp-list-table .column-status .cntctfrmtdb-trash {
+	width: 14px;
+	height: 16px;
+	background: url('../images/status-icons.png') 0 -44px;
+	text-indent: 9999px;
+	display: inline-block;
+}
+.cntctfrmtdb .wp-list-table .column-status .cntctfrmtdb-trash:hover {
+	background: url('../images/status-icons.png') -14px -44px;
+}
+.cntctfrmtdb .wp-list-table .column-status .cntctfrmtdb-unknown {
+	width: 16px;
+	height: 16px;
+	background: url('../images/status-icons.png') 0 -60px;
+	text-indent: 9999px;
+	display: inline-block;
+}
+.cntctfrmtdb .wp-list-table .column-status .cntctfrmtdb-unknown:hover {
+	background: url('../images/status-icons.png') -16px -60px;
+}
+.cntctfrmtdb .wp-list-table .column-from .from-name {
+	display: block;
+	color: #333;
+	text-transform: capitalize;
+	cursor: pointer;
+}
+.cntctfrmtdb .wp-list-table .column-from .from-name:hover {
+	text-decoration: underline;
+}
+.cntctfrmtdb .wp-list-table .column-from .not-read-message {
+	font-weight: bold;
+}
+.cntctfrmtdb .wp-list-table .column-message .message-container {
+	position: relative;
+	padding-bottom: 2px;
+	overflow: hidden;
+	color: #333;
+}
+.cntctfrmtdb .wp-list-table .column-message .message-container .attachments-preview {
+	margin-top: 5px;
+	border-top: 1px solid #999;
+}
+.cntctfrmtdb .wp-list-table .column-message .message-container .attachments-preview tr {
+	float: left;
+	margin-right: 3px;
+	margin-top: 3px
+}
+.cntctfrmtdb .wp-list-table .column-message .message-container .attachments-preview .attachment-img {
+	display: block;
+	border: 1px solid #999;
+	-webkit-border-radius: 5px ;
+	-moz-border-radius: 5px; 
+	border-radius: 5px;
+}
+.cntctfrmtdb .wp-list-table .column-message .message-container .attachments-preview .attachment-img img {
+	max-width: 150px;
+	max-height: 150px;
+	border: 2px solid #fff;
+	-webkit-border-radius: 3px ;
+	-moz-border-radius: 3px; 
+	border-radius: 3px;
+	-webkit-box-shadow: 1px 1px 5px rgba( 0, 0, 0, 0.8 );
+	-moz-box-shadow: 1px 1px 5px rgba( 0, 0, 0, 0.8 );
+	box-shadow: 1px 1px 5px rgba( 0, 0, 0, 0.8 );
+}
+.cntctfrmtdb .wp-list-table .column-message .message-container .attachments-preview td {
+	vertical-align: middle!important;
+	border: none;
+}
+.cntctfrmtdb .wp-list-table .column-message .message-container .attachments-preview .attachment-info a {
+	 visibility: hidden;
+}
+.cntctfrmtdb .wp-list-table .column-message .message-container .attachments-preview .attachment-info:hover a {
+	 visibility: visible;
+}
+.cntctfrmtdb .wp-list-table .column-message strong {
+	color: #333;
+}
+.cntctfrmtdb-attachment-column-title {
+	display: inline-block;
+	width: 11px;
+	height: 16px;
+	margin-top: 3px;
+	background: url('../images/status-icons.png') 0px 0px;
+}
+.cntctfrmtdb .wp-list-table .column-attachment .has-attachment {
+	width: 11px;
+	height: 16px;
+	margin-top: 15px;
+	background: url('../images/status-icons.png') -11px 0px;
+}
+.cntctfrmtdb .wp-list-table .column-attachment .warning-attachment {
+	width: 11px;
+	height: 16px;
+	margin-top: 15px;
+	background: url('../images/status-icons.png') -22px 0px;
+}
+.cntctfrmtdb .wp-list-table .column-sent .counter {
+	display: block;
+	width: 34px;
+	height: 19px;
+	padding-top: 1px;
+	-webkit-border-radius: 2px ;
+	-moz-border-radius: 2px; 
+	border-radius: 2px;
+	background: #dbdbdb;
+	color: #fff;
+	text-align: center;
+}
+.cntctfrmtdb .wp-list-table .column-sent .warning {
+	display: block;
+	float: left;
+	width: 6px;
+	height: 14px;
+	margin-top: 15px;
+	margin-left: 6px;
+	background: url('../images/status-icons.png') -33px 0px;
+}
+.cntctfrmtdb .tablenav option[value="re_send_messages"],
+.cntctfrmtdb .tablenav option[value="download_attachments"] {
+	display: none;
+}
+.cntctfrmtdb-has-attachment {
+	display: inline-block;
+	width: 11px;
+	height: 16px;
+	background: url('../images/status-icons.png') -11px 0px;
+}
+/*
+* styles for pro_version settings and tooltip 
+*/
+a.bws_plugin_menu_pro_version,
+.bws_plugin_menu_pro_version:hover {
+    background: #B1B1B1;    
+}
+table a.bws_plugin_menu_pro_version,
+table a.bws_plugin_menu_pro_version:hover {
+    background: transparent;
+    color: #666666;
+}
+
+@media screen and (max-width: 782px) {
+	.cntctfrmtdb .wp-list-table .column-status,
+	.cntctfrmtdb .wp-list-table .column-from,
+	.cntctfrmtdb .wp-list-table .column-department,
+	.cntctfrmtdb .wp-list-table .column-attachment,
+	.cntctfrmtdb .wp-list-table .column-sent {
+		display: none;
+	}
+	.cntctfrmtdb .wp-list-table .column-from::before {
+		content: '' !important;
+	}
+	.cntctfrmtdb-help-pages {
+		display: none;
+	}
+}

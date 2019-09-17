@@ -1,0 +1,4733 @@
+# Copyright (C) 2015 Events Made Easy
+# This file is distributed under the same license as the Events Made Easy package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Events Made Easy 1.5.51\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/events-made-easy\n"
+"POT-Creation-Date: 2015-11-08 21:16:21+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-11-28 22:29+0100\n"
+"Last-Translator: Mart\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.7.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: hu_HU\n"
+
+#: captcha_check.php:6
+msgid "You entered an incorrect code. Please fill in the correct code."
+msgstr ""
+
+#: eme_UI_helpers.php:77 eme_UI_helpers.php:120 eme_people.php:348
+#: eme_people.php:478 eme_rsvp.php:2153
+msgid "Yes"
+msgstr "Igen"
+
+#: eme_UI_helpers.php:78 eme_UI_helpers.php:119 eme_people.php:348
+#: eme_people.php:478 eme_rsvp.php:2153
+msgid "No"
+msgstr "Nem"
+
+#: eme_attributes.php:61
+msgid "Add attributes here"
+msgstr "Attribútumok házzáadása"
+
+#: eme_attributes.php:65
+msgid "Attribute Name"
+msgstr "Az attribútum neve:"
+
+#: eme_attributes.php:66
+msgid "Value"
+msgstr "Érték"
+
+#: eme_attributes.php:71
+msgid "Add new tag"
+msgstr "Új címke hozzáadása"
+
+#: eme_attributes.php:85
+msgid "Not defined in templates"
+msgstr ""
+
+#: eme_attributes.php:96 eme_attributes.php:117
+msgid "Remove"
+msgstr "Eltávolítás"
+
+#: eme_attributes.php:128
+msgid ""
+"In order to use attributes, you must define some in your templates, otherwise "
+"they'll never show. Go to Events > Settings to add attribute placeholders."
+msgstr ""
+
+#: eme_attributes.php:141
+msgid ""
+"No attributes defined yet. If you want attributes, you first need to define/use "
+"some in the Settings page. See the section about custom attributes on the "
+"documention site for more info."
+msgstr ""
+"Egy attribútumot sem határozott meg. Ha attribútumokat szeretne, először "
+"definiáljon néhányat a Beállítások oldalon. Nézze meg az egyéni attribútumokról "
+"szóló részt a dokumentációs oldalon."
+
+#: eme_calendar.php:331 eme_recurrence.php:311
+msgid "Sunday"
+msgstr "Vasárnap"
+
+#: eme_calendar.php:331 eme_recurrence.php:311
+msgid "Monday"
+msgstr "Hétfő"
+
+#: eme_calendar.php:331 eme_recurrence.php:311
+msgid "Tuesday"
+msgstr "Kedd"
+
+#: eme_calendar.php:331 eme_recurrence.php:311
+msgid "Wednesday"
+msgstr "Szerda"
+
+#: eme_calendar.php:331 eme_recurrence.php:311
+msgid "Thursday"
+msgstr "Csütörtök"
+
+#: eme_calendar.php:331 eme_recurrence.php:311
+msgid "Friday"
+msgstr "Péntek"
+
+#: eme_calendar.php:331 eme_recurrence.php:311
+msgid "Saturday"
+msgstr "Szombat"
+
+#: eme_categories.php:7
+msgid "You have no right to update categories!"
+msgstr "Nincs jogosultsága a kategóriák frissítéséhez!"
+
+#: eme_categories.php:24 eme_cleanup.php:53 eme_templates.php:24
+msgid "Problem detected, please try again."
+msgstr "Problémát észleltünk. Kérem, próbálja újra!"
+
+#: eme_categories.php:33
+msgid "Successfully edited the category"
+msgstr "A kategória szerkesztése sikeres volt."
+
+#: eme_categories.php:35
+msgid "There was a problem editing your category, please try again."
+msgstr ""
+"Hiba történt a kiválasztott kategória szerkesztésénél.  Kérem, próbálja újra!"
+
+#: eme_categories.php:45
+msgid "Successfully added the category"
+msgstr "Kategória sikeresen hozzáadva"
+
+#: eme_categories.php:47
+msgid "There was a problem adding your category, please try again."
+msgstr "Hiba történt a kategória hozzáadásakor.  Kérem, próbálja újra!"
+
+#: eme_categories.php:57
+msgid "Successfully deleted the selected categories."
+msgstr "A kiválasztott kategóriák sikeresen törölve"
+
+#: eme_categories.php:59
+msgid "There was a problem deleting the selected categories, please try again."
+msgstr ""
+"Hiba történt a kiválasztott kategória/kategóriák törlésekor.  Kérem, próbálja "
+"újra!"
+
+#: eme_categories.php:61 eme_categories.php:64
+msgid ""
+"Couldn't delete the categories. Incorrect category IDs supplied. Please try "
+"again."
+msgstr ""
+
+#: eme_categories.php:80 events-manager.php:1031
+msgid "Categories"
+msgstr "Kategóriák"
+
+#: eme_categories.php:103 eme_categories.php:110 eme_events.php:2067
+#: eme_formfields.php:140 eme_formfields.php:148 eme_locations.php:421
+#: eme_locations.php:431 eme_people.php:296 eme_people.php:431 eme_people.php:570
+#: eme_rsvp.php:2732 eme_templates.php:101 eme_templates.php:108
+msgid "ID"
+msgstr "ID"
+
+#: eme_categories.php:104 eme_categories.php:111 eme_events.php:2068
+#: eme_events.php:2909 eme_events.php:3213 eme_events.php:3957
+#: eme_formfields.php:141 eme_formfields.php:149 eme_locations.php:422
+#: eme_locations.php:432 eme_people.php:571 eme_rsvp.php:2733
+msgid "Name"
+msgstr "Név"
+
+#: eme_categories.php:124
+msgid "Are you sure you want to delete these categories?"
+msgstr "Biztosan törölni szeretné ezeket a kategóriákat?"
+
+#: eme_categories.php:138
+msgid "No categories have been inserted yet!"
+msgstr "Még egy kategóriát sem adott meg."
+
+#: eme_categories.php:151 eme_categories.php:162
+msgid "Add category"
+msgstr "Kategória hozzáadása:"
+
+#: eme_categories.php:156 eme_categories.php:200
+msgid "Category name"
+msgstr "Kategória neve"
+
+#: eme_categories.php:158 eme_categories.php:202
+msgid "The name of the category"
+msgstr "A kategória neve"
+
+#: eme_categories.php:159 eme_categories.php:205
+msgid "Category description"
+msgstr "Kategória leírás"
+
+#: eme_categories.php:183
+msgid "Edit category"
+msgstr "Kategória szerkesztése"
+
+#: eme_categories.php:207
+msgid "The description of the category"
+msgstr "A kategória leírása"
+
+#: eme_categories.php:210
+msgid "Update category"
+msgstr "Kategória frissítése"
+
+#: eme_cleanup.php:61
+msgid ""
+"Cleanup done: events (and corresponding booking data) older than %d %s(s) have "
+"been removed."
+msgstr ""
+
+#: eme_cleanup.php:65
+msgid "Cleanup done: unpayed bookings older than %d hours have been removed."
+msgstr ""
+
+#: eme_cleanup.php:74
+msgid "Are you sure you want to do this?"
+msgstr "Biztosan ezt szeretné?"
+
+#: eme_cleanup.php:80
+msgid "Cleanup actions"
+msgstr "Törlési műveletek"
+
+#: eme_cleanup.php:87
+msgid "Remove events older than"
+msgstr "Események eltávolítás, amelyek régebbiek mint"
+
+#: eme_cleanup.php:94
+msgid "Day(s)"
+msgstr ""
+
+#: eme_cleanup.php:95
+msgid "Week(s)"
+msgstr ""
+
+#: eme_cleanup.php:96
+msgid "Month(s)"
+msgstr "Hónap(ok)"
+
+#: eme_cleanup.php:98 eme_cleanup.php:109 eme_events.php:2058 eme_people.php:561
+#: eme_rsvp.php:2705
+msgid "Apply"
+msgstr "Alkalmaz"
+
+#: eme_cleanup.php:101
+msgid "Remove unpayed bookings older than"
+msgstr "Fizetetlen foglalások eltávolítása, amelyek korábbiak mint"
+
+#: eme_cleanup.php:107 eme_events.php:2574 eme_options.php:641
+msgid "hours"
+msgstr ""
+
+#: eme_events.php:91 eme_events.php:484
+msgid "Insert New Event"
+msgstr "Új esemény hozzáadása"
+
+#: eme_events.php:132
+msgid "Event(s) published!"
+msgstr "Esemény(ek) közzétéve!"
+
+#: eme_events.php:134 eme_events.php:144 eme_events.php:154
+msgid "You have no right to edit events!"
+msgstr "Nincs jogosultsága az eseményt szerkeszteni!"
+
+#: eme_events.php:142
+msgid "Event(s) made private!"
+msgstr "Esemény(ek) priváttá minősítve!"
+
+#: eme_events.php:152
+msgid "Event(s) changed to draft!"
+msgstr "Esemény(ek) vázlattá minősítve!"
+
+#: eme_events.php:179 eme_events.php:199
+msgid "Event(s) deleted!"
+msgstr "Esemény(ek) törölve!"
+
+#: eme_events.php:181 eme_events.php:201
+msgid "You have no right to delete events!"
+msgstr "Nincs jogosultsága a helyszín törölni!"
+
+#: eme_events.php:210
+msgid "You have no right to insert or update events"
+msgstr "Nincs jogosultsága eseményt létrehozni vagy frissíteni!"
+
+#: eme_events.php:405
+msgid ""
+"Could not create the new location for this event: either you don't have the "
+"right to insert locations or there's a DB problem."
+msgstr ""
+
+#: eme_events.php:419 eme_events.php:427
+msgid "Database insert failed!"
+msgstr "Hiba történt az adatbázisba való beillesztéskor."
+
+#: eme_events.php:421 eme_events.php:457
+msgid "New recurrent event inserted!"
+msgstr "Új ismétlődő esemény sikeresen hozzáadva!"
+
+#: eme_events.php:429
+msgid "New event successfully inserted!"
+msgstr "Új esemény sikeresen hozzáadva!"
+
+#: eme_events.php:441
+msgid "Recurrence updated!"
+msgstr "Ismétlődés frissítve!"
+
+#: eme_events.php:444
+msgid "Something went wrong with the recurrence update..."
+msgstr ""
+
+#: eme_events.php:447 eme_events.php:471 eme_events.php:498
+msgid "You have no right to update '%s'"
+msgstr "Nincs jogosultsága a következő frissítéséhez: '%s'"
+
+#: eme_events.php:464
+msgid "Updated '%s'"
+msgstr "Frissítve: '%s'"
+
+#: eme_events.php:466
+msgid "Failed to update '%s'"
+msgstr "'%s' frissítése sikertelen."
+
+#: eme_events.php:487
+msgid "You have no right to add events!"
+msgstr "Nincs jogosultsága eseményt létrehozni!"
+
+#: eme_events.php:495
+msgid "Edit Event '%s'"
+msgstr "Esemény szerkesztése -  '%s'"
+
+#: eme_events.php:511 eme_locations.php:48
+msgid " (Copy)"
+msgstr "(Másolás)"
+
+#: eme_events.php:515
+msgid "Edit event copy '%s'"
+msgstr "Esemény másolatának szerkesztése -  '%s'"
+
+#: eme_events.php:518
+msgid "You have no right to copy '%s'"
+msgstr "Nincs jogosultsága a(z) '%s' esemény másolásához!"
+
+#: eme_events.php:528
+msgid "Edit Recurrence"
+msgstr "Ismétlődés szerkesztése"
+
+#: eme_events.php:531
+msgid "You have no right to update"
+msgstr "Nincs jogosultsága a frissítéshez!"
+
+#: eme_events.php:542
+msgid "Past Events"
+msgstr "Korábbi események"
+
+#: eme_events.php:545
+msgid "All Events"
+msgstr "Összes esemény"
+
+#: eme_events.php:548
+msgid "Future Events"
+msgstr "Jövőbeli események"
+
+#: eme_events.php:565
+msgid "Please select a page"
+msgstr "Kérem, válasszon egy oldalt!"
+
+#: eme_events.php:602
+msgid "The bookings have been cancelled"
+msgstr "A foglalásokat töröltük."
+
+#: eme_events.php:1024 eme_locations.php:808
+msgid "Previous week"
+msgstr "Előző hét"
+
+#: eme_events.php:1025 eme_locations.php:809
+msgid "Next week"
+msgstr "Következő hét"
+
+#: eme_events.php:1033 eme_locations.php:817
+msgid "Previous month"
+msgstr "Előző hónap"
+
+#: eme_events.php:1034 eme_locations.php:818
+msgid "Next month"
+msgstr "Következő hónap"
+
+#: eme_events.php:1043 eme_locations.php:828
+msgid "Previous year"
+msgstr "Előző év"
+
+#: eme_events.php:1044 eme_locations.php:829
+msgid "Next year"
+msgstr "Következő év"
+
+#: eme_events.php:1051 eme_events.php:1060 eme_locations.php:836
+#: eme_locations.php:845
+msgid "Previous day"
+msgstr "Előző nap"
+
+#: eme_events.php:1052 eme_events.php:1061 eme_locations.php:837
+#: eme_locations.php:846
+msgid "Next day"
+msgstr "Következő nap"
+
+#: eme_events.php:1087
+msgid "Previous page"
+msgstr "Előző oldal"
+
+#: eme_events.php:1088
+msgid "Next page"
+msgstr "Következő oldal"
+
+#: eme_events.php:1119 eme_events.php:1129
+msgid "Page "
+msgstr "Oldal "
+
+#: eme_events.php:1988 eme_rsvp.php:2603
+msgid "Past events"
+msgstr "Korábbi események"
+
+#: eme_events.php:1989 eme_rsvp.php:2604 eme_rsvp.php:2673
+msgid "All events"
+msgstr "Összes esemény"
+
+#: eme_events.php:1990 eme_rsvp.php:2605
+msgid "Future events"
+msgstr "Jövőbeli események"
+
+#: eme_events.php:2002
+msgid "New Event ..."
+msgstr "Új esemény..."
+
+#: eme_events.php:2025 eme_events.php:2377
+msgid "Event Status"
+msgstr "Esemény állapota"
+
+#: eme_events.php:2031
+msgid "All categories"
+msgstr "Minden kategória"
+
+#: eme_events.php:2042 eme_rsvp.php:2691
+msgid "Filter"
+msgstr "Szűrő"
+
+#: eme_events.php:2051 eme_people.php:558 eme_rsvp.php:2698
+msgid "Bulk Actions"
+msgstr "Csoportos művelet"
+
+#: eme_events.php:2052
+msgid "Delete selected events"
+msgstr "A kijelölt események törlése"
+
+#: eme_events.php:2053
+msgid "Delete selected recurrent events"
+msgstr "A kijelölt ismétlődő események törlése"
+
+#: eme_events.php:2054
+msgid "Publish selected events"
+msgstr "A kijelölt események közzététele"
+
+#: eme_events.php:2055
+msgid "Make selected events private"
+msgstr "A kijelölt események privát állapotba helyezése."
+
+#: eme_events.php:2056
+msgid "Make selected events draft"
+msgstr "A kijelölt események vázlattá alakítása"
+
+#: eme_events.php:2069 eme_events.php:2380
+msgid "Status"
+msgstr "Állapot"
+
+#: eme_events.php:2070 eme_locations.php:435
+msgid "Copy"
+msgstr "Másolás"
+
+#: eme_events.php:2071 eme_events.php:2924 eme_events.php:3166
+msgid "Location"
+msgstr "Helyszín"
+
+#: eme_events.php:2072 eme_rsvp.php:2734
+msgid "Date and time"
+msgstr "Dátum és idő"
+
+#: eme_events.php:2073
+msgid "Recurrence info"
+msgstr "Ismétlődési információk"
+
+#: eme_events.php:2102
+msgid "Edit event"
+msgstr "Esemény szerkesztése"
+
+#: eme_events.php:2109 eme_events.php:2605 eme_locations.php:317
+#: eme_widgets.php:156 eme_widgets.php:301
+msgid "Category"
+msgstr "Kategória"
+
+#: eme_events.php:2126 eme_events.php:2128
+msgid "RSVP Info: "
+msgstr "RSVP információ:"
+
+#: eme_events.php:2126 eme_events.php:2128
+msgid "Free: "
+msgstr "Ingyenes:"
+
+#: eme_events.php:2126 eme_rsvp.php:2784
+msgid "Pending: "
+msgstr "Függőben:"
+
+#: eme_events.php:2126 eme_events.php:2128 eme_rsvp.php:2784
+msgid "Max: "
+msgstr "Maximum:"
+
+#: eme_events.php:2132 eme_rsvp.php:1805 eme_rsvp.php:2788
+msgid "Printable view"
+msgstr "Nyomtatható nézet"
+
+#: eme_events.php:2133 eme_rsvp.php:1809 eme_rsvp.php:2789 eme_rsvp.php:3093
+msgid "CSV export"
+msgstr "CSV exportálás"
+
+#: eme_events.php:2145
+msgid "Preview event"
+msgstr "Előnézet"
+
+#: eme_events.php:2147
+msgid "View event"
+msgstr "Esemény megtekintése"
+
+#: eme_events.php:2152
+msgid "Duplicate this event"
+msgstr "Az esemény duplázása"
+
+#: eme_events.php:2160
+msgid "All day"
+msgstr "Egész nap"
+
+#: eme_events.php:2171
+msgid "Edit Recurrence ID %d"
+msgstr "Ismétlődés szerkesztése: ID %d"
+
+#: eme_events.php:2291 eme_widgets.php:140
+msgid "Daily"
+msgstr "Naponta"
+
+#: eme_events.php:2291
+msgid "Weekly"
+msgstr "Heti"
+
+#: eme_events.php:2291 eme_widgets.php:141
+msgid "Monthly"
+msgstr "Havi"
+
+#: eme_events.php:2291 eme_recurrence.php:357
+msgid "Specific days"
+msgstr "Meghatározott napok"
+
+#: eme_events.php:2292
+msgid "Mon"
+msgstr "Hé"
+
+#: eme_events.php:2292
+msgid "Tue"
+msgstr "Ke"
+
+#: eme_events.php:2292
+msgid "Wed"
+msgstr "Sze"
+
+#: eme_events.php:2292
+msgid "Thu"
+msgstr "Csü"
+
+#: eme_events.php:2292
+msgid "Fri"
+msgstr "Pén"
+
+#: eme_events.php:2292
+msgid "Sat"
+msgstr "Szo"
+
+#: eme_events.php:2292
+msgid "Sun"
+msgstr "Vas"
+
+#: eme_events.php:2293
+msgid "first"
+msgstr "első"
+
+#: eme_events.php:2293
+msgid "second"
+msgstr "második"
+
+#: eme_events.php:2293
+msgid "third"
+msgstr "harmadik"
+
+#: eme_events.php:2293
+msgid "fourth"
+msgstr "negyedik"
+
+#: eme_events.php:2293
+msgid "fifth"
+msgstr "ötödik"
+
+#: eme_events.php:2293
+msgid "last"
+msgstr "utolsó"
+
+#: eme_events.php:2293
+msgid "Start day"
+msgstr "Kezdőnap"
+
+#: eme_events.php:2353 eme_events.php:2358
+msgid "WARNING: This is a recurring event."
+msgstr "FIGYELMEZTETÉS: Ez egy ismétlődő esemény."
+
+#: eme_events.php:2355
+msgid ""
+"Modifying these data all the events linked to this recurrence will be "
+"rescheduled"
+msgstr ""
+
+#: eme_events.php:2360
+msgid "If you change these data and save, this will become an independent event."
+msgstr ""
+
+#: eme_events.php:2394
+msgid ""
+"Private events are only visible for logged in users, draft events are not "
+"visible from the front end."
+msgstr "A privát események csak a bejelentkezett felszanálók számára láthatók"
+
+#: eme_events.php:2406
+msgid "Recurrence"
+msgstr "Ismétlődés"
+
+#: eme_events.php:2426 eme_events.php:2448
+msgid "Every"
+msgstr "Minden"
+
+#: eme_events.php:2430
+msgid "day"
+msgstr "nap"
+
+#: eme_events.php:2432 eme_events.php:2572 eme_options.php:640
+msgid "days"
+msgstr "napon"
+
+#: eme_events.php:2434
+msgid "week"
+msgstr "hét"
+
+#: eme_events.php:2436
+msgid "weeks"
+msgstr "hét"
+
+#: eme_events.php:2438
+msgid "month"
+msgstr "hónap"
+
+#: eme_events.php:2440
+msgid "months"
+msgstr "hónap"
+
+#: eme_events.php:2445
+msgid ""
+"If you leave this empty, the recurrence start date will be used as a reference."
+msgstr "Ha üresen hagyja, az ismétlődés kezdődátuma lesz kiindulópont."
+
+#: eme_events.php:2455
+msgid "Day of month"
+msgstr "napján"
+
+#: eme_events.php:2457
+msgid ""
+"If you use \"Start day\" as day of the month, the recurrence start date will be "
+"used as a reference."
+msgstr ""
+"Ha a \"Kezdőnap\" lehetőséget választja, az ismétlődés kezdődátuma lesz "
+"kiindulópont."
+
+#: eme_events.php:2463
+msgid "Check if your event happens more than once."
+msgstr "Jelölje be, ha esemény többször történik meg."
+
+#: eme_events.php:2466
+msgid ""
+"The event start and end date only define the duration of an event in case of a "
+"recurrence."
+msgstr ""
+"Az esemény kezdő és zárónapja csak az esemény hosszát határozza meg ismétlődő "
+"esemény esetén."
+
+#: eme_events.php:2478 eme_widgets.php:183 eme_widgets.php:320
+msgid "Author"
+msgstr "Szerző"
+
+#: eme_events.php:2481
+msgid "Author of this event: "
+msgstr "Az esemény szerzője"
+
+#: eme_events.php:2494
+msgid "Contact Person"
+msgstr "Kapcsolattartó"
+
+#: eme_events.php:2497
+msgid "Contact"
+msgstr "Kapcsolat"
+
+#: eme_events.php:2499 eme_options.php:623
+msgid "Event author"
+msgstr "Esemény szerzője"
+
+#: eme_events.php:2503
+msgid ""
+"Since the author is undefined for this event, any reference to the contact "
+"person (like when using #_CONTACTPERSON when sending mails), will use the admin "
+"user info."
+msgstr ""
+
+#: eme_events.php:2512
+msgid "RSVP"
+msgstr "RSVP"
+
+#: eme_events.php:2516
+msgid "Enable registration for this event"
+msgstr "Regisztráció hozzáadása az eseményhez"
+
+#: eme_events.php:2521
+msgid "Require approval for registration"
+msgstr "Jóváhagyás szükséges a regisztrációhoz"
+
+#: eme_events.php:2524
+msgid "Auto-approve registration upon payment"
+msgstr "Regisztráció automatikus jóváhagyása fizetéskor"
+
+#: eme_events.php:2527
+msgid "Consider pending registrations as available seats for new bookings"
+msgstr ""
+
+#: eme_events.php:2530
+msgid "Require WP membership for registration"
+msgstr "WP-tagság szükséges a regisztrációhoz"
+
+#: eme_events.php:2533
+msgid "Only take attendance (0 or 1 seat) for this event"
+msgstr ""
+
+#: eme_events.php:2536 eme_rsvp.php:1771
+msgid "Spaces"
+msgstr "Helyek"
+
+#: eme_events.php:2537
+msgid "For multiseat events, seperate the values by '||'"
+msgstr ""
+
+#: eme_events.php:2540 eme_people.php:427
+msgid "Price: "
+msgstr "Ár:"
+
+#: eme_events.php:2541
+msgid "For multiprice events, seperate the values by '||'"
+msgstr ""
+
+#: eme_events.php:2544
+msgid "Currency: "
+msgstr "Pénznem"
+
+#: eme_events.php:2561 eme_options.php:632
+msgid "Max number of spaces to book"
+msgstr ""
+
+#: eme_events.php:2562 eme_options.php:632
+msgid "The maximum number of spaces a person can book in one go."
+msgstr ""
+
+#: eme_events.php:2562 eme_events.php:2566
+msgid "(is multi-compatible)"
+msgstr ""
+
+#: eme_events.php:2565 eme_options.php:631
+msgid "Min number of spaces to book"
+msgstr ""
+
+#: eme_events.php:2566 eme_options.php:631
+msgid ""
+"The minimum number of spaces a person can book in one go (it can be 0, for e.g. "
+"just an attendee list)."
+msgstr ""
+
+#: eme_events.php:2569
+msgid "Allow RSVP until "
+msgstr ""
+
+#: eme_events.php:2576 eme_options.php:644
+msgid "before the event "
+msgstr "az esemény előtt"
+
+#: eme_events.php:2577 eme_options.php:643
+msgid "starts"
+msgstr "kezdődik"
+
+#: eme_events.php:2577 eme_options.php:643
+msgid "ends"
+msgstr "végződik"
+
+#: eme_events.php:2582
+msgid "Payment methods"
+msgstr "Fizetési módok"
+
+#: eme_events.php:2583
+msgid "Paypal"
+msgstr "PayPal"
+
+#: eme_events.php:2584
+msgid "2Checkout"
+msgstr "2Checkout"
+
+#: eme_events.php:2585
+msgid "Webmoney"
+msgstr "Webmoney"
+
+#: eme_events.php:2586
+msgid "First Data"
+msgstr "First Data"
+
+#: eme_events.php:2587
+msgid "Mollie"
+msgstr "Mollie"
+
+#: eme_events.php:2588
+msgid "Sage Pay"
+msgstr "Sage Pay"
+
+#: eme_events.php:2589
+msgid "Worldpay"
+msgstr "Worldpay"
+
+#: eme_events.php:2712 eme_rsvp.php:3009 eme_widgets.php:122
+msgid "No templates defined yet!"
+msgstr "Még egy sablont sem határozott meg!"
+
+#: eme_events.php:2727
+msgid "Save"
+msgstr "Mentés"
+
+#: eme_events.php:2729
+msgid "Are you sure you want to delete this event?"
+msgstr "Biztosan törölni szeretné ezt az eseményt?"
+
+#: eme_events.php:2730
+msgid "Are you sure you want to delete this recurrence?"
+msgstr "Biztosan törölni szeretné ezt az ismétlődést?"
+
+#: eme_events.php:2733 eme_events.php:2735
+msgid "Update"
+msgstr "Frissítés"
+
+#: eme_events.php:2737
+msgid "Delete Event"
+msgstr "Esemény törlése"
+
+#: eme_events.php:2739
+msgid "Delete Recurrence"
+msgstr "Ismétlődés törlése"
+
+#: eme_events.php:2753
+msgid "The event name"
+msgstr "Az esemény elnevezése"
+
+#: eme_events.php:2756 eme_locations.php:637 eme_locations.php:641
+#: eme_locations.php:644
+msgid " is missing!"
+msgstr "hiányzik!"
+
+#: eme_events.php:2759
+msgid ""
+"Since the event is repeated, you must specify an event date for the recurrence."
+msgstr ""
+
+#: eme_events.php:2762
+msgid ""
+"Since the event contains multiple seat categories (multiseat), you must specify "
+"the price per category (multiprice) as well."
+msgstr ""
+
+#: eme_events.php:2767
+msgid ""
+"Since the event contains multiple seat categories (multiseat), you must specify "
+"the exact same amount of prices (multiprice) as well."
+msgstr ""
+
+#: eme_events.php:2776
+msgid ""
+"Since this is a multiprice event and you decided to limit the max amount of "
+"seats to book (for one booking) per price category, you must specify the exact "
+"same amount of \"max seats to book\" as you did for the prices."
+msgstr ""
+
+#: eme_events.php:2782
+msgid ""
+"Since this is a multiprice event and you decided to limit the min amount of "
+"seats to book (for one booking) per price category, you must specify the exact "
+"same amount of \"min seats to book\" as you did for the prices."
+msgstr ""
+
+#: eme_events.php:2788 eme_locations.php:651
+msgid "Ach, some problems here:"
+msgstr "Jaj, van itt néhány probléma:"
+
+#: eme_events.php:2910
+msgid "Recurrence dates"
+msgstr "Ismétlődés dátumai"
+
+#: eme_events.php:2911
+msgid "Event date"
+msgstr "Esemény időpontja"
+
+#: eme_events.php:2912
+msgid "Event time"
+msgstr "Az esemény ideje"
+
+#: eme_events.php:2913
+msgid "Single Event Title Format"
+msgstr "Önálló esemény címformátuma"
+
+#: eme_events.php:2914
+msgid "Single Event Format"
+msgstr "Önálló esemény formátuma"
+
+#: eme_events.php:2915
+msgid "Contact Person Email Format"
+msgstr ""
+
+#: eme_events.php:2916
+msgid "Booking recorded html Format"
+msgstr ""
+
+#: eme_events.php:2917
+msgid "Respondent Email Format"
+msgstr ""
+
+#: eme_events.php:2918
+msgid "Registration Pending Email Format"
+msgstr ""
+
+#: eme_events.php:2919
+msgid "Registration Updated Email Format"
+msgstr ""
+
+#: eme_events.php:2920
+msgid "Registration Cancelled Email Format"
+msgstr ""
+
+#: eme_events.php:2921
+msgid "Registration Denied Email Format"
+msgstr ""
+
+#: eme_events.php:2922
+msgid "Registration Form Format"
+msgstr "A regisztrációs űrlap formátuma"
+
+#: eme_events.php:2923
+msgid "Cancel Registration Form Format"
+msgstr ""
+
+#: eme_events.php:2925
+msgid "Details"
+msgstr "Részletek"
+
+#: eme_events.php:2926
+msgid "Event image"
+msgstr "Esemény kép"
+
+#: eme_events.php:2928 eme_locations.php:366
+msgid "Attributes"
+msgstr "Attribútumok"
+
+#: eme_events.php:2929 eme_locations.php:373
+msgid "External link"
+msgstr "Külső hivatkozás"
+
+#: eme_events.php:2939
+msgid "The event name. Example: Birthday party"
+msgstr "Az esemény neve. Például: Születésnapi buli"
+
+#: eme_events.php:2943 eme_locations.php:212
+msgid "Permalink: "
+msgstr "Közvetlen hivatkozás:"
+
+#: eme_events.php:2961
+msgid "The event beginning and end date."
+msgstr "Az esemény kezdő- és zárónapja."
+
+#: eme_events.php:2965
+msgid ""
+"In case of a recurrent event, use the beginning and end date to just indicate "
+"the duration of one event in days. The real start date is determined by the "
+"recurrence scheme being used."
+msgstr ""
+"Ismétlődő esemény esetén a kezdő- és záródátumot csak arra használja, hogy a "
+"rendezvény napokban mért hosszát meghatározza. A valódi kezdődátumot az "
+"ismétlődési séma határozza meg."
+
+#: eme_events.php:2970
+msgid "This event lasts all day"
+msgstr "Ez egy egésznapos esemény."
+
+#: eme_events.php:2982
+msgid "The recurrence beginning and end date."
+msgstr "Az ismétlődés kezdő- és záródátuma."
+
+#: eme_events.php:2985
+msgid "Select all the dates you want the event to begin on."
+msgstr "Válassza ki az összes dátumot, amelyeken az esemény kezdődik."
+
+#: eme_events.php:2992 eme_events.php:3034 eme_events.php:3046
+#: eme_events.php:3058 eme_events.php:3070 eme_events.php:3082
+#: eme_events.php:3094 eme_events.php:3106 eme_events.php:3118
+#: eme_events.php:3130 eme_events.php:3142 eme_rsvp.php:3067 eme_rsvp.php:3073
+#: eme_widgets.php:194
+msgid "Either choose from a template: "
+msgstr "Válasszon sablont:"
+
+#: eme_events.php:2993 eme_events.php:3035 eme_events.php:3047
+#: eme_events.php:3059 eme_events.php:3071 eme_events.php:3083
+#: eme_events.php:3095 eme_events.php:3107 eme_events.php:3119
+#: eme_events.php:3131 eme_events.php:3143 eme_rsvp.php:3068 eme_rsvp.php:3074
+#: eme_widgets.php:197
+msgid ""
+"Or enter your own (if anything is entered here, it takes precedence over the "
+"selected template): "
+msgstr ""
+"vagy írja be a sajátját (ha ide bármit beír, az elsőbbséget élvez a "
+"kiválasztott sablonnal szemben):"
+
+#: eme_events.php:2996
+msgid "The format of the single event title."
+msgstr "Az önálló esemény címforumátuma."
+
+#: eme_events.php:2998 eme_events.php:3032 eme_events.php:3044
+#: eme_events.php:3056 eme_events.php:3068 eme_events.php:3080
+#: eme_events.php:3092 eme_events.php:3104 eme_events.php:3116
+#: eme_events.php:3128 eme_events.php:3140
+msgid "Only fill this in if you want to override the default settings."
+msgstr ""
+"Csak akkor töltse ki, ha felül szeretné írni az alapértelmezett beállításokat."
+
+#: eme_events.php:3023
+msgid "The time of the event beginning and end"
+msgstr "Az esemény kezdő- és záróidőpontja"
+
+#: eme_events.php:3030
+msgid "The format of the single event page."
+msgstr "Önálló eseményoldal formátuma"
+
+#: eme_events.php:3042 eme_options.php:694
+msgid "The format of the email which will be sent to the contact person."
+msgstr ""
+
+#: eme_events.php:3054 eme_options.php:662
+msgid ""
+"The text (html allowed) shown to the user when the booking has been made "
+"successfully."
+msgstr ""
+
+#: eme_events.php:3066 eme_options.php:700
+msgid "The format of the email which will be sent to the respondent."
+msgstr ""
+
+#: eme_events.php:3078
+msgid ""
+"The format of the email which will be sent to the respondent if the "
+"registration is pending."
+msgstr ""
+
+#: eme_events.php:3090
+msgid ""
+"The format of the email which will be sent to the respondent if the "
+"registration has been updated by an admin."
+msgstr ""
+
+#: eme_events.php:3102
+msgid ""
+"The format of the email which will be sent to the respondent if the "
+"registration is cancelled."
+msgstr ""
+
+#: eme_events.php:3114
+msgid ""
+"The format of the email which will be sent to the respondent if the "
+"registration is denied."
+msgstr ""
+
+#: eme_events.php:3126
+msgid "The registration form format."
+msgstr "A regisztrációs űrlap formátuma."
+
+#: eme_events.php:3138
+msgid "The cancel registration form format."
+msgstr "A lemondási regisztrációs űrlap formátuma."
+
+#: eme_events.php:3196 eme_events.php:3221 eme_locations.php:347
+msgid "Map not found"
+msgstr "Nem található térkép"
+
+#: eme_events.php:3206
+msgid "Select a location for your event"
+msgstr "Válasszon egy helyszínt az eseményhez"
+
+#: eme_events.php:3231
+msgid ""
+"The name of the location where the event takes place. You can use the name of a "
+"venue, a square, etc"
+msgstr ""
+
+#: eme_events.php:3233
+msgid "If you leave this empty, the map will NOT be shown for this event"
+msgstr "Ha ezt üresen hagyja, a térkép NEM fog látszani az eseménynél."
+
+#: eme_events.php:3237
+msgid "Address:"
+msgstr "Cím:"
+
+#: eme_events.php:3242
+msgid ""
+"The address of the location where the event takes place. Example: 21, Dominick "
+"Street"
+msgstr "A helyszín címe, ahol az eseményt megrendezik. Pl: Fő utca 1."
+
+#: eme_events.php:3246
+msgid "Town:"
+msgstr "Város:"
+
+#: eme_events.php:3251
+msgid ""
+"The town where the location is located. If you're using the Google Map "
+"integration and want to avoid geotagging ambiguities include the country in the "
+"town field. Example: Verona, Italy."
+msgstr ""
+
+#: eme_events.php:3255
+msgid "Latitude:"
+msgstr "Földrajzi szélesség:"
+
+#: eme_events.php:3259
+msgid "Longitude:"
+msgstr "Földrajzi hosszúság:"
+
+#: eme_events.php:3264
+msgid ""
+"If you're using the Google Map integration and are really serious about the "
+"correct place, use these."
+msgstr ""
+"Ha Google Maps integrációt használ, és nagyon komolyan veszi a hely "
+"pontosságát, használja ezeket!"
+
+#: eme_events.php:3281
+msgid "Details about the event"
+msgstr "Az esemény részletei"
+
+#: eme_events.php:3291
+msgid "Current image:"
+msgstr "Aktuális kép:"
+
+#: eme_events.php:3309 eme_locations.php:277
+msgid "Set a featured image"
+msgstr "Kiemelt kép beállítása"
+
+#: eme_events.php:3310 eme_locations.php:278
+msgid "Unset featured image"
+msgstr "Kiemelt kép eltávolítása"
+
+#: eme_events.php:3325 eme_locations.php:292
+msgid "Select the image to be used as featured image"
+msgstr "Válassza ki a képet, melyet kiemelt képként szeretne használni."
+
+#: eme_events.php:3327 eme_locations.php:294
+msgid "Set featured image"
+msgstr "Kiemelt kép beállítása"
+
+#: eme_events.php:3357
+msgid ""
+"If this is filled in, the single event URL will point to this url instead of "
+"the standard event page."
+msgstr ""
+"Ha ezt kitölti, az önálló esemény URL-je ide fog mutatni, nem a normál "
+"eseménylapra."
+
+#: eme_events.php:3901
+msgid "Add an event"
+msgstr "Esemény hozzáadása"
+
+#: eme_events.php:3909
+msgid ""
+"This page corresponds to <strong>Events Made Easy</strong> events page. Its "
+"content will be overriden by <strong>Events Made Easy</strong>. If you want to "
+"display your content, you can can assign another page to <strong>Events Made "
+"Easy</strong> in the the <a href='%s'>Settings</a>. "
+msgstr ""
+
+#: eme_events.php:3958
+msgid "Date"
+msgstr "Dátum"
+
+#: eme_events.php:3959
+msgid "Some required fields are missing:"
+msgstr "Néhány kötelező mező hiányzik:"
+
+#: eme_events.php:3960
+msgid "Since the event is repeated, you must specify an end date"
+msgstr ""
+
+#: eme_filters.php:35
+msgid "Select Week"
+msgstr "Válasszon hetet!"
+
+#: eme_filters.php:50
+msgid "Select Month"
+msgstr "Válasszon hónapot!"
+
+#: eme_filters.php:67
+msgid "Select Year"
+msgstr "Év kiválasztása"
+
+#: eme_filters.php:129
+msgid "Select one or more categories"
+msgstr "Válasszon ki egy vagy több kategóriát!"
+
+#: eme_filters.php:132
+msgid "Select a category"
+msgstr "Válasszon kategóriát"
+
+#: eme_filters.php:151
+msgid "Select one or more locations"
+msgstr "Válasszon ki egy vagy több helyszínt"
+
+#: eme_filters.php:154
+msgid "Select a location"
+msgstr "Válasszon helyszínt"
+
+#: eme_filters.php:172
+msgid "Select one or more towns"
+msgstr "Válasszon ki egy vagy több várost"
+
+#: eme_filters.php:175
+msgid "Select a town"
+msgstr "Válassza ki a várost"
+
+#: eme_formfields.php:7
+msgid "You have no right to update form fields!"
+msgstr "Nincs jogosultsága az űrlapmezők frissítéséhez!"
+
+#: eme_formfields.php:35 eme_formfields.php:61
+msgid "Error: the field name must be unique."
+msgstr ""
+
+#: eme_formfields.php:39 eme_formfields.php:64
+msgid "Error: the field value can not be empty for this type of field."
+msgstr ""
+
+#: eme_formfields.php:45 eme_formfields.php:69
+msgid ""
+"Error: if you specify field tags, there need to be exact the same amount of "
+"tags as values."
+msgstr ""
+
+#: eme_formfields.php:51
+msgid "Successfully edited the field"
+msgstr "A mező szerkesztése sikeres volt."
+
+#: eme_formfields.php:74
+msgid "Successfully added the field"
+msgstr "Mező sikeresen hozzáadva."
+
+#: eme_formfields.php:90
+msgid "Successfully deleted the field(s)"
+msgstr "Mező(k) sikeresen törölve."
+
+#: eme_formfields.php:93
+msgid ""
+"Couldn't delete the form fields. Incorrect field IDs supplied. Please try again."
+msgstr ""
+
+#: eme_formfields.php:117
+msgid "Form fields"
+msgstr "Űrlapmezők"
+
+#: eme_formfields.php:142 eme_formfields.php:150
+msgid "Type"
+msgstr "Típus"
+
+#: eme_formfields.php:164
+msgid "Are you sure you want to delete these form fields?"
+msgstr "Biztosan törölni szeretné ezeket az űrlapmezőket?"
+
+#: eme_formfields.php:178
+msgid "No fields defined yet!"
+msgstr "Még egy mezőt sem határozott meg!"
+
+#: eme_formfields.php:191 eme_formfields.php:208
+msgid "Add field"
+msgstr "Mező hozzáadása"
+
+#: eme_formfields.php:196 eme_formfields.php:251
+msgid "Field name"
+msgstr "Mezőnév"
+
+#: eme_formfields.php:198 eme_formfields.php:255
+msgid "Field type"
+msgstr "Mező típusa"
+
+#: eme_formfields.php:201 eme_formfields.php:259
+msgid "Field values"
+msgstr "Mezőértékek"
+
+#: eme_formfields.php:203 eme_formfields.php:261
+msgid ""
+"Tip: for multivalue field types (like Drop Down), use \"||\" to seperate the "
+"different values (e.g.: a1||a2||a3)"
+msgstr ""
+
+#: eme_formfields.php:204 eme_formfields.php:265
+msgid "Field tags"
+msgstr "Mezőcímkék"
+
+#: eme_formfields.php:206 eme_formfields.php:267
+msgid ""
+"For multivalue fields, you can here enter the \"visible\" tags people will see. "
+"If left empty, the field values will be used. Use \"||\" to seperate the "
+"different tags (e.g.: a1||a2||a3)"
+msgstr ""
+
+#: eme_formfields.php:211 eme_formfields.php:275 eme_options.php:659
+#: eme_options.php:670 eme_options.php:671
+msgid "For more information about form fields, see "
+msgstr "Az űrlapmezőkkel kapcsolatos további információkért lásd:"
+
+#: eme_formfields.php:211 eme_formfields.php:275 eme_options.php:466
+#: eme_options.php:467 eme_options.php:536 eme_options.php:541
+#: eme_options.php:551 eme_options.php:584 eme_options.php:589
+#: eme_options.php:656 eme_options.php:659 eme_options.php:670
+#: eme_options.php:671 eme_options.php:693 eme_options.php:694
+#: eme_options.php:695 eme_options.php:696 eme_options.php:697
+#: eme_options.php:698 eme_options.php:699 eme_options.php:700
+#: eme_options.php:701 eme_options.php:702 eme_options.php:703
+#: eme_options.php:704 eme_options.php:705 eme_options.php:706
+#: eme_options.php:707 eme_options.php:708 eme_options.php:734
+#: eme_options.php:735 eme_options.php:739 eme_options.php:740
+msgid "the documentation"
+msgstr " a dokumentációt"
+
+#: eme_formfields.php:230
+msgid "Edit field"
+msgstr "Mező szerkesztése"
+
+#: eme_formfields.php:240
+msgid ""
+"Warning: changing the field name might result in some answers not being visible "
+"when using the #_BOOKINGS placeholder, since the answers are based on the field "
+"name"
+msgstr ""
+
+#: eme_formfields.php:271
+msgid "Update field"
+msgstr "Mező frissítése"
+
+#: eme_formfields.php:558 eme_formfields.php:706 eme_formfields.php:1154
+msgid "(Required field)"
+msgstr "(Kötelező mező)"
+
+#: eme_formfields.php:574
+msgid "Not all required fields are present in the cancel form."
+msgstr ""
+
+#: eme_formfields.php:966 eme_formfields.php:984 eme_formfields.php:1144
+msgid "Update booking"
+msgstr "Foglalás frissítése"
+
+#: eme_formfields.php:1177 eme_formfields.php:1186
+msgid "Not all required fields are present in the booking form."
+msgstr ""
+
+#: eme_formfields.php:1178
+msgid ""
+"Since this is a multiprice event, make sure you changed the setting "
+"'Registration Form Format' for the event to include #_SEATxx placeholders for "
+"each price."
+msgstr ""
+
+#: eme_formfields.php:1179
+msgid "See the documentation about multiprice events."
+msgstr ""
+
+#: eme_functions.php:502
+msgid "Public"
+msgstr "Nyilvános"
+
+#: eme_functions.php:503
+msgid "Private"
+msgstr "Privát"
+
+#: eme_functions.php:504
+msgid "Draft"
+msgstr "Vázlat"
+
+#: eme_functions.php:538
+msgid "Australian Dollar"
+msgstr "Ausztrál dollár"
+
+#: eme_functions.php:539
+msgid "Canadian Dollar"
+msgstr "Kanadai dollár"
+
+#: eme_functions.php:540
+msgid "Czech Koruna"
+msgstr "Cseh korona"
+
+#: eme_functions.php:541
+msgid "Danish Krone"
+msgstr "Dán korona"
+
+#: eme_functions.php:542
+msgid "Euro"
+msgstr "Euró"
+
+#: eme_functions.php:543
+msgid "Hong Kong Dollar"
+msgstr "Hong Kong-i dollár"
+
+#: eme_functions.php:544
+msgid "Hungarian Forint"
+msgstr "Magyar forint"
+
+#: eme_functions.php:545
+msgid "Israeli New Sheqel"
+msgstr "Izraeli új sékel"
+
+#: eme_functions.php:546
+msgid "Japanese Yen"
+msgstr "Japán jen"
+
+#: eme_functions.php:547
+msgid "Mexican Peso"
+msgstr "Mexikói peso"
+
+#: eme_functions.php:548
+msgid "Norwegian Krone"
+msgstr "Norvég korona"
+
+#: eme_functions.php:549
+msgid "New Zealand Dollar"
+msgstr "Új-Zélandi dollár"
+
+#: eme_functions.php:550
+msgid "Philippine Peso"
+msgstr "Fülöp-szigeteki Pezó"
+
+#: eme_functions.php:551
+msgid "Polish Zloty"
+msgstr "Lengyel złoty"
+
+#: eme_functions.php:552
+msgid "Pound Sterling"
+msgstr "Font sterling"
+
+#: eme_functions.php:553
+msgid "Singapore Dollar"
+msgstr "Szingapúri dollár"
+
+#: eme_functions.php:554
+msgid "Swedish Krona"
+msgstr "Svéd korona"
+
+#: eme_functions.php:555
+msgid "Swiss Franc"
+msgstr "Svájci frank"
+
+#: eme_functions.php:556
+msgid "Thai Baht"
+msgstr "Thai bát"
+
+#: eme_functions.php:557
+msgid "U.S. Dollar"
+msgstr "USA Dollár"
+
+#: eme_functions.php:558
+msgid "Chinese Yuan Renminbi"
+msgstr "Kínai jüan"
+
+#: eme_locations.php:40 eme_locations.php:85
+msgid "You have no right to edit this location!"
+msgstr "Nincs jogosultsága a helyszín szerkesztéséhez!"
+
+#: eme_locations.php:53
+msgid "You have no right to copy this location!"
+msgstr "Nincs jogosultsága a helyszín másolásához!"
+
+#: eme_locations.php:61 eme_locations.php:81
+msgid "You have no right to add a location!"
+msgstr "Nincs jogosultsága helyszínt hozzáadni!"
+
+#: eme_locations.php:73
+msgid "Successfully deleted the selected locations."
+msgstr "A kiválasztott helyszínek sikeresen törölve"
+
+#: eme_locations.php:146
+msgid "The location has been added."
+msgstr "Helyszín hozzáadva"
+
+#: eme_locations.php:148
+msgid "There has been a problem adding the location."
+msgstr "Hiba történt a helyszín hozzáadásakor."
+
+#: eme_locations.php:153
+msgid "The location has been updated."
+msgstr "Helyszín frissítve"
+
+#: eme_locations.php:155
+msgid "The location update failed."
+msgstr "A helyszín frissítése sikertelen."
+
+#: eme_locations.php:183 eme_locations.php:380 eme_locations.php:407
+#: eme_options.php:499
+msgid "Add location"
+msgstr "Helyszín hozzáadása"
+
+#: eme_locations.php:185 eme_locations.php:443 eme_options.php:501
+msgid "Edit location"
+msgstr "Helyszín szerkesztése"
+
+#: eme_locations.php:207
+msgid "Location name"
+msgstr "A helyszín neve"
+
+#: eme_locations.php:225
+msgid "Location address"
+msgstr "A helyszín címe"
+
+#: eme_locations.php:234
+msgid "Location town"
+msgstr "A helyszín városa"
+
+#: eme_locations.php:243
+msgid "Location latitude/longitude"
+msgstr "A helyszín földrajzi szélessége/hosszúsága"
+
+#: eme_locations.php:247
+msgid "Latitude"
+msgstr "Földrajzi szélesség"
+
+#: eme_locations.php:251
+msgid "Longitude"
+msgstr "Földrajzi hosszúság"
+
+#: eme_locations.php:259
+msgid "Location image"
+msgstr "Helyszín kép"
+
+#: eme_locations.php:343
+msgid ""
+"Because qtranslate or a derivate is active, the title of the location might not "
+"update automatically in the balloon, so don't panic there."
+msgstr ""
+"Mivel a qtranslate vagy annak származéka aktív, lehetséges,hogy a helyszín "
+"megnevezése nem frissül automatikusan a buborékban. Ne essen pánikba!"
+
+#: eme_locations.php:353
+msgid "Location description"
+msgstr "A  helyszín leírása"
+
+#: eme_locations.php:360
+msgid "A description of the Location. You may include any kind of info here."
+msgstr "A helyszín leírása. Bármilyen információ megadható itt."
+
+#: eme_locations.php:377
+msgid ""
+"If this is filled in, the single location URL will point to this url instead of "
+"the standard location page."
+msgstr ""
+"Ha ezt kitölti, az önálló helyszín URL-je ide fog mutatni, nem a normál "
+"eseménylapra."
+
+#: eme_locations.php:380
+msgid "Update location"
+msgstr "Helyszín frissítése"
+
+#: eme_locations.php:396
+msgid "Add a new location"
+msgstr "Új helyszín hozzáadása"
+
+#: eme_locations.php:411 events-manager.php:1029
+msgid "Locations"
+msgstr "Helyszínek"
+
+#: eme_locations.php:423 eme_locations.php:433
+msgid "Address"
+msgstr "Cím"
+
+#: eme_locations.php:424 eme_locations.php:434
+msgid "Town"
+msgstr "Város"
+
+#: eme_locations.php:446
+msgid "Duplicate this location"
+msgstr "A helyszín duplázása"
+
+#: eme_locations.php:455
+msgid "Are you sure you want to delete these locations?"
+msgstr "Biztosan törölni szeretné ezeket a helyszíneket?"
+
+#: eme_locations.php:461
+msgid "No venues have been inserted yet!"
+msgstr ""
+
+#: eme_locations.php:634
+msgid "The location name"
+msgstr "A helyszín megnevezése"
+
+#: eme_locations.php:634
+msgid "The location address"
+msgstr "A helyszín címe"
+
+#: eme_locations.php:634
+msgid "The location town"
+msgstr "A helyszín városa"
+
+#: eme_locations.php:1304 events-manager.php:1023 events-manager.php:1204
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: eme_locations.php:1407
+msgid "Your Street Address"
+msgstr ""
+
+#: eme_locations.php:1411
+msgid "Get Directions"
+msgstr "Útvonaltervezés"
+
+#: eme_options.php:4
+msgid "New booking for '#_EVENTNAME'"
+msgstr "Új foglalás a(z) '#_EVENTNAME' eseményre"
+
+#: eme_options.php:5
+msgid ""
+"#_RESPNAME (#_RESPEMAIL) will attend #_EVENTNAME on #_STARTDATE. They want to "
+"reserve #_RESPSPACES space(s).<br/>Now there are #_RESERVEDSPACES space(s) "
+"reserved, #_AVAILABLESPACES are still available.<br/><br/>Yours faithfully,<br/"
+">Events Manager"
+msgstr ""
+
+#: eme_options.php:6
+msgid "A reservation has been cancelled for '#_EVENTNAME'"
+msgstr "Foglalás törölve a(z) '#_EVENTNAME' eseményre"
+
+#: eme_options.php:7
+msgid ""
+"#_RESPNAME (#_RESPEMAIL) has cancelled for #_EVENTNAME on #_STARTDATE. <br/>Now "
+"there are #_RESERVEDSPACES space(s) reserved, #_AVAILABLESPACES are still "
+"available.<br/><br/>Yours faithfully,<br/>Events Manager"
+msgstr ""
+
+#: eme_options.php:8
+msgid "Approval required for new booking for '#_EVENTNAME'"
+msgstr "Jóváhagyás szükséges az új foglaláshoz  a(z) '#_EVENTNAME' eseményre"
+
+#: eme_options.php:9
+msgid ""
+"#_RESPNAME (#_RESPEMAIL) would like to attend #_EVENTNAME on #_STARTDATE. They "
+"want to reserve #_RESPSPACES space(s).<br/>Now there are #_RESERVEDSPACES "
+"space(s) reserved, #_AVAILABLESPACES are still available.<br/><br/>Yours "
+"faithfully,<br/>Events Manager"
+msgstr ""
+
+#: eme_options.php:10
+msgid "Reservation for '#_EVENTNAME' confirmed"
+msgstr ""
+
+#: eme_options.php:11
+msgid ""
+"Dear #_RESPNAME,<br/><br/>You have successfully reserved #_RESPSPACES space(s) "
+"for #_EVENTNAME.<br/><br/>Yours faithfully,<br/>#_CONTACTPERSON"
+msgstr ""
+
+#: eme_options.php:12
+msgid "Reservation for '#_EVENTNAME' is pending"
+msgstr ""
+
+#: eme_options.php:13
+msgid ""
+"Dear #_RESPNAME,<br/><br/>Your request to reserve #_RESPSPACES space(s) for "
+"#_EVENTNAME is pending.<br/><br/>Yours faithfully,<br/>#_CONTACTPERSON"
+msgstr ""
+
+#: eme_options.php:14
+msgid "Reservation for '#_EVENTNAME' cancelled"
+msgstr ""
+
+#: eme_options.php:15
+msgid ""
+"Dear #_RESPNAME,<br/><br/>Your request to reserve #_RESPSPACES space(s) for "
+"#_EVENTNAME has been cancelled.<br/><br/>Yours faithfully,<br/>#_CONTACTPERSON"
+msgstr ""
+
+#: eme_options.php:16
+msgid "Reservation for '#_EVENTNAME' denied"
+msgstr ""
+
+#: eme_options.php:17
+msgid ""
+"Dear #_RESPNAME,<br/><br/>Your request to reserve #_RESPSPACES space(s) for "
+"#_EVENTNAME has been denied.<br/><br/>Yours faithfully,<br/>#_CONTACTPERSON"
+msgstr ""
+
+#: eme_options.php:18
+msgid "Reservation for '#_EVENTNAME' updated"
+msgstr ""
+
+#: eme_options.php:19
+msgid ""
+"Dear #_RESPNAME,<br/><br/>Your request to reserve #_RESPSPACES space(s) for "
+"#_EVENTNAME has been updated.<br/><br/>Yours faithfully,<br/>#_CONTACTPERSON"
+msgstr ""
+
+#: eme_options.php:20
+msgid "Your booking has been recorded"
+msgstr "Foglalását rögzítettük."
+
+#: eme_options.php:22 eme_options.php:33 eme_people.php:99 eme_people.php:297
+#: eme_people.php:432
+msgid "Last Name"
+msgstr "Vezetéknév"
+
+#: eme_options.php:23 eme_options.php:34 eme_people.php:103 eme_people.php:298
+#: eme_people.php:433
+msgid "First Name"
+msgstr "Keresztnév"
+
+#: eme_options.php:24 eme_options.php:35
+msgid "E-Mail"
+msgstr "Email"
+
+#: eme_options.php:25 eme_people.php:135 eme_people.php:306 eme_people.php:435
+#: eme_people.php:573 eme_people.php:823 eme_rsvp.php:786 eme_rsvp.php:1045
+msgid "Phone number"
+msgstr "Telefonszám"
+
+#: eme_options.php:26 eme_people.php:310 eme_people.php:436 eme_rsvp.php:2737
+msgid "Seats"
+msgstr ""
+
+#: eme_options.php:27 eme_people.php:315 eme_people.php:441 eme_rsvp.php:792
+#: eme_rsvp.php:1051
+msgid "Comment"
+msgstr "Hozzászólás"
+
+#: eme_options.php:40
+msgid "Pay via %s"
+msgstr "Fizetés: %s haszálatával"
+
+#: eme_options.php:41
+msgid ""
+"You can pay for this event via %s. If you wish to do so, click the button below."
+msgstr ""
+
+#: eme_options.php:66 eme_options.php:67 events-manager.php:87
+#: events-manager.php:994 events-manager.php:1020
+msgid "Events"
+msgstr "Események"
+
+#: eme_options.php:240
+msgid "Using Mollie, you can pay using one of the following methods:"
+msgstr ""
+
+#: eme_options.php:390
+msgid ""
+"Conversion done, please check your events and restore from backup if you see "
+"any sign of troubles."
+msgstr ""
+
+#: eme_options.php:437
+msgid "Event Manager Options"
+msgstr "Event Manager beállítások"
+
+#: eme_options.php:440
+msgid ""
+"Please also check <a href='%s'>your profile</a> for some per-user EME settings."
+msgstr ""
+"Kérem, ellenőrizze az <a href='%s'>adatlapját</a> a felhasználóhoz kapcsolódó "
+"EME beállítások miatt."
+
+#: eme_options.php:450
+msgid "General options"
+msgstr "Általános beállítások"
+
+#: eme_options.php:453
+msgid "Use dropdown for locations?"
+msgstr "Legördülő menü használata a helyszíneknél"
+
+#: eme_options.php:453
+msgid ""
+"Select yes to select location from a drop-down menu; location selection will be "
+"faster, but you will lose the ability to insert locations with events."
+msgstr ""
+
+#: eme_options.php:453
+msgid ""
+"When the qtranslate plugin is installed and activated, this setting will be "
+"ignored and always considered 'Yes'."
+msgstr ""
+
+#: eme_options.php:454
+msgid "Use recurrence?"
+msgstr "Ismétlődés használata"
+
+#: eme_options.php:454
+msgid "Select yes to enable the possibility to create recurrent events."
+msgstr "Az ismétlődő események engedélyezéséhez válassza az \"Igen\"-t."
+
+#: eme_options.php:455
+msgid "Use RSVP?"
+msgstr "RSVP használata?"
+
+#: eme_options.php:455
+msgid ""
+"Select yes to enable the RSVP feature so people can register for an event and "
+"book places."
+msgstr ""
+
+#: eme_options.php:456
+msgid "Use categories?"
+msgstr "Kategóriák használata"
+
+#: eme_options.php:456
+msgid "Select yes to enable the category features."
+msgstr "Az kategória-tulajdonságok engedélyezéséhez válassza az \"Igen\"-t."
+
+#: eme_options.php:457
+msgid "Use attributes?"
+msgstr "Attribútumok használata"
+
+#: eme_options.php:457
+msgid "Select yes to enable the attributes feature."
+msgstr "Az attribútumok engedélyezéséhez válassza az \"Igen\"-t."
+
+#: eme_options.php:458
+msgid "Enable Google Maps integration?"
+msgstr " Google Maps integráció engedélyezése"
+
+#: eme_options.php:458
+msgid "Check this option to enable Google Map integration."
+msgstr "A négyzet bejelölésével engedélyezi a Google Térkép integrálását."
+
+#: eme_options.php:459
+msgid "Enable map scroll-wheel zooming?"
+msgstr "Engedélyezi a egér gördítőkerekével való nagyítást a térképen?"
+
+#: eme_options.php:459
+msgid ""
+"Yes, enables map scroll-wheel zooming. No, enables scroll-wheel page scrolling "
+"over maps. (It will be necessary to refresh your web browser on a map page to "
+"see the effect of this change.)"
+msgstr ""
+
+#: eme_options.php:460
+msgid "Always include JS in header?"
+msgstr "Mindig szerepeljen a JS a fejlécben?"
+
+#: eme_options.php:460
+msgid ""
+"Some themes are badely designed and can have issues showing the google maps or "
+"advancing in the calendar. If so, try activating this option which will cause "
+"the javascript to always be included in the header of every page (off by "
+"default)."
+msgstr ""
+
+#: eme_options.php:461
+msgid "Use the client computer clock for the calendar"
+msgstr ""
+
+#: eme_options.php:461
+msgid ""
+"Check this option if you want to use the clock of the client as base to "
+"calculate current day for the calendar."
+msgstr ""
+
+#: eme_options.php:462
+msgid "Theme loop protection"
+msgstr ""
+
+#: eme_options.php:462
+msgid "Simple loop protection (default)"
+msgstr ""
+
+#: eme_options.php:462
+msgid "Loop protection for older or misbehaving themes"
+msgstr ""
+
+#: eme_options.php:462
+msgid "Last attempt at loop protection (if all else fails)"
+msgstr ""
+
+#: eme_options.php:462
+msgid ""
+"Choose the level of loop protection against the_content filter you want. "
+"Depending on the theme you may need to change this."
+msgstr ""
+
+#: eme_options.php:463
+msgid "Delete all EME data when upgrading or deactivating?"
+msgstr "Minden EME adat törlése frissítéskor vagy kikapcsoláskor."
+
+#: eme_options.php:463
+msgid ""
+"Check this option if you want to delete all EME data (database tables and "
+"options) when upgrading or deactivating the plugin."
+msgstr ""
+
+#: eme_options.php:464
+msgid "Enable shortcodes in widgets"
+msgstr "Rövidkódok engedélyezése a widget-ekben."
+
+#: eme_options.php:464
+msgid ""
+"Check this option if you want to enable the use of shortcodes in widgets "
+"(affects shortcodes of any plugin used in widgets, so use with care)."
+msgstr ""
+
+#: eme_options.php:465
+msgid "Enable placeholders in event notes"
+msgstr ""
+
+#: eme_options.php:465
+msgid ""
+"Check this option if you want to enable the use of placeholders in the event "
+"notes. By default placeholders in notes are not being touched at all so as not "
+"to interfere with possible format settings for other shortcodes you can/want to "
+"use, so use with care."
+msgstr ""
+
+#: eme_options.php:466
+msgid "Allow deprecated placeholders"
+msgstr "Elavult helykitöltők engedélyezése"
+
+#: eme_options.php:466
+msgid "Check this option if you want to use some deprecated placeholders."
+msgstr ""
+"Jelölje be ezt a lehetőséget, ha elavult helykitöltőket szeretne használni."
+
+#: eme_options.php:466 eme_options.php:467
+msgid "For more information, see "
+msgstr "Bővebb tájékoztatásért lásd:"
+
+#: eme_options.php:467
+msgid "Re-enable legacy placeholder syntax"
+msgstr ""
+
+#: eme_options.php:467
+msgid ""
+"Check this option if you want to re-enable the use of the older placeholder "
+"syntax with square brackets. Be aware of the fact that the new placeholder "
+"syntax will not work then."
+msgstr ""
+"Jelölje be ezt a lehetőséget, ha újra engedélyezni kívánja a régebbi "
+"helykitöltő formátumot a szögletes zárójelekkel. Ne felejtse el, hogy az új "
+"formátum nem fog így működni."
+
+#: eme_options.php:476
+msgid "Permalink options"
+msgstr "Közvetlen hivatkozások beállításai"
+
+#: eme_options.php:479
+msgid "Enable event permalinks if possible?"
+msgstr "Közvetlen hivatkozás engedélyezése az eseményeknél, ha lehetséges."
+
+#: eme_options.php:479
+msgid "If Yes, EME will render SEO permalinks if permalinks are activated."
+msgstr ""
+"Ha igen, az EME létrehozza a SEO közvetlen hivatkozásokat, amennyiben a "
+"közvetlen hivatkozások engedélyezettek."
+
+#: eme_options.php:479
+msgid ""
+"It is necessary to click 'Save Changes' on the  WordPress 'Settings/Permalinks' "
+"page before you will see the effect of this change."
+msgstr ""
+
+#: eme_options.php:480
+msgid "Events permalink prefix"
+msgstr "Események - közvetlen hivatkozás előtag"
+
+#: eme_options.php:480
+msgid "The permalink prefix used for events and the calendar."
+msgstr "A eseményeknél és a naptárnál használt közvetlen hivatkozás előtagja."
+
+#: eme_options.php:481
+msgid "Locations permalink prefix"
+msgstr "Helyszínek - közvetlen hivatkozás előtag"
+
+#: eme_options.php:481
+msgid "The permalink prefix used for locations."
+msgstr "A helyszíneknél használt közvetlen hivatkozás előtagja."
+
+#: eme_options.php:490
+msgid "Access rights"
+msgstr "Hozzáférési jogok"
+
+#: eme_options.php:491
+msgid ""
+"Tip: Use a plugin like \"User Role Editor\" to add/edit capabilities and roles."
+msgstr ""
+
+#: eme_options.php:494
+msgid "Add event"
+msgstr "Esemény hozzáadása"
+
+#: eme_options.php:494
+msgid "Permission needed to add a new event. Default: %s"
+msgstr "Engedély szükséges új esemény hozzáadásához. Alapértelmezett: %s"
+
+#: eme_options.php:495
+msgid "Author event"
+msgstr "Szerző eseménye"
+
+#: eme_options.php:495
+msgid "Permission needed to edit own events. Default: %s"
+msgstr ""
+
+#: eme_options.php:496
+msgid "Publish event"
+msgstr "Esemény közzététele"
+
+#: eme_options.php:496
+msgid "Permission needed to make an event public. Default: %s"
+msgstr ""
+
+#: eme_options.php:497
+msgid "List events"
+msgstr ""
+
+#: eme_options.php:497
+msgid ""
+"Permission needed to just list all events, useful for CSV exports for bookings "
+"and such. Default: %s"
+msgstr ""
+
+#: eme_options.php:497
+msgid "All your event admins need this as well, otherwise the menu will not show."
+msgstr ""
+
+#: eme_options.php:498
+msgid "Edit events"
+msgstr "Események szerkesztése"
+
+#: eme_options.php:498
+msgid "Permission needed to edit all events. Default: %s"
+msgstr "Engedély szükséges az összes esemény szerkesztéséhez. Alapértelmezett: %s"
+
+#: eme_options.php:499
+msgid "Permission needed to add locations. Default: %s"
+msgstr "Engedély szükséges helyszín hozzáadásához. Alapértelmezett: %s"
+
+#: eme_options.php:500
+msgid "Author location"
+msgstr "Szerző helyszín"
+
+#: eme_options.php:500
+msgid "Permission needed to edit own locations. Default: %s"
+msgstr ""
+
+#: eme_options.php:501
+msgid "Permission needed to edit all locations. Default: %s"
+msgstr ""
+"Engedély szükséges az összes helyszín szerkesztéséhez. Alapértelmezett: %s"
+
+#: eme_options.php:502
+msgid "Edit categories"
+msgstr "A kategóriák szerkesztése"
+
+#: eme_options.php:502
+msgid "Permission needed to edit all categories. Default: %s"
+msgstr ""
+"Engedély szükséges az összes kategória szerkesztéséhez. Alapértelmezett: %s"
+
+#: eme_options.php:503
+msgid "Edit templates"
+msgstr "Sablonok szerkesztése"
+
+#: eme_options.php:503
+msgid "Permission needed to edit all templates. Default: %s"
+msgstr "Engedély szükséges az összes sablon szerkesztéséhez. Alapértelmezett: %s"
+
+#: eme_options.php:504
+msgid "View people"
+msgstr "Emberek megtekintése"
+
+#: eme_options.php:504
+msgid "Permission needed to view registered people info. Default: %s"
+msgstr ""
+
+#: eme_options.php:505
+msgid "Approve registrations"
+msgstr "Regiszrációk jóváhagyása."
+
+#: eme_options.php:505
+msgid "Permission needed to approve pending registrations. Default: %s"
+msgstr ""
+"Engedély szükséges a függőben lévő események jóváhagyásához. Alapértelmezett: %s"
+
+#: eme_options.php:506
+msgid "Edit registrations"
+msgstr "Regisztrációk szerkesztése"
+
+#: eme_options.php:506
+msgid "Permission needed to edit approved registrations. Default: %s"
+msgstr ""
+
+#: eme_options.php:507 events-manager.php:1039
+msgid "Send Mails"
+msgstr "E-mail küldése"
+
+#: eme_options.php:507
+msgid "Permission needed to send mails for own events. Default: %s"
+msgstr ""
+
+#: eme_options.php:508
+msgid "Send Other Mails"
+msgstr ""
+
+#: eme_options.php:508
+msgid "Permission needed to send mails for any event. Default: %s"
+msgstr ""
+
+#: eme_options.php:509
+msgid "Edit form fields"
+msgstr "Űrlapmezők szerkesztése"
+
+#: eme_options.php:509
+msgid "Permission needed to edit form fields. Default: %s"
+msgstr ""
+
+#: eme_options.php:510 events-manager.php:1043
+msgid "Cleanup"
+msgstr "Törlés"
+
+#: eme_options.php:510
+msgid "Permission needed to execute cleanup actions. Default: %s"
+msgstr ""
+
+#: eme_options.php:511
+msgid "Edit settings"
+msgstr "Beállítások szerkesztése"
+
+#: eme_options.php:511
+msgid "Permission needed to edit settings. Default: %s"
+msgstr ""
+
+#: eme_options.php:520 eme_options.php:523 events-manager.php:2334
+msgid "Events page"
+msgstr "Események oldal"
+
+#: eme_options.php:523
+msgid "This option allows you to select which page to use as an events page."
+msgstr ""
+
+#: eme_options.php:523
+msgid ""
+"The content of this page (including shortcodes of any kind) will be ignored "
+"completely and dynamically replaced by events data."
+msgstr ""
+"Az oldal tartalmát az EME teljesen figyelmen kívül hagyja (beleértve minden "
+"rövidkódot), és dinamikusan feltölti az események adataival."
+
+#: eme_options.php:524
+msgid "Show events page in lists?"
+msgstr ""
+
+#: eme_options.php:524
+msgid ""
+"Check this option if you want the events page to appear together with other "
+"pages in pages lists."
+msgstr ""
+
+#: eme_options.php:524
+msgid ""
+"This option should no longer be used, it will be deprecated. Using the "
+"[eme_events] shortcode in a self created page is recommended."
+msgstr ""
+
+#: eme_options.php:525
+msgid "Display calendar in events page?"
+msgstr "Megjeleníti a naptárt az események lapon?"
+
+#: eme_options.php:525
+msgid ""
+"This option allows to display the calendar in the events page, instead of the "
+"default list. It is recommended not to display both the calendar widget and a "
+"calendar page."
+msgstr ""
+
+#: eme_options.php:526
+msgid "Number of events to show in lists"
+msgstr "Mutatott események száma a listákban."
+
+#: eme_options.php:526
+msgid ""
+"The number of events to show in a list if no specific limit is specified (used "
+"in the shortcode eme_events, RSS feed, the placeholders #_NEXTEVENTS and "
+"#_PASTEVENTS, ...). Use 0 for no limit."
+msgstr ""
+
+#: eme_options.php:527
+msgid "State for new event"
+msgstr "Új esemény állapota"
+
+#: eme_options.php:527
+msgid "Initial state for a new event"
+msgstr "Esemény kezdőállapota"
+
+#: eme_options.php:530
+msgid "Events format"
+msgstr "Események formátuma"
+
+#: eme_options.php:533
+msgid "Remove leading zeros from minutes?"
+msgstr "Eltávolítsuk a perceknél a kezdő nullákat?"
+
+#: eme_options.php:533
+msgid ""
+"PHP date/time functions have no notation to show minutes without leading zeros. "
+"Checking this option will return e.g. 9 for 09 and empty for 00."
+msgstr ""
+
+#: eme_options.php:534
+msgid "Default event list format header"
+msgstr "Alapértelmezett eseménylista-formátum fejrésze"
+
+#: eme_options.php:534
+msgid ""
+"This content will appear just above your code for the default event list "
+"format. If you leave this empty, the value <code>%s</code> will be used."
+msgstr ""
+"Ez a tartalom közvetlenül az alapértelmezett eseménylista kódja felett jelenik "
+"meg. Ha üresen hagyja, az érték a következő lesz:  <code>%s</code>"
+
+#: eme_options.php:535
+msgid "Default categories event list format header"
+msgstr "Alapértelmezett eseménylista-formátum fejrésze"
+
+#: eme_options.php:535
+msgid ""
+"This content will appear just above your code for the event list format when "
+"showing events for a specific category. If you leave this empty, the value "
+"<code>%s</code> will be used."
+msgstr ""
+"Ez a tartalom közvetlenül egy meghatározott kategória eseménylista kódja felett "
+"jelenik meg. Ha üresen hagyja, az érték a következő lesz:  <code>%s</code>"
+
+#: eme_options.php:536
+msgid "Default event list format"
+msgstr "Alapértelmezett eseménylista-formátum"
+
+#: eme_options.php:536
+msgid ""
+"The format of any events in a list.<br/>Insert one or more of the following "
+"placeholders: <code>#_EVENTNAME</code>, <code>#_LOCATIONNAME</code>, "
+"<code>#_ADDRESS</code>, <code>#_TOWN</code>, <code>#_NOTES</code>.<br/> Use "
+"<code>#_EXCERPT</code> to show <code>#_NOTES</code> until you place a "
+"<code>&lt;!&ndash;&ndash;more&ndash;&ndash;&gt;</code> marker.<br/> Use "
+"<code>#_LINKEDNAME</code> for the event name with a link to the given event "
+"page.<br/> Use <code>#_EVENTPAGEURL</code> to print the event page URL and make "
+"your own customised links.<br/> Use <code>#_LOCATIONPAGEURL</code> to print the "
+"location page URL and make your own customised links.<br/>Use "
+"<code>#_EDITEVENTLINK</code> to add a link to edit page for the event, which "
+"will appear only when a user is logged in.<br/>To insert date and time values, "
+"use <a href=\"http://www.php.net/manual/en/function.date.php\">PHP time format "
+"characters</a>  with a <code>#</code> symbol before them, i.e. <code>#m</code>, "
+"<code>#M</code>, <code>#j</code>, etc.<br/> For the end time, put <code>#@</"
+"code> in front of the character, e.g. <code>#@h</code>, <code>#@i</code>, etc."
+"<br/> You can also create a date format without prepending <code>#</code> by "
+"wrapping it in #_{} or #@_{} (e.g. <code>#_{d/m/Y}</code>). If there is no end "
+"date, the value is not shown.<br/>Use <code>#_12HSTARTTIME</code> and "
+"<code>#_12HENDTIME</code> for AM/PM start-time/end-time notation, idem "
+"<code>#_24HSTARTTIME</code> and <code>#_24HENDTIME</code>.<br/>Feel free to use "
+"HTML tags as <code>li</code>, <code>br</code> and so on.<br/>For custom "
+"attributes, you use <code>#_ATT{key}{alternative text}</code>, the second "
+"braces are optional and will appear if the attribute is not defined or left "
+"blank for that event. This key will appear as an option when adding attributes "
+"to your event."
+msgstr ""
+
+#: eme_options.php:536
+msgid ""
+"Use <code>#_PAST_FUTURE_CLASS</code> to return a class name indicating this "
+"event is future or past (<code>eme-future-event</code> or <code>eme-past-event</"
+"code>), use the returned value in e.g. the li-statement for each event in the "
+"list of events"
+msgstr ""
+
+#: eme_options.php:536 eme_options.php:541 eme_options.php:551
+#: eme_options.php:584 eme_options.php:589 eme_options.php:693
+#: eme_options.php:694 eme_options.php:695 eme_options.php:696
+#: eme_options.php:697 eme_options.php:698 eme_options.php:699
+#: eme_options.php:700 eme_options.php:701 eme_options.php:702
+#: eme_options.php:703 eme_options.php:704 eme_options.php:705
+#: eme_options.php:706 eme_options.php:707 eme_options.php:708
+#: eme_options.php:734 eme_options.php:735 eme_options.php:739
+#: eme_options.php:740
+msgid "For all possible placeholders, see "
+msgstr "Az összes lehetsége helykitöltőt megtalálja itt: "
+
+#: eme_options.php:537
+msgid "Default event list format footer"
+msgstr "Alapértelmezett eseménylista-formátum lábrésze"
+
+#: eme_options.php:537
+msgid ""
+"This content will appear just below your code for the default event list "
+"format. If you leave this empty, the value <code>%s</code> will be used."
+msgstr ""
+"Ez a tartalom közvetlenül az alapértelmezett eseménylista formátum kódja alatt "
+"jelenik meg. Ha üresen hagyja, az érték a következő lesz:  <code>%s</code>"
+
+#: eme_options.php:538
+msgid "Default categories event list format footer"
+msgstr "Alapértelmezett eseménylista-formátum lábrésze"
+
+#: eme_options.php:538
+msgid ""
+"This content will appear just below your code for the default event list format "
+"when showing events for a specific category. If you leave this empty, the value "
+"<code>%s</code> will be used."
+msgstr ""
+"Ez a tartalom közvetlenül egy meghatározott kategória alapértelmezett "
+"eseménylista kódja alatt jelenik meg. Ha üresen hagyja, az érték a következő "
+"lesz:  <code>%s</code>"
+
+#: eme_options.php:539
+msgid "Single event page title format"
+msgstr "Önálló esemény oldalcím-formátuma"
+
+#: eme_options.php:539
+msgid ""
+"The format of a single event page title. Follow the previous formatting "
+"instructions."
+msgstr ""
+"Az önálló eseményoldal címformátuma.  Kövesse a fenti formázási útmutatásokat."
+
+#: eme_options.php:540
+msgid "Single event html title format"
+msgstr "Önálló esemény html címformátuma"
+
+#: eme_options.php:540
+msgid ""
+"The format of a single event html page title. Follow the previous formatting "
+"instructions."
+msgstr ""
+
+#: eme_options.php:540 eme_options.php:542 eme_options.php:543
+#: eme_options.php:588
+msgid " The default is: "
+msgstr "Az alapértelmezett érték:"
+
+#: eme_options.php:541
+msgid "Default single event format"
+msgstr "Alapértelmezett önálló eseményformátum"
+
+#: eme_options.php:541
+msgid ""
+"The format of a single event page.<br/>Follow the previous formatting "
+"instructions. <br/>Use <code>#_MAP</code> to insert a map.<br/>Use "
+"<code>#_CONTACTNAME</code>, <code>#_CONTACTEMAIL</code>, <code>#_CONTACTPHONE</"
+"code> to insert respectively the name, e-mail address and phone number of the "
+"designated contact person. <br/>Use <code>#_ADDBOOKINGFORM</code> to insert a "
+"form to allow the user to respond to your events reserving one or more places "
+"(RSVP).<br/> Use <code>#_REMOVEBOOKINGFORM</code> to insert a form where users, "
+"inserting their name and e-mail address, can remove their bookings."
+msgstr ""
+
+#: eme_options.php:541
+msgid ""
+"<br/>Use <code>#_ADDBOOKINGFORM_IF_NOT_REGISTERED</code> to insert the booking "
+"form only if the user has not registered yet. Similar use "
+"<code>#_REMOVEBOOKINGFORM_IF_REGISTERED</code> to insert the booking removal "
+"form only if the user has already registered before. These two codes only work "
+"for WP users."
+msgstr ""
+
+#: eme_options.php:541
+msgid ""
+"<br/> Use <code>#_DIRECTIONS</code> to insert a form so people can ask "
+"directions to the event."
+msgstr ""
+
+#: eme_options.php:541
+msgid ""
+"<br/> Use <code>#_CATEGORIES</code> to insert a comma-seperated list of "
+"categories an event is in."
+msgstr ""
+
+#: eme_options.php:541
+msgid ""
+"<br/> Use <code>#_ATTENDEES</code> to get a list of the names attending the "
+"event."
+msgstr ""
+
+#: eme_options.php:542
+msgid "Monthly period date format"
+msgstr ""
+
+#: eme_options.php:542
+msgid ""
+"The format of the date-string used when you use showperiod=monthly as an option "
+"to &#91;the eme_events] shortcode, also used for monthly pagination. Use php "
+"date() compatible settings."
+msgstr ""
+
+#: eme_options.php:543
+msgid "Yearly period date format"
+msgstr "Éves periódus dátumformátuma"
+
+#: eme_options.php:543
+msgid ""
+"The format of the date-string used when you use showperiod=yearly as an option "
+"to &#91;the eme_events] shortcode, also used for yearly pagination. Use php "
+"date() compatible settings."
+msgstr ""
+
+#: eme_options.php:544
+msgid "Events page title"
+msgstr "Események oldal címe"
+
+#: eme_options.php:544
+msgid "The title on the multiple events page."
+msgstr ""
+
+#: eme_options.php:545
+msgid "No events message"
+msgstr "Üzenet, ha nincs esemény:"
+
+#: eme_options.php:545
+msgid "The message displayed when no events are available."
+msgstr "Ez az üzenet jelenik meg, ha nem nincsenek események."
+
+#: eme_options.php:548
+msgid "Events filtering format"
+msgstr "Események szűrőformátuma"
+
+#: eme_options.php:551
+msgid "Default event list filtering format"
+msgstr "Alapértelmezett eseménylista szűrőformátum"
+
+#: eme_options.php:551
+msgid ""
+"This defines the layout of the event list filtering form when using the "
+"shortcode <code>[eme_filterform]</code>. Use <code>#_FILTER_CATS</code>, "
+"<code>#_FILTER_LOCS</code>, <code>#_FILTER_TOWNS</code>, <code>#_FILTER_WEEKS</"
+"code>, <code>#_FILTER_MONTHS</code>."
+msgstr ""
+
+#: eme_options.php:560
+msgid "Calendar options"
+msgstr "A Naptár beállításai"
+
+#: eme_options.php:563
+msgid "Hide past events?"
+msgstr "Korábbi események elrejtése?"
+
+#: eme_options.php:563
+msgid "Check this option if you want to hide past events in the calendar."
+msgstr ""
+"Jelölje be ezt a lehetőséget, ha el szeretné elrejteni a múltbeli eseményeket a "
+"naptárban."
+
+#: eme_options.php:566
+msgid "Calendar format"
+msgstr "Naptár formátum"
+
+#: eme_options.php:569
+msgid "Small calendar title"
+msgstr "Kis naptár cime"
+
+#: eme_options.php:569
+msgid ""
+"The format of the title, corresponding to the text that appears when hovering "
+"on an eventful calendar day."
+msgstr ""
+
+#: eme_options.php:570
+msgid "Small calendar title separator"
+msgstr "Kis naptár elválasztó"
+
+#: eme_options.php:570
+msgid ""
+"The separator appearing on the above title when more than one event is taking "
+"place on the same day."
+msgstr ""
+
+#: eme_options.php:571
+msgid "Full calendar events format"
+msgstr "A teljes naptár eseményformátuma"
+
+#: eme_options.php:571
+msgid ""
+"The format of each event when displayed in the full calendar. Remember to "
+"include <code>li</code> tags before and after the event."
+msgstr ""
+
+#: eme_options.php:580
+msgid "Locations format"
+msgstr "Helyszínformátum"
+
+#: eme_options.php:583
+msgid "Default location list format header"
+msgstr "Alapértelmezett helyszínlista-formátum fejrésze"
+
+#: eme_options.php:583
+msgid ""
+"This content will appear just above your code for the default location list "
+"format. If you leave this empty, the value <code>%s</code> will be used.<br/"
+">Used by the shortcode <code>[eme_locations]</code>"
+msgstr ""
+"Ez a tartalom közvetlenül az alapértelmezett helyszínlista kódja felett jelenik "
+"meg. Ha üresen hagyja, az érték a következő lesz:  <code>%s</code>"
+
+#: eme_options.php:584
+msgid "Default location list item format"
+msgstr "Alapértelmezett helyszínlistaelem formátuma"
+
+#: eme_options.php:584
+msgid ""
+"The format of a location in a location list. If you leave this empty, the value "
+"<code>%s</code> will be used.<br/>See the documentation for a list of available "
+"placeholders for locations.<br/>Used by the shortcode <code>[eme_locations]</"
+"code>"
+msgstr ""
+
+#: eme_options.php:585
+msgid "Default location list format footer"
+msgstr "Alapértelmezett helyszínlista-formátum lábrésze"
+
+#: eme_options.php:585
+msgid ""
+"This content will appear just below your code for the default location list "
+"format. If you leave this empty, the value <code>%s</code> will be used.<br/"
+">Used by the shortcode <code>[eme_locations]</code>"
+msgstr ""
+"Ez a tartalom közvetlenül az alapértelmezett helyszínlista formátum kódja "
+"felett jelenik meg. Ha üresen hagyja, az érték a következő lesz:  <code>%s</"
+"code>"
+
+#: eme_options.php:587
+msgid "Single location page title format"
+msgstr "Önálló helyszín oldalcím-formátuma"
+
+#: eme_options.php:587
+msgid ""
+"The format of a single location page title.<br/>Follow the previous formatting "
+"instructions."
+msgstr ""
+"Az önálló helyszínoldal címformátuma.  Kövesse a fenti formázási útmutatásokat."
+
+#: eme_options.php:588
+msgid "Single location html title format"
+msgstr "Önálló helyszín html címformátuma"
+
+#: eme_options.php:588
+msgid ""
+"The format of a single location html page title.<br/>Follow the previous "
+"formatting instructions."
+msgstr ""
+"Az önálló helyszínoldal html címformátuma.<br/> Kövesse a fenti formázási "
+"útmutatásokat."
+
+#: eme_options.php:589
+msgid "Default single location page format"
+msgstr "Alapértelmezett önálló helyszínformátum"
+
+#: eme_options.php:589
+msgid ""
+"The format of a single location page.<br/>Insert one or more of the following "
+"placeholders: <code>#_LOCATIONNAME</code>, <code>#_ADDRESS</code>, "
+"<code>#_TOWN</code>, <code>#_DESCRIPTION</code>.<br/> Use <code>#_MAP</code> to "
+"display a map of the event location, and <code>#_IMAGE</code> to display an "
+"image of the location.<br/> Use <code>#_NEXTEVENTS</code> to insert a list of "
+"the upcoming events, <code>#_PASTEVENTS</code> for a list of past events, "
+"<code>#_ALLEVENTS</code> for a list of all events taking place in this location."
+msgstr ""
+
+#: eme_options.php:590
+msgid "Default location balloon format"
+msgstr "Alapértelmezett helyszín-buborék formátum"
+
+#: eme_options.php:590
+msgid ""
+"The format of the text appearing in the balloon describing the location in the "
+"map.<br/>Insert one or more of the following placeholders: "
+"<code>#_LOCATIONNAME</code>, <code>#_ADDRESS</code>, <code>#_TOWN</code>, "
+"<code>#_DESCRIPTION</code>,<code>#_IMAGE</code>, <code>#_LOCATIONPAGEURL</code> "
+"or <code>#_DIRECTIONS</code>."
+msgstr ""
+
+#: eme_options.php:591
+msgid "Default location event list format"
+msgstr "Alapértelmezett helyszínlista-formátum"
+
+#: eme_options.php:591
+msgid ""
+"The format of the events list inserted in the location page through the "
+"<code>#_NEXTEVENTS</code>, <code>#_PASTEVENTS</code> and <code>#_ALLEVENTS</"
+"code> element. <br/> Follow the events formatting instructions"
+msgstr ""
+
+#: eme_options.php:592
+msgid "Default no events message"
+msgstr "Alapértelmezett 'Nincs esemény' üzenet"
+
+#: eme_options.php:592
+msgid ""
+"The message to be displayed in the list generated by <code>#_NEXTEVENTS</code>, "
+"<code>#_PASTEVENTS</code> and <code>#_ALLEVENTS</code> when no events are "
+"available."
+msgstr ""
+
+#: eme_options.php:601
+msgid "RSS and ICAL feed format"
+msgstr ""
+
+#: eme_options.php:604
+msgid "RSS main title"
+msgstr "RSS főcím"
+
+#: eme_options.php:604
+msgid "The main title of your RSS events feed."
+msgstr ""
+
+#: eme_options.php:605
+msgid "RSS main description"
+msgstr ""
+
+#: eme_options.php:605
+msgid "The main description of your RSS events feed."
+msgstr ""
+
+#: eme_options.php:606
+msgid "RSS title format"
+msgstr "RSS címformátum"
+
+#: eme_options.php:606
+msgid "The format of the title of each item in the events RSS feed."
+msgstr ""
+
+#: eme_options.php:607
+msgid "RSS description format"
+msgstr ""
+
+#: eme_options.php:607
+msgid ""
+"The format of the description of each item in the events RSS feed. Follow the "
+"previous formatting instructions."
+msgstr ""
+
+#: eme_options.php:608
+msgid "RSS Pubdate usage"
+msgstr ""
+
+#: eme_options.php:608
+msgid ""
+"Show the event creation/modification date as PubDate info in the in the events "
+"RSS feed."
+msgstr ""
+
+#: eme_options.php:609
+msgid "RSS Pubdate is start date"
+msgstr ""
+
+#: eme_options.php:609
+msgid ""
+"If you select this, the pubDate field in RSS will be the event start date, not "
+"the modification date."
+msgstr ""
+
+#: eme_options.php:610
+msgid "ICAL title format"
+msgstr "ICAL címformátum"
+
+#: eme_options.php:610
+msgid "The format of the title of each item in the events ICAL feed."
+msgstr ""
+
+#: eme_options.php:611
+msgid "ICAL description format"
+msgstr "ICAL leírás formátuma"
+
+#: eme_options.php:611
+msgid ""
+"The format of the description of each item in the events ICAL feed. Follow the "
+"previous formatting instructions."
+msgstr ""
+
+#: eme_options.php:620
+msgid "RSVP: registrations and bookings"
+msgstr "RSVP: regisztrációk és foglalás"
+
+#: eme_options.php:625
+msgid "Default contact person"
+msgstr "Alapértelmezett kapcsolattartó személy"
+
+#: eme_options.php:625
+msgid ""
+"Select the default contact person. This user will be employed whenever a "
+"contact person is not explicitly specified for an event"
+msgstr ""
+
+#: eme_options.php:626
+msgid "By default enable registrations for new events?"
+msgstr "Alapértelmezés szerint engedélyezze a regisztrációt az új eseményeknél?"
+
+#: eme_options.php:626
+msgid ""
+"Check this option if you want to enable registrations by default for new events."
+msgstr ""
+
+#: eme_options.php:627
+msgid "By default require approval for registrations?"
+msgstr "Alapértelmezés szerint a regisztrációk jóváhagyása szükséges?"
+
+#: eme_options.php:627
+msgid ""
+"Check this option if you want by default that new registrations require "
+"approval."
+msgstr ""
+
+#: eme_options.php:628
+msgid "By default require WP membership to be able to register?"
+msgstr "Alapértelmezés szerint követelmény legyen a WP tagság a regisztrációhoz?"
+
+#: eme_options.php:628
+msgid ""
+"Check this option if you want by default that only WP registered users can book "
+"for an event."
+msgstr ""
+
+#: eme_options.php:629
+msgid "Check required fields upon submit?"
+msgstr "Kötelező mezők ellenőrzése küldéskor"
+
+#: eme_options.php:629
+msgid ""
+"Check this option if you want to check on the server-side if all required "
+"fields have been completed upon RSVP form submit. Consider using a captcha if "
+"disabling this."
+msgstr ""
+
+#: eme_options.php:630
+msgid "Default number of spaces"
+msgstr "A helyek alapértelmezett száma"
+
+#: eme_options.php:630
+msgid "The default number of spaces an event has."
+msgstr "Az esemény alapértelmezett helyszáma."
+
+#: eme_options.php:638
+msgid "By default allow RSVP until this many"
+msgstr ""
+
+#: eme_options.php:650
+msgid "RSVP cancel cutoff"
+msgstr ""
+
+#: eme_options.php:650
+msgid "Allow RSVP cancellation until this many days before the event starts."
+msgstr ""
+
+#: eme_options.php:651
+msgid "Use captcha for booking form?"
+msgstr "Captcha használata a foglalási űrlapnál"
+
+#: eme_options.php:651
+msgid ""
+"Check this option if you want to use a captcha on the booking form, to thwart "
+"spammers a bit."
+msgstr ""
+
+#: eme_options.php:652
+msgid "Hide fully booked events?"
+msgstr "Teltházas események elrejtése"
+
+#: eme_options.php:652
+msgid ""
+"Check this option if you want to hide events that are fully booked from the "
+"calendar and events listing in the front."
+msgstr ""
+
+#: eme_options.php:653
+msgid "Hide RSVP ended events?"
+msgstr ""
+
+#: eme_options.php:653
+msgid ""
+"Check this option if you want to hide events which RSVP registration period has "
+"already ended."
+msgstr ""
+
+#: eme_options.php:654
+msgid "Add booking form submit text"
+msgstr ""
+
+#: eme_options.php:654
+msgid "The string of the submit button on the add booking form"
+msgstr ""
+
+#: eme_options.php:655
+msgid "Delete booking form submit text"
+msgstr ""
+
+#: eme_options.php:655
+msgid "The string of the submit button on the delete booking form"
+msgstr ""
+
+#: eme_options.php:656
+msgid "Attendees list format"
+msgstr "A résztvevők listájának formátuma"
+
+#: eme_options.php:656
+msgid ""
+"The format for the attendees list when using the <code>#_ATTENDEES</code> "
+"placeholder."
+msgstr ""
+
+#: eme_options.php:656 eme_options.php:659
+msgid "For all placeholders you can use here, see "
+msgstr "Az összes helykitöltőt megtalálja itt: "
+
+#: eme_options.php:657
+msgid "Attendees list ignore pending"
+msgstr "Résztvevők listája a függőben lévők nélkül"
+
+#: eme_options.php:657
+msgid ""
+"Whether or not to ignore pending bookings when using the <code>#_ATTENDEES</"
+"code> placeholder."
+msgstr ""
+
+#: eme_options.php:658
+msgid "Bookings list header format"
+msgstr ""
+
+#: eme_options.php:658
+msgid ""
+"The header format for the bookings list when using the <code>#_BOOKINGS</code> "
+"placeholder."
+msgstr ""
+
+#: eme_options.php:658 eme_options.php:660 eme_options.php:880
+#: eme_options.php:894 eme_options.php:895 eme_options.php:896
+#: eme_options.php:897
+msgid " The default is '%s'"
+msgstr "Az alapértelmezett érték: '%s'"
+
+#: eme_options.php:659
+msgid "Bookings list format"
+msgstr ""
+
+#: eme_options.php:659
+msgid ""
+"The format for the bookings list when using the <code>#_BOOKINGS</code> "
+"placeholder."
+msgstr ""
+
+#: eme_options.php:660
+msgid "Bookings list footer format"
+msgstr ""
+
+#: eme_options.php:660
+msgid ""
+"The footer format for the bookings list when using the <code>#_BOOKINGS</code> "
+"placeholder."
+msgstr ""
+
+#: eme_options.php:661
+msgid "Bookings list ignore pending"
+msgstr ""
+
+#: eme_options.php:661
+msgid ""
+"Whether or not to ignore pending bookings when using the <code>#_BOOKINGS</"
+"code> placeholder."
+msgstr ""
+
+#: eme_options.php:662
+msgid "Booking recorded message"
+msgstr ""
+
+#: eme_options.php:663
+msgid "Show RSVP form again after booking?"
+msgstr ""
+
+#: eme_options.php:663
+msgid ""
+"Uncheck this option if you don't want to show the RSVP booking form again after "
+"a successful booking."
+msgstr ""
+
+#: eme_options.php:667
+msgid "RSVP: form format"
+msgstr "RSVP: űrlapformátum"
+
+#: eme_options.php:670
+msgid "Form format"
+msgstr "Űrlapformátum"
+
+#: eme_options.php:670
+msgid ""
+"The look and feel of the form for registrations. #_NAME, #_EMAIL and #_SEATS "
+"are obligated fields, if not present then the form will not be shown."
+msgstr ""
+
+#: eme_options.php:671
+msgid "Cancel form format"
+msgstr "Lemondási űrlap formátuma"
+
+#: eme_options.php:671
+msgid ""
+"The look and feel of the cancel form for registrations. #_NAME and #_EMAIL are "
+"obligated fields, if not present then the form will not be shown."
+msgstr ""
+
+#: eme_options.php:681
+msgid "RSVP: mail options"
+msgstr "RSVP: e-mail beállítások"
+
+#: eme_options.php:684
+msgid "Enable the RSVP e-mail notifications?"
+msgstr ""
+
+#: eme_options.php:684
+msgid ""
+"Check this option if you want to receive an email when someone books places for "
+"your events."
+msgstr ""
+
+#: eme_options.php:689
+msgid "Enable pending RSVP e-mails?"
+msgstr ""
+
+#: eme_options.php:689
+msgid "Check this option if you want to send mails for pending registrations."
+msgstr ""
+
+#: eme_options.php:690
+msgid "Enable approved RSVP e-mails?"
+msgstr ""
+
+#: eme_options.php:690
+msgid "Check this option if you want to send mails for approved registrations."
+msgstr ""
+
+#: eme_options.php:691
+msgid "Send HTML mails"
+msgstr "HTML levelek küldése"
+
+#: eme_options.php:691
+msgid "Check this option if you want to use html in the mails being sent."
+msgstr ""
+
+#: eme_options.php:692
+msgid "Quick deny send mails"
+msgstr ""
+
+#: eme_options.php:692
+msgid ""
+"Check this option if you want to sent mails when denying a registration while "
+"editing an event."
+msgstr ""
+
+#: eme_options.php:693
+msgid "Contact person email subject format"
+msgstr ""
+
+#: eme_options.php:693
+msgid "The format of the email subject which will be sent to the contact person."
+msgstr ""
+
+#: eme_options.php:694
+msgid "Contact person email format"
+msgstr ""
+
+#: eme_options.php:695
+msgid "Contact person cancelled email subject format"
+msgstr ""
+
+#: eme_options.php:695
+msgid ""
+"The format of the email subject which will be sent to the contact person for a "
+"cancellation."
+msgstr ""
+
+#: eme_options.php:696
+msgid "Contact person cancelled email format"
+msgstr ""
+
+#: eme_options.php:696
+msgid ""
+"The format of the email which will be sent to the contact person for a "
+"cancellation."
+msgstr ""
+
+#: eme_options.php:697
+msgid "Contact person pending email subject format"
+msgstr ""
+
+#: eme_options.php:697
+msgid ""
+"The format of the email subject which will be sent to the contact person if "
+"approval is needed."
+msgstr ""
+
+#: eme_options.php:698
+msgid "Contact person pending email format"
+msgstr ""
+
+#: eme_options.php:698
+msgid ""
+"The format of the email which will be sent to the contact person if approval is "
+"needed."
+msgstr ""
+
+#: eme_options.php:699
+msgid "Respondent email subject format"
+msgstr ""
+
+#: eme_options.php:699
+msgid "The format of the email subject which will be sent to the respondent."
+msgstr ""
+
+#: eme_options.php:700
+msgid "Respondent email format"
+msgstr ""
+
+#: eme_options.php:701
+msgid "Registration pending email subject format"
+msgstr ""
+
+#: eme_options.php:701
+msgid ""
+"The format of the email subject which will be sent to the respondent when the "
+"event requires registration approval."
+msgstr ""
+
+#: eme_options.php:702
+msgid "Registration pending email format"
+msgstr ""
+
+#: eme_options.php:702
+msgid ""
+"The format of the email which will be sent to the respondent when the event "
+"requires registration approval."
+msgstr ""
+
+#: eme_options.php:703
+msgid "Registration cancelled email subject format"
+msgstr ""
+
+#: eme_options.php:703
+msgid ""
+"The format of the email subject which will be sent to the respondent when the "
+"respondent cancels the registrations for an event."
+msgstr ""
+
+#: eme_options.php:704
+msgid "Registration cancelled email format"
+msgstr ""
+
+#: eme_options.php:704
+msgid ""
+"The format of the email which will be sent to the respondent when the "
+"respondent cancels the registrations for an event."
+msgstr ""
+
+#: eme_options.php:705
+msgid "Registration denied email subject format"
+msgstr ""
+
+#: eme_options.php:705
+msgid ""
+"The format of the email subject which will be sent to the respondent when the "
+"admin denies the registration request if the event requires registration "
+"approval."
+msgstr ""
+
+#: eme_options.php:706
+msgid "Registration denied email format"
+msgstr ""
+
+#: eme_options.php:706
+msgid ""
+"The format of the email which will be sent to the respondent when the admin "
+"denies the registration request if the event requires registration approval."
+msgstr ""
+
+#: eme_options.php:707
+msgid "Registration updated email subject format"
+msgstr ""
+
+#: eme_options.php:707
+msgid ""
+"The format of the email subject which will be sent to the respondent when the "
+"admin updates the registration request."
+msgstr ""
+
+#: eme_options.php:708
+msgid "Registration updated email format"
+msgstr ""
+
+#: eme_options.php:708
+msgid ""
+"The format of the email which will be sent to the respondent when the admin "
+"updates the registration request."
+msgstr ""
+
+#: eme_options.php:709
+msgid "Notification sender name"
+msgstr ""
+
+#: eme_options.php:709
+msgid "Insert the display name of the notification sender."
+msgstr ""
+
+#: eme_options.php:710
+msgid "Notification sender address"
+msgstr ""
+
+#: eme_options.php:710
+msgid ""
+"Insert the address of the notification sender. It must correspond with your "
+"Gmail account user if you use Gmail to send mails."
+msgstr ""
+
+#: eme_options.php:711
+msgid "Notification BCC address"
+msgstr ""
+
+#: eme_options.php:711
+msgid ""
+"Insert an address that will be added in Bcc to all outgoing mails. Can be left "
+"empty."
+msgstr ""
+
+#: eme_options.php:712
+msgid "Mail sending method"
+msgstr "E-mail küldési módszer"
+
+#: eme_options.php:712
+msgid "PHP mail function"
+msgstr ""
+
+#: eme_options.php:712
+msgid "Select the method to send email notification."
+msgstr "Válassza ki az e-mail értesítés módját."
+
+#: eme_options.php:713
+msgid "SMTP host"
+msgstr "SMTP host"
+
+#: eme_options.php:713
+msgid ""
+"The SMTP host. Usually it corresponds to 'localhost'. If you use Gmail, set "
+"this value to 'ssl://smtp.gmail.com:465'."
+msgstr ""
+
+#: eme_options.php:714
+msgid "Mail sending port"
+msgstr "E-mail küldési port"
+
+#: eme_options.php:714
+msgid ""
+"The port through which you e-mail notifications will be sent. Make sure the "
+"firewall doesn't block this port"
+msgstr ""
+
+#: eme_options.php:715
+msgid "Use SMTP authentication?"
+msgstr "SMTP hitelesítést használ?"
+
+#: eme_options.php:715
+msgid ""
+"SMTP authentication is often needed. If you use Gmail, make sure to set this "
+"parameter to Yes"
+msgstr ""
+"SMTP hitelesítés szükséges. Ha Gmail-t használ, állítsa ezt az értéket \"Igen\"-"
+"re."
+
+#: eme_options.php:716
+msgid "SMTP username"
+msgstr "SMTP felhasználói név"
+
+#: eme_options.php:716
+msgid "Insert the username to be used to access your SMTP server."
+msgstr ""
+
+#: eme_options.php:717
+msgid "SMTP password"
+msgstr "SMTP jelszó"
+
+#: eme_options.php:717
+msgid "Insert the password to be used to access your SMTP server"
+msgstr ""
+
+#: eme_options.php:718
+msgid "Debug SMTP?"
+msgstr ""
+
+#: eme_options.php:718
+msgid ""
+"Check this option if you have issues sending mail via SMTP. Only do this for "
+"debugging purposes and deactivate it afterwards!"
+msgstr ""
+
+#: eme_options.php:729
+msgid "RSVP: price options"
+msgstr "RSVP: áropciók"
+
+#: eme_options.php:732
+msgid "Default currency"
+msgstr "Alapértelmezett pénznem"
+
+#: eme_options.php:732
+msgid "Select the default currency for payments."
+msgstr "Válassza ki a kifizetések alapértelmezett pénznemét."
+
+#: eme_options.php:733
+msgid "Default price"
+msgstr "Alapértelmezett ár"
+
+#: eme_options.php:733
+msgid "The default price for an event."
+msgstr "Egy esemény alapértelmezett ára."
+
+#: eme_options.php:734
+msgid "Payment form header format"
+msgstr ""
+
+#: eme_options.php:734
+msgid ""
+"The format of the text shown above the payment buttons. If left empty, a "
+"standard text will be shown."
+msgstr ""
+
+#: eme_options.php:735
+msgid "Payment form footer format"
+msgstr ""
+
+#: eme_options.php:735
+msgid "The format of the text shown below the payment buttons. Default: empty."
+msgstr ""
+
+#: eme_options.php:736
+msgid "Multibooking payment form header format"
+msgstr ""
+
+#: eme_options.php:736
+msgid ""
+"The format of the text shown above the payment buttons in the multibooking "
+"form. If left empty, a standard text will be shown."
+msgstr ""
+
+#: eme_options.php:736 eme_options.php:737
+msgid ""
+"Although the same placeholders as for the regular payment form header format "
+"can be used, it is advised to only use multibooking related placeholders."
+msgstr ""
+
+#: eme_options.php:737
+msgid "Multibooking payment form footer format"
+msgstr ""
+
+#: eme_options.php:737
+msgid ""
+"The format of the text shown below the payment buttons in the multibooking "
+"form. Default: empty."
+msgstr ""
+
+#: eme_options.php:738
+msgid "Show custom payment return page"
+msgstr ""
+
+#: eme_options.php:738
+msgid ""
+"Check this option if you want to define a custom page format for the sucess or "
+"failure of the payment."
+msgstr ""
+
+#: eme_options.php:739
+msgid "Payment succes return page format"
+msgstr ""
+
+#: eme_options.php:739
+msgid "The format of the return page when the payment is succesfull."
+msgstr ""
+
+#: eme_options.php:740
+msgid "Payment failure return page format"
+msgstr ""
+
+#: eme_options.php:740
+msgid ""
+"The format of the return page when the payment failed or has been canceled."
+msgstr ""
+
+#: eme_options.php:741
+msgid "Add booking id to return page info"
+msgstr ""
+
+#: eme_options.php:741
+msgid ""
+"Check this option if you want to add the booking id to the return page. This "
+"will allow you to also use booking placeholders next to the regular event "
+"placeholders, but beware that other people can change the url and see other "
+"booking info then!"
+msgstr ""
+
+#: eme_options.php:745
+msgid "RSVP: paypal options"
+msgstr "RSVP: Paypal beállítások"
+
+#: eme_options.php:749
+msgid "PayPal live or test"
+msgstr ""
+
+#: eme_options.php:749
+msgid "Paypal Sandbox (for testing)"
+msgstr ""
+
+#: eme_options.php:749
+msgid "Paypal Live"
+msgstr "Paypal Live"
+
+#: eme_options.php:749
+msgid ""
+"Choose wether you want to test paypal in a paypal sandbox or go live and really "
+"use paypal."
+msgstr ""
+
+#: eme_options.php:750
+msgid "PayPal business info"
+msgstr ""
+
+#: eme_options.php:750
+msgid "Paypal business ID or email."
+msgstr ""
+
+#: eme_options.php:751
+msgid "Use paypal encryption?"
+msgstr "Paypal titkosítás használata"
+
+#: eme_options.php:751
+msgid "Select yes to encrypt the paypal button using certificates."
+msgstr ""
+
+#: eme_options.php:752
+msgid "Ignore paypal tax setting?"
+msgstr ""
+
+#: eme_options.php:752
+msgid "Select yes to ignore the tax setting in your paypal profile."
+msgstr ""
+
+#: eme_options.php:753
+msgid "Paypal public cert"
+msgstr ""
+
+#: eme_options.php:753
+msgid "Path to paypal public certificate file."
+msgstr ""
+
+#: eme_options.php:754
+msgid "Own public cert"
+msgstr ""
+
+#: eme_options.php:754
+msgid "Path to own public certificate file."
+msgstr ""
+
+#: eme_options.php:755
+msgid "Own private key"
+msgstr ""
+
+#: eme_options.php:755
+msgid "Path to own private key file."
+msgstr ""
+
+#: eme_options.php:756
+msgid "Certificate ID"
+msgstr ""
+
+#: eme_options.php:756
+msgid "Certificate ID of your cert at paypal."
+msgstr ""
+
+#: eme_options.php:757 eme_options.php:775 eme_options.php:793
+#: eme_options.php:811 eme_options.php:827 eme_options.php:844
+#: eme_options.php:863
+msgid "Extra charge"
+msgstr "Extra költség"
+
+#: eme_options.php:757 eme_options.php:775 eme_options.php:793
+#: eme_options.php:811 eme_options.php:827 eme_options.php:844
+#: eme_options.php:863
+msgid ""
+"Extra charge added when paying for an event. Can either be an absolute number "
+"or a percentage. E.g. 2 or 5%"
+msgstr ""
+
+#: eme_options.php:758 eme_options.php:776 eme_options.php:794
+#: eme_options.php:812 eme_options.php:828 eme_options.php:845
+#: eme_options.php:864
+msgid "Extra charge 2"
+msgstr "Extra költség 2"
+
+#: eme_options.php:758 eme_options.php:776 eme_options.php:794
+#: eme_options.php:812 eme_options.php:828 eme_options.php:845
+#: eme_options.php:864
+msgid ""
+"Second extra charge added when paying for an event. Can either be an absolute "
+"number or a percentage. E.g. 2 or 5%"
+msgstr ""
+
+#: eme_options.php:759 eme_options.php:777 eme_options.php:795
+#: eme_options.php:813 eme_options.php:829 eme_options.php:846
+#: eme_options.php:865
+msgid "Payment button label"
+msgstr "Fizetési gomb felirata"
+
+#: eme_options.php:759 eme_options.php:777 eme_options.php:795
+#: eme_options.php:813 eme_options.php:829 eme_options.php:846
+#: eme_options.php:865
+msgid "The text shown inside the payment button"
+msgstr "A fizetésgomb szövege"
+
+#: eme_options.php:760 eme_options.php:778 eme_options.php:796
+#: eme_options.php:814 eme_options.php:830 eme_options.php:847
+#: eme_options.php:866
+msgid "Payment button image"
+msgstr "Fizetési gomb képe"
+
+#: eme_options.php:760 eme_options.php:778 eme_options.php:796
+#: eme_options.php:814 eme_options.php:830 eme_options.php:847
+#: eme_options.php:866
+msgid ""
+"The url to an image for the payment button that replaces the standard submit "
+"button with the label mentioned above."
+msgstr ""
+
+#: eme_options.php:761 eme_options.php:779 eme_options.php:797
+#: eme_options.php:815 eme_options.php:831 eme_options.php:848
+#: eme_options.php:867
+msgid "Text above payment button"
+msgstr "A fizetés gomb feletti szöveg"
+
+#: eme_options.php:761 eme_options.php:779 eme_options.php:797
+#: eme_options.php:815 eme_options.php:831 eme_options.php:848
+#: eme_options.php:867
+msgid ""
+"The text shown just above the payment button, you can use #_EXTRACHARGE and "
+"#_CURRENCY to indicate the extra charge calculated if wanted"
+msgstr ""
+
+#: eme_options.php:762 eme_options.php:780 eme_options.php:798
+#: eme_options.php:816 eme_options.php:832 eme_options.php:849
+#: eme_options.php:868
+msgid "Text below payment button"
+msgstr "A fizetés gomb alatti szöveg"
+
+#: eme_options.php:762 eme_options.php:780 eme_options.php:798
+#: eme_options.php:816 eme_options.php:832 eme_options.php:849
+#: eme_options.php:868
+msgid ""
+"The text shown just below the payment button, you can use #_EXTRACHARGE and "
+"#_CURRENCY to indicate the extra charge calculated if wanted"
+msgstr ""
+
+#: eme_options.php:763 eme_options.php:781 eme_options.php:799
+#: eme_options.php:817 eme_options.php:833
+msgid "Info: the url for payment notifications is: "
+msgstr ""
+
+#: eme_options.php:767
+msgid "RSVP: 2Checkout options"
+msgstr "RSVP: 2Checkout opciók"
+
+#: eme_options.php:772
+msgid "2Checkout live or test"
+msgstr ""
+
+#: eme_options.php:772
+msgid "2Checkout Sandbox (for testing)"
+msgstr ""
+
+#: eme_options.php:772
+msgid "2Checkout Test (the \"demo\" mode)"
+msgstr ""
+
+#: eme_options.php:772
+msgid "2Checkout Live"
+msgstr "2Checkout Élő"
+
+#: eme_options.php:772
+msgid ""
+"Choose wether you want to test 2Checkout in a sandbox or go live and really use "
+"2Checkout."
+msgstr ""
+
+#: eme_options.php:773
+msgid "2Checkout Account number"
+msgstr "2Checkout Számlaszám"
+
+#: eme_options.php:773
+msgid "2Checkout Account number."
+msgstr "2Checkout Számlaszám."
+
+#: eme_options.php:774
+msgid "2Checkout Secret"
+msgstr ""
+
+#: eme_options.php:774
+msgid "2Checkout secret."
+msgstr ""
+
+#: eme_options.php:785
+msgid "RSVP: Webmoney options"
+msgstr "RSVP: Webmoney beállítások"
+
+#: eme_options.php:790
+msgid "Webmoney live or test"
+msgstr ""
+
+#: eme_options.php:790
+msgid "Webmoney Sandbox (for testing)"
+msgstr ""
+
+#: eme_options.php:790
+msgid "Webmoney Live"
+msgstr "Webmoney Live"
+
+#: eme_options.php:790
+msgid ""
+"Choose wether you want to test Webmoney in a sandbox or go live and really use "
+"Webmoney."
+msgstr ""
+
+#: eme_options.php:791
+msgid "Webmoney Purse"
+msgstr ""
+
+#: eme_options.php:791
+msgid "Webmoney Purse."
+msgstr ""
+
+#: eme_options.php:792
+msgid "Webmoney Secret"
+msgstr ""
+
+#: eme_options.php:792
+msgid "Webmoney secret."
+msgstr ""
+
+#: eme_options.php:803
+msgid "RSVP: First Data options"
+msgstr "RSVP: First Data beállítások"
+
+#: eme_options.php:808
+msgid "First Data live or test"
+msgstr ""
+
+#: eme_options.php:808
+msgid "First Data Sandbox (for testing)"
+msgstr ""
+
+#: eme_options.php:808
+msgid "First Data Live"
+msgstr ""
+
+#: eme_options.php:808
+msgid ""
+"Choose wether you want to test First Data in a sandbox or go live and really "
+"use First Datal."
+msgstr ""
+
+#: eme_options.php:809
+msgid "First Data Store Name"
+msgstr ""
+
+#: eme_options.php:809
+msgid "First Data Store Name."
+msgstr ""
+
+#: eme_options.php:810
+msgid "First Data Shared Secret"
+msgstr ""
+
+#: eme_options.php:810
+msgid "First Data Shared Secret."
+msgstr ""
+
+#: eme_options.php:821
+msgid "RSVP: Mollie options"
+msgstr "RSVP: Mollie opciók"
+
+#: eme_options.php:826
+msgid "Mollie API key"
+msgstr "Mollie API kulcs"
+
+#: eme_options.php:837
+msgid "RSVP: Sage Pay options"
+msgstr "RSVP: Sage Pay beállítások"
+
+#: eme_options.php:840
+msgid "Sage Pay live or test"
+msgstr ""
+
+#: eme_options.php:840
+msgid "Sage Pay Sandbox (for testing)"
+msgstr ""
+
+#: eme_options.php:840
+msgid "Sage Pay Live"
+msgstr ""
+
+#: eme_options.php:840
+msgid ""
+"Choose wether you want to test Sage Pay in a sandbox or go live and really use "
+"Sage Pay."
+msgstr ""
+
+#: eme_options.php:841
+msgid "Sage Pay Vendor Name"
+msgstr ""
+
+#: eme_options.php:842
+msgid "Sage Pay Test Password"
+msgstr ""
+
+#: eme_options.php:842
+msgid "Sage Pay password for testing purposes"
+msgstr ""
+
+#: eme_options.php:843
+msgid "Sage Pay Live Password"
+msgstr ""
+
+#: eme_options.php:843
+msgid "Sage Pay password when using Sage Pay for real"
+msgstr ""
+
+#: eme_options.php:850
+msgid ""
+"Info: for Sage Pay to work, your PHP installation must have the mcrypt module "
+"installed and activated. Search the internet for which extra PHP package to "
+"install and/or which line in php.ini to change."
+msgstr ""
+
+#: eme_options.php:854
+msgid "RSVP: Worldpay options"
+msgstr "RSVP: Worldpay beállítások"
+
+#: eme_options.php:857
+msgid "Worldpay live or test"
+msgstr ""
+
+#: eme_options.php:857
+msgid "Worldpay Sandbox (for testing)"
+msgstr ""
+
+#: eme_options.php:857
+msgid "Worldpay Live"
+msgstr ""
+
+#: eme_options.php:857
+msgid ""
+"Choose wether you want to test Worldpay in a sandbox or go live and really use "
+"Worldpay."
+msgstr ""
+
+#: eme_options.php:858
+msgid "Worldpay installation ID"
+msgstr ""
+
+#: eme_options.php:859
+msgid "Worldpay MD5 secret"
+msgstr ""
+
+#: eme_options.php:859
+msgid "Worldpay MD5 secret used when submitting payments"
+msgstr ""
+
+#: eme_options.php:860
+msgid "Worldpay MD5 parameters"
+msgstr ""
+
+#: eme_options.php:860
+msgid ""
+"Worldpay parameters used to generate the MD5 signature, separated by ':'. Only "
+"use these 4 in the order of your choice: instId,cartId,currency and/or amount"
+msgstr ""
+
+#: eme_options.php:861
+msgid "Worldpay Test Password"
+msgstr ""
+
+#: eme_options.php:861
+msgid "Worldpay password for payment notifications when testing"
+msgstr ""
+
+#: eme_options.php:862
+msgid "Worldpay Live Password"
+msgstr ""
+
+#: eme_options.php:862
+msgid "Worldpay password for payment notifications when using Worldpay for real"
+msgstr ""
+
+#: eme_options.php:877 eme_options.php:880
+msgid "CSV separator"
+msgstr "CSV-elválasztó"
+
+#: eme_options.php:880
+msgid "Set the separator used in CSV exports."
+msgstr ""
+
+#: eme_options.php:884
+msgid "Images size"
+msgstr "Képek mérete"
+
+#: eme_options.php:887
+msgid "Thumbnail size"
+msgstr "Bélyegkép mérete"
+
+#: eme_options.php:887
+msgid ""
+"Choose the default thumbnail size to be shown when using placeholders involving "
+"thumbnails like e.g. #_EVENTIMAGETHUMB, #_LOCATIONIMAGETHUMB, ..."
+msgstr ""
+
+#: eme_options.php:891
+msgid "Map options"
+msgstr "A térkép beállításai"
+
+#: eme_options.php:894
+msgid "Global map zoom factor"
+msgstr "Globális térkép zoom beállítása"
+
+#: eme_options.php:894
+msgid "The zoom factor used for the global map (max: 14)."
+msgstr ""
+
+#: eme_options.php:895
+msgid "Individual map zoom factor"
+msgstr "Egyedi térkép zoom beállítása"
+
+#: eme_options.php:895
+msgid "The zoom factor used when showing a single map (max: 14)."
+msgstr ""
+
+#: eme_options.php:896
+msgid "Global map type"
+msgstr "Globális térkép típusa"
+
+#: eme_options.php:896 eme_options.php:897
+msgid "Road map view"
+msgstr "Utcatérkép nézet"
+
+#: eme_options.php:896 eme_options.php:897
+msgid "Google Earth satellite images"
+msgstr "Google Earth műholdas képek"
+
+#: eme_options.php:896 eme_options.php:897
+msgid "Hybrid: a mixture of normal and satellite views"
+msgstr "Hibrid: a normál és a műholdas nézet keveréke"
+
+#: eme_options.php:896 eme_options.php:897
+msgid "Terrain: a physical map based on terrain information"
+msgstr "Domborzat: fizikai térkép a domborzat alapján"
+
+#: eme_options.php:896
+msgid "The map type used for the global map (max: 14)."
+msgstr ""
+
+#: eme_options.php:897
+msgid "Individual map type"
+msgstr "Egyedi térkép típusa"
+
+#: eme_options.php:897
+msgid "The map type used when showing a single map (max: 14)."
+msgstr ""
+
+#: eme_options.php:901
+msgid "Extra html headers"
+msgstr "Extra html fejrészek"
+
+#: eme_options.php:904
+msgid "Extra html header"
+msgstr "Extra html fejrész"
+
+#: eme_options.php:904
+msgid ""
+"Here you can define extra html headers, no placeholders can be used, no html "
+"will be stripped. Can be used to add custom javascript, ..."
+msgstr ""
+
+#: eme_options.php:905
+msgid "Extra html footer"
+msgstr "Extra html lábrész"
+
+#: eme_options.php:905
+msgid ""
+"Here you can define extra html footer, no placeholders can be used, no html "
+"will be stripped. Can be used to add custom javascript, ..."
+msgstr ""
+
+#: eme_options.php:906
+msgid "Extra event html headers"
+msgstr "Extra esemény html fejrészek"
+
+#: eme_options.php:906
+msgid ""
+"Here you can define extra html headers when viewing a single event, typically "
+"used to add meta tags for facebook or SEO. All event placeholders can be used, "
+"but will be stripped from resulting html."
+msgstr ""
+
+#: eme_options.php:907
+msgid "Extra location html headers"
+msgstr "Extra helyszín html fejrész"
+
+#: eme_options.php:907
+msgid ""
+"Here you can define extra html headers when viewing a single location, "
+"typically used to add meta tags for facebook or SEO. All location placeholders "
+"can be used, but will be stripped from resulting html."
+msgstr ""
+
+#: eme_options.php:911
+msgid "Facebook info"
+msgstr "Facebook információ"
+
+#: eme_options.php:914
+msgid "Facebook app id"
+msgstr "Facebook app id"
+
+#: eme_options.php:914
+msgid ""
+"Provide facebook app id. This is needed to be able to import info from a "
+"facebook event when creating a new event."
+msgstr ""
+"Adja meg a Facebook App Id-t! Erre azért van szükség, hogy az új esemény "
+"létrehozásánál egy Facebook esemény adatait importálhassuk."
+
+#: eme_options.php:923
+msgid "Save Changes"
+msgstr "Változások mentése"
+
+#: eme_payments.php:16
+msgid "This booking has already been payed for"
+msgstr "Ezt a foglalást már kifizették."
+
+#: eme_payments.php:31 eme_payments.php:91
+msgid "Payment handling"
+msgstr "Fizetés kezelése"
+
+#: eme_payments.php:32 eme_payments.php:92
+msgid "The booking price in %s is: %01.2f"
+msgstr ""
+
+#: eme_payments.php:155 eme_payments.php:201 eme_payments.php:252
+#: eme_payments.php:312 eme_payments.php:372 eme_payments.php:437
+#: eme_payments.php:502
+msgid "Multiple booking request"
+msgstr ""
+
+#: eme_payments.php:159 eme_payments.php:205 eme_payments.php:256
+#: eme_payments.php:316 eme_payments.php:376 eme_payments.php:441
+#: eme_payments.php:506
+msgid "Booking for '%s'"
+msgstr "Foglalás a(z)  '%s' eseményhez"
+
+#: eme_people.php:5
+msgid "You have no right to update people!"
+msgstr "Nincs jogosultsága a személyek frissítéséhez!"
+
+#: eme_people.php:16
+msgid "Person info has been updated."
+msgstr ""
+
+#: eme_people.php:18
+msgid "Couldn't update the person. Please try again."
+msgstr ""
+
+#: eme_people.php:21
+msgid "People without bookings have been deleted."
+msgstr ""
+
+#: eme_people.php:58
+msgid "Couldn't delete the people. Please try again."
+msgstr ""
+
+#: eme_people.php:81
+msgid "Edit person"
+msgstr "Személy szerkesztése"
+
+#: eme_people.php:107 eme_people.php:299
+msgid "Address1"
+msgstr "Cím 1"
+
+#: eme_people.php:111 eme_people.php:300
+msgid "Address2"
+msgstr "Cím 2"
+
+#: eme_people.php:115 eme_people.php:301
+msgid "City"
+msgstr "Város"
+
+#: eme_people.php:119 eme_people.php:302
+msgid "State"
+msgstr "Állam"
+
+#: eme_people.php:123 eme_people.php:303
+msgid "Zip"
+msgstr "Irányítószám"
+
+#: eme_people.php:127 eme_people.php:304
+msgid "Country"
+msgstr "Ország"
+
+#: eme_people.php:131 eme_people.php:305 eme_people.php:434 eme_people.php:572
+msgid "E-mail"
+msgstr "Email"
+
+#: eme_people.php:139
+msgid "Update person"
+msgstr "Személy frissítése"
+
+#: eme_people.php:150
+msgid "Delete People"
+msgstr "Személy törlése"
+
+#: eme_people.php:153
+msgid "You have specified these people for deletion:"
+msgstr ""
+
+#: eme_people.php:167
+msgid "What should be done with the bookings done by these people?"
+msgstr ""
+
+#: eme_people.php:169
+msgid "Delete associated bookings"
+msgstr "Kapcsolódó foglalások törlése"
+
+#: eme_people.php:175
+msgid "Transfer associated bookings to:"
+msgstr ""
+
+#: eme_people.php:308 eme_people.php:436
+msgid "Seats (Multiprice)"
+msgstr ""
+
+#: eme_people.php:311 eme_people.php:437 eme_rsvp.php:2741
+msgid "Paid"
+msgstr "Fizetve"
+
+#: eme_people.php:312 eme_people.php:438 eme_rsvp.php:2736
+msgid "Booking date"
+msgstr "Foglalás napja"
+
+#: eme_people.php:313 eme_people.php:439 eme_rsvp.php:2739
+msgid "Total price"
+msgstr "Teljes ár"
+
+#: eme_people.php:314 eme_people.php:440 eme_rsvp.php:2740
+msgid "Unique nbr"
+msgstr ""
+
+#: eme_people.php:327 eme_people.php:458 eme_rsvp.php:1789
+msgid "(pending)"
+msgstr "(folyamatban)"
+
+#: eme_people.php:428
+msgid "Bookings data"
+msgstr ""
+
+#: eme_people.php:504
+msgid "Booked"
+msgstr "Lefoglalva"
+
+#: eme_people.php:510 eme_people.php:512
+msgid "(%s pending)"
+msgstr "%s függőben"
+
+#: eme_people.php:519
+msgid "Available"
+msgstr "Elérhető"
+
+#: eme_people.php:546
+msgid "No people have responded to your events yet!"
+msgstr ""
+
+#: eme_people.php:549
+msgid "This table shows the data about the people who responded to your events"
+msgstr ""
+
+#: eme_people.php:552
+msgid "Delete people without bookings"
+msgstr "Foglalás nélküli személyek törlése"
+
+#: eme_people.php:559
+msgid "Delete selected"
+msgstr "A kijelölt elemek törlése"
+
+#: eme_people.php:584
+msgid "Click the ID in order to edit the person."
+msgstr ""
+
+#: eme_people.php:588
+msgid "Show all bookings"
+msgstr "Összes foglalás megjelenítése"
+
+#: eme_people.php:820
+msgid "Events Made Easy settings"
+msgstr "Events Made Easy beállítások"
+
+#: eme_people.php:825
+msgid ""
+"The phone number used by Events Made Easy when the user is indicated as the "
+"contact person for an event."
+msgstr ""
+
+#: eme_people.php:829
+msgid "Future bookings made"
+msgstr ""
+
+#: eme_recurrence.php:312
+msgid "the first %s of the month"
+msgstr ""
+
+#: eme_recurrence.php:312
+msgid "the second %s of the month"
+msgstr ""
+
+#: eme_recurrence.php:312
+msgid "the third %s of the month"
+msgstr ""
+
+#: eme_recurrence.php:312
+msgid "the fourth %s of the month"
+msgstr ""
+
+#: eme_recurrence.php:312
+msgid "the fifth %s of the month"
+msgstr ""
+
+#: eme_recurrence.php:312
+msgid "the last %s of the month"
+msgstr ""
+
+#: eme_recurrence.php:313
+msgid "From %1$s to %2$s"
+msgstr ""
+
+#: eme_recurrence.php:315
+msgid "everyday"
+msgstr ""
+
+#: eme_recurrence.php:317
+msgid "every %s days"
+msgstr "minden %s napon"
+
+#: eme_recurrence.php:333 eme_recurrence.php:350
+msgid " and "
+msgstr "és"
+
+#: eme_recurrence.php:335
+msgid "every week"
+msgstr ""
+
+#: eme_recurrence.php:337
+msgid "every %s weeks"
+msgstr "minden  %s héten"
+
+#: eme_recurrence.php:352
+msgid "every month"
+msgstr ""
+
+#: eme_recurrence.php:354
+msgid "every %s months"
+msgstr "minden %s hónapban"
+
+#: eme_rsvp.php:146 eme_rsvp.php:537
+msgid "Bookings no longer allowed on this date."
+msgstr ""
+
+#: eme_rsvp.php:171
+msgid "Bookings no longer possible: no seats available anymore"
+msgstr ""
+
+#: eme_rsvp.php:183 eme_rsvp.php:554
+msgid "(* marks a required field)"
+msgstr "A * jelzi a kötelezően kitöltendő mezőket.)"
+
+#: eme_rsvp.php:577
+msgid "You're about to cancel the following bookings:"
+msgstr ""
+
+#: eme_rsvp.php:587
+msgid "You're no longer allowed to cancel this booking"
+msgstr ""
+
+#: eme_rsvp.php:602
+msgid "No such booking found!"
+msgstr "Nem található ilyen foglalás!"
+
+#: eme_rsvp.php:614
+msgid "This function is not allowed from the admin backend."
+msgstr ""
+
+#: eme_rsvp.php:642 eme_rsvp.php:721 eme_rsvp.php:981
+msgid "You entered an incorrect code"
+msgstr ""
+
+#: eme_rsvp.php:644 eme_rsvp.php:724 eme_rsvp.php:984
+msgid ""
+"You're not allowed to do this. If you believe you've received this message in "
+"error please contact the site owner."
+msgstr ""
+
+#: eme_rsvp.php:681
+msgid "Booking deleted"
+msgstr "Foglalás törölve"
+
+#: eme_rsvp.php:683 eme_rsvp.php:686
+msgid "There are no bookings associated to this name and e-mail"
+msgstr ""
+
+#: eme_rsvp.php:846 eme_rsvp.php:1105
+msgid "Please fill out your last name"
+msgstr "Kérjük, adja meg a vezetéknevét"
+
+#: eme_rsvp.php:850 eme_rsvp.php:1109
+msgid "Please fill out your e-mail"
+msgstr "Kérjük, adja meg az e-mail címét!"
+
+#: eme_rsvp.php:854 eme_rsvp.php:1113
+msgid ""
+"Please make sure all of the following required fields are filled out correctly: "
+"%s"
+msgstr ""
+
+#: eme_rsvp.php:856 eme_rsvp.php:1115
+msgid "Please enter a valid mail address"
+msgstr "Kérjük, adjon meg egy érvényes címet."
+
+#: eme_rsvp.php:858 eme_rsvp.php:860 eme_rsvp.php:863 eme_rsvp.php:867
+#: eme_rsvp.php:1117 eme_rsvp.php:1119 eme_rsvp.php:1122 eme_rsvp.php:1126
+msgid "Please enter a correct number of spaces to reserve"
+msgstr ""
+
+#: eme_rsvp.php:870 eme_rsvp.php:1129
+msgid "WP membership is required for registration"
+msgstr ""
+
+#: eme_rsvp.php:905 eme_rsvp.php:1163
+msgid "No booker ID found, something is wrong here"
+msgstr ""
+
+#: eme_rsvp.php:909 eme_rsvp.php:1167
+msgid "Booking cannot be made: not enough seats available!"
+msgstr "Foglalás nem lehetséges: nincs elegendő rendelkezésre álló hely!"
+
+#: eme_rsvp.php:1746 eme_rsvp.php:1753
+msgid "approved"
+msgstr "jóváhagyott"
+
+#: eme_rsvp.php:1746 eme_rsvp.php:1753
+msgid "pending"
+msgstr "függőben"
+
+#: eme_rsvp.php:1765
+msgid "bookings so far"
+msgstr "eddigi foglalások"
+
+#: eme_rsvp.php:1770
+msgid "Respondent"
+msgstr "Válaszadó"
+
+#: eme_rsvp.php:1776
+msgid "Booked spaces"
+msgstr "Lefoglalt helyek"
+
+#: eme_rsvp.php:1777
+msgid "Available spaces"
+msgstr "Szabad helyek száma"
+
+#: eme_rsvp.php:1783
+msgid "Comment:"
+msgstr "Hozzászólás:"
+
+#: eme_rsvp.php:1815 eme_rsvp.php:1933 eme_rsvp.php:1973
+msgid "No responses yet!"
+msgstr "Nincsenek válaszok."
+
+#: eme_rsvp.php:2014
+msgid "No bookings found."
+msgstr "Nem található foglalás."
+
+#: eme_rsvp.php:2136
+msgid "Cancel booking"
+msgstr "Foglalás törlése"
+
+#: eme_rsvp.php:2463
+msgid "Send mails for changed registration?"
+msgstr ""
+
+#: eme_rsvp.php:2466
+msgid "Move booking to event"
+msgstr ""
+
+#: eme_rsvp.php:2492
+msgid "Send mails for new registration?"
+msgstr ""
+
+#: eme_rsvp.php:2558
+msgid "Booking updated"
+msgstr ""
+
+#: eme_rsvp.php:2619
+msgid "Add a registration for an event"
+msgstr "Regisztráció hozzáadása az eseményhez"
+
+#: eme_rsvp.php:2627
+msgid "Event"
+msgstr "Esemény"
+
+#: eme_rsvp.php:2642
+msgid "Register new booking"
+msgstr "Új foglalás regisztrálása"
+
+#: eme_rsvp.php:2649 events-manager.php:1036
+msgid "Pending Approvals"
+msgstr "Függőben lévő jóváhagyások"
+
+#: eme_rsvp.php:2651
+msgid "Change reserved spaces or cancel registrations"
+msgstr "Helyfoglalás módosítása vagy lemondása"
+
+#: eme_rsvp.php:2700
+msgid "Approve registration"
+msgstr "Regisztráció jóváhagyása"
+
+#: eme_rsvp.php:2702
+msgid "Update payed status"
+msgstr "Fizetési állapot frissítése"
+
+#: eme_rsvp.php:2703
+msgid "Deny registration"
+msgstr "Regisztráció elutasítása"
+
+#: eme_rsvp.php:2708
+msgid "Send mails to attendees upon changes being made?"
+msgstr "Küldjön e-mailt a résztvevőknek, ha változás történik?"
+
+#: eme_rsvp.php:2735
+msgid "Booker"
+msgstr "Foglaló"
+
+#: eme_rsvp.php:2738
+msgid "Event price"
+msgstr "Ár"
+
+#: eme_rsvp.php:2776
+msgid ""
+"Click the booking ID in order to see and/or edit the details of the booking."
+msgstr ""
+
+#: eme_rsvp.php:2778
+msgid "Click the event name in order to see and/or edit the details of the event."
+msgstr ""
+
+#: eme_rsvp.php:2784
+msgid "Approved: "
+msgstr "Jóváhagyott:"
+
+#: eme_rsvp.php:2797
+msgid ""
+"Click the name of the booker in order to see and/or edit the details of the "
+"booker."
+msgstr ""
+
+#: eme_rsvp.php:2804
+msgid "(Multiprice)"
+msgstr ""
+
+#: eme_rsvp.php:2818
+msgid "This is based on the payment ID of the booking: %d"
+msgstr ""
+
+#: eme_rsvp.php:2923
+msgid "Please enter both subject and message for the mail to be sent."
+msgstr ""
+
+#: eme_rsvp.php:2981
+msgid "The mail has been sent."
+msgstr "Az üzenetet elküldtük."
+
+#: eme_rsvp.php:2983
+msgid "You do not have the permission to send mails for this event."
+msgstr ""
+
+#: eme_rsvp.php:2997
+msgid "Send Mails to attendees or bookings for a event"
+msgstr ""
+
+#: eme_rsvp.php:3001
+msgid ""
+"Warning: using this functionality to send mails to attendees can result in a "
+"php timeout, so not everybody will receive the mail then. This depends on the "
+"number of attendees, the load on the server, ... . If this happens, use the CSV "
+"export link to get the list of all attendees and use mass mailing tools (like "
+"OpenOffice) for your mailing."
+msgstr ""
+
+#: eme_rsvp.php:3018
+msgid "Select the event"
+msgstr "Esemény kiválasztása"
+
+#: eme_rsvp.php:3037
+msgid "Select the type of mail"
+msgstr "Válassza ki az e-mail típusát."
+
+#: eme_rsvp.php:3041 eme_rsvp.php:3080
+msgid "Attendee mails"
+msgstr "Résztvevő levelek"
+
+#: eme_rsvp.php:3042 eme_rsvp.php:3081
+msgid "Booking mails"
+msgstr ""
+
+#: eme_rsvp.php:3043
+msgid "Mail to all WP users"
+msgstr ""
+
+#: eme_rsvp.php:3044
+msgid "All WP users except those registered for the event"
+msgstr ""
+
+#: eme_rsvp.php:3049
+msgid "Select your target audience"
+msgstr "Válassza ki a célközönséget!"
+
+#: eme_rsvp.php:3052
+msgid "All registered persons"
+msgstr "Minden regisztrált személy"
+
+#: eme_rsvp.php:3053
+msgid "Exclude pending registrations"
+msgstr "Függőben lévő regisztrációk kizárása"
+
+#: eme_rsvp.php:3054
+msgid "Only pending registrations"
+msgstr "Csak függőben lévő regisztrációk"
+
+#: eme_rsvp.php:3059
+msgid "Only send mails to attendees who did not pay yet"
+msgstr "Csak azoknak küld e-mailt, akik még nem fizettek."
+
+#: eme_rsvp.php:3066
+msgid "Subject"
+msgstr "Tárgy"
+
+#: eme_rsvp.php:3072
+msgid "Message"
+msgstr "Üzenet"
+
+#: eme_rsvp.php:3078
+msgid "You can use any placeholders mentioned here:"
+msgstr "A következő helykitöltők bármelyikét használhatja:"
+
+#: eme_rsvp.php:3079
+msgid "Event placeholders"
+msgstr "Esemény helykitöltők"
+
+#: eme_rsvp.php:3080
+msgid "Attendees placeholders"
+msgstr "Résztvevők helykitöltők"
+
+#: eme_rsvp.php:3080 eme_rsvp.php:3081
+msgid "for "
+msgstr ""
+
+#: eme_rsvp.php:3081
+msgid "Booking placeholders"
+msgstr ""
+
+#: eme_rsvp.php:3085
+msgid "Send Mail"
+msgstr "E-mail küldése"
+
+#: eme_templates.php:7
+msgid "You have no right to update templates!"
+msgstr "Nincs jogosultsága a sablonok frissítéséhez!"
+
+#: eme_templates.php:32
+msgid "Successfully edited the template."
+msgstr "A sablon szerkesztése sikeres volt."
+
+#: eme_templates.php:34
+msgid "There was a problem editing your template, please try again."
+msgstr "Hiba történt a sablon szerkesztésekor. Kérem, próbálja újra!"
+
+#: eme_templates.php:43
+msgid "Successfully added the template."
+msgstr "Sablon sikeresn hozzáadva"
+
+#: eme_templates.php:45
+msgid "There was a problem adding your template, please try again."
+msgstr "Hiba történt a sablon hozzáadásakor.  Kérem, próbálja újra!"
+
+#: eme_templates.php:55
+msgid "Successfully deleted the selected template(s)."
+msgstr "A kiválasztott sablon(ok) sikeresen törölve"
+
+#: eme_templates.php:57
+msgid "There was a problem deleting the selected template(s), please try again."
+msgstr "Hiba történt a kiválasztott sablon(ok) törlésekor.  Kérem, próbálja újra!"
+
+#: eme_templates.php:59 eme_templates.php:62
+msgid ""
+"Couldn't delete the templates. Incorrect template IDs supplied. Please try "
+"again."
+msgstr ""
+
+#: eme_templates.php:78 events-manager.php:1033
+msgid "Templates"
+msgstr "Sablonok"
+
+#: eme_templates.php:102 eme_templates.php:109
+msgid "Format description"
+msgstr "Formátum leírása"
+
+#: eme_templates.php:122
+msgid "Are you sure you want to delete these templates?"
+msgstr "Biztosan törölni szeretné ezeket a sablonokat?"
+
+#: eme_templates.php:137
+msgid "No templates have been inserted yet!"
+msgstr ""
+
+#: eme_templates.php:150 eme_templates.php:161
+msgid "Add template"
+msgstr "Sablon hozzáadása"
+
+#: eme_templates.php:155 eme_templates.php:199
+msgid "Template description"
+msgstr "Sablon leírása"
+
+#: eme_templates.php:157
+msgid "Format"
+msgstr "Formátum"
+
+#: eme_templates.php:159 eme_templates.php:206
+msgid "The format of the template"
+msgstr "A sablon formátuma"
+
+#: eme_templates.php:182
+msgid "Edit template"
+msgstr "Sablon szerkesztése"
+
+#: eme_templates.php:201
+msgid "The description of the template"
+msgstr "A sablon leírása"
+
+#: eme_templates.php:204
+msgid "Template format"
+msgstr "Sablonformátum"
+
+#: eme_templates.php:209
+msgid "Update template"
+msgstr "Sablon frissítése"
+
+#: eme_widgets.php:8
+msgid "Events Made Easy List"
+msgstr "Events Made Easy Lista"
+
+#: eme_widgets.php:9
+msgid "Events Made Easy List of events"
+msgstr "Events Made Easy Eseménylista"
+
+#: eme_widgets.php:125 eme_widgets.php:290
+msgid "Title:"
+msgstr "Cím:"
+
+#: eme_widgets.php:129
+msgid "Number of events"
+msgstr "Események száma"
+
+#: eme_widgets.php:133
+msgid "Scope of the events"
+msgstr ""
+
+#: eme_widgets.php:133
+msgid "(See the doc for &#91;events_list] for all possible values)"
+msgstr ""
+
+#: eme_widgets.php:137
+msgid "Show events per period"
+msgstr ""
+
+#: eme_widgets.php:139 eme_widgets.php:185 eme_widgets.php:322
+msgid "Select..."
+msgstr "Válasszon..."
+
+#: eme_widgets.php:142
+msgid "Yearly"
+msgstr "Éves"
+
+#: eme_widgets.php:146
+msgid "Order of the events"
+msgstr "Az események sorrendje"
+
+#: eme_widgets.php:148
+msgid "Ascendant"
+msgstr "Növekvő"
+
+#: eme_widgets.php:149
+msgid "Descendant"
+msgstr "Csökkenő"
+
+#: eme_widgets.php:164 eme_widgets.php:309
+msgid "Exclude Category"
+msgstr "Kategória kizárása"
+
+#: eme_widgets.php:175
+msgid "Show Ongoing Events?"
+msgstr "Folyamatban lévő események megjelenítése"
+
+#: eme_widgets.php:179
+msgid "Show Recurrent Events Only Once?"
+msgstr ""
+
+#: eme_widgets.php:189
+msgid "List header format<br />(if empty &lt;ul&gt; is used)"
+msgstr ""
+"Lista fejrész formátuma<br />(Ha üresen marad, a következő használata:  &lt;/"
+"ul&gt;)"
+
+#: eme_widgets.php:193
+msgid "List item format"
+msgstr "Listaelem formátuma"
+
+#: eme_widgets.php:201
+msgid "List footer format<br />(if empty &lt;/ul&gt; is used)"
+msgstr ""
+"Lista lábrész formátuma<br />(Ha üresen marad, a következő használata:  &lt;/"
+"ul&gt;)"
+
+#: eme_widgets.php:213 eme_widgets.php:214
+msgid "Events Made Easy Calendar"
+msgstr "Events Made Easy Naptár"
+
+#: eme_widgets.php:294
+msgid "Show Long Events?"
+msgstr "Hosszú események megjelenítése"
+
+#: events-manager.php:37
+msgid ""
+"Your PHP version is too old, please upgrade to a newer version. Your version is "
+"%1$s, Events Made Easy requires %2$s"
+msgstr ""
+
+#: events-manager.php:96
+msgid "No events"
+msgstr "Nincs esemény"
+
+#: events-manager.php:104
+msgid "<li>No events in this location</li>"
+msgstr "<li>Ezen a helyszínen nincsenek események.</li>"
+
+#: events-manager.php:112
+msgid "Send your booking"
+msgstr "Küldje el a foglalását"
+
+#: events-manager.php:113
+msgid "Cancel your booking"
+msgstr "Foglalás törlése"
+
+#: events-manager.php:995
+msgid ""
+"This page is used by Events Made Easy. Don't change it, don't use it in your "
+"menu's, don't delete it. Just make sure the EME setting called 'Events page' "
+"points to this page. EME uses this page to render any and all events, "
+"locations, bookings, maps, ... anything. If you do want to delete this page, "
+"create a new one EME can use and update the EME setting 'Events page' "
+"accordingly."
+msgstr ""
+
+#: events-manager.php:1026
+msgid "Add new"
+msgstr "Új esemény létrehozása"
+
+#: events-manager.php:1031
+msgid "Event Categories"
+msgstr "Esemény kategóriák"
+
+#: events-manager.php:1035
+msgid "People"
+msgstr "Emberek"
+
+#: events-manager.php:1037
+msgid "Change Registration"
+msgstr "Regisztráció módosítása"
+
+#: events-manager.php:1041
+msgid "Form Fields"
+msgstr "Űrlapmezők"
+
+#: events-manager.php:1050
+msgid "Events Made Easy Settings"
+msgstr "Események Made Easy Beállítások"
+
+#: events-manager.php:1050
+msgid "Settings"
+msgstr "Beállítások"
+
+#: events-manager.php:1216 events-manager.php:1228
+msgid "Printable view of bookings"
+msgstr "A foglalások nyomtatható nézete."
+
+#: events-manager.php:2327
+msgid ""
+"It seems you upgraded Events Made Easy, the events database has been updated "
+"accordingly. Click <a href='%s'>here</a> to dismiss this message."
+msgstr ""
+
+#: events-manager.php:2334
+msgid ""
+"Error: the special events page is not set or no longer exist, please set the "
+"option '%s' to an existing page or EME will not work correctly!"
+msgstr ""
+
+#: events-manager.php:2344
+msgid "Donate"
+msgstr "Adományozás"
+
+#: events-manager.php:2346
+msgid ""
+"If you find this plugin useful to you, please consider making a small donation "
+"to help contribute to my time invested and to further development. Thanks for "
+"your kind support!"
+msgstr ""
+"Ha hasznosnak találja ezt a bővítményt, fontolja meg, hogy egy kisebb "
+"támogatással hozzájárul a befektetett időmhöz és a további fejlesztésekhez, "
+"Köszönöm a támogatást!"
+
+#: events-manager.php:2355
+msgid "<a href=\"%s\" title=\"I already donated\">I already donated.</a>"
+msgstr "<a href=\"%s\" title=\"Már adományoztam\">Már adományoztam.</a>"
+
+#: events-manager.php:2369
+msgid ""
+"<p>Hey, <strong>%s</strong>, welcome to <strong>Events Made Easy</strong>! We "
+"hope you like it around here.</p> \n"
+"   <p>Now it's time to insert events lists through  <a href=\"%s\" title="
+"\"Widgets page\">widgets</a>, <a href=\"%s\" title=\"Template tags documentation"
+"\">template tags</a> or <a href=\"%s\" title=\"Shortcodes documentation"
+"\">shortcodes</a>.</p>\n"
+"   <p>By the way, have you taken a look at the <a href=\"%s\" title=\"Change "
+"settings\">Settings page</a>? That's where you customize the way events and "
+"locations are displayed.</p>\n"
+"   <p>What? Tired of seeing this advice? I hear you, <a href=\"%s\" title="
+"\"Don't show this advice again\">click here</a> and you won't see this again!</"
+"p>"
+msgstr ""
+
+#: events-manager.php:2383
+msgid ""
+"<p><strong>Events Made Easy placeholders warning</strong></p>\n"
+"   <p>The legacy placeholders of Events Made Easy have been disabled. More info "
+"can be found in <a href=\"%s\" title=\"Legacy doc\">the documention</a></p>\n"
+"   <p>What? Tired of seeing this advice? I hear you, <a href=\"%s\" title="
+"\"Don't show this advice again\">click here</a> and you won't see this again!</"
+"p>"
+msgstr ""
+"<p><strong>Events Made Easy helykitöltő figyelmeztetés</strong></p>\n"
+"   <p>Az Events Mad Easy régi helykitöltőit letiltottuk. További információt "
+"találhat a <a href=\"%s\" title=\"Régiebbi helykitöltők\"> néven a "
+"dokumentációban</a></p>\n"
+"   <p>Hogyan? Elege van ebből a tanácsból? Értem...<a href=\"%s\" title=\"Ne "
+"mutassa többet ezt a tanácsot!\">Kattintson ide</a> és többet nem fogja látni!</"
+"p>"
+
+#: events-manager.php:2396
+msgid ""
+"<p><strong>Events Made Easy placeholders warning</strong></p>\n"
+"   <p>You have activated the use of legacy placeholder syntax. Please note "
+"that, although it works just fine, you should switch to the new syntax to avoid "
+"issues with regular wordpress shortcodes. More info can be found in <a href=\"%s"
+"\" title=\"Legacy doc\">the documention</a>. This message will go away when the "
+"use of legacy placeholder syntax has been disabled.</p>"
+msgstr ""
+
+#: events-manager.php:2408
+msgid ""
+"<p><strong>Events Made Easy placeholders warning</strong></p>\n"
+"   <p>The use of deprecated placeholders is still allowed. Please note that, "
+"although these work just fine, you should switch to the new syntax because "
+"these might go away at some time in the future. More info can be found in <a "
+"href=\"%s\" title=\"Deprecated doc\">the documention</a>. This message will go "
+"away when the use of deprecated placeholders has been disabled.</p>"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Events Made Easy"
+msgstr "Events Made Easy"
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.e-dynamics.be/wordpress"
+msgstr "http://www.e-dynamics.be/wordpress"
+
+#. Description of the plugin/theme
+msgid ""
+"Manage and display events. Includes recurring events; locations; widgets; "
+"Google maps; RSVP; ICAL and RSS feeds; Paypal, 2Checkout and others. <a href="
+"\"admin.php?page=eme-options\">Settings</a> | <a href=\"https://www.paypal.com/"
+"cgi-bin/webscr?cmd=_donations&business=SMGDS4GLCYWNG&lc=BE&item_name=To"
+"%20support%20development%20of%20EME&currency_code=EUR&bn=PP%2dDonationsBF"
+"%3abtn_donateCC_LG%2egif%3aNonHosted\">Donate</a>"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Franky Van Liedekerke"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.e-dynamics.be/"
+msgstr "http://www.e-dynamics.be/"

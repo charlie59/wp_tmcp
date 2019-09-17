@@ -1,0 +1,44 @@
+/*
+ Theme Name:     Valenti Child (Austin Relocation)
+ Theme URI:      http://themeforest.net/user/cubell
+ Description:    Valenti Child Theme for Austin Relocation
+ Author:         Cubell
+ Author URI:     http://themeforest.net/user/cubell
+ Template:       valenti
+ Version:        1.0
+*/
+
+
+/* =Theme customization starts here. Any CSS code entered here will overwrite the parent's CSS.
+-------------------------------------------------------------- */
+
+
+#cb-nav-bar.cb-dark-menu {
+    background-color: rgba(76,138,64, 0.95);
+}
+.cb-mega-title.h2 {visibility: hidden;}
+@media only screen and (min-width: 1020px) {
+#cb-nav-bar #cb-main-menu .main-nav li .cb-big-menu .cb-articles .cb-mega-title {padding: 0;}
+}
+
+.view-all {text-align: center; padding: 1em;}
+.view-all a {font-size: 1.2em; text-transform: uppercase;}
+
+
+/* listing styles */
+
+.listing-categories li {}
+.listing-categories li a {color: #4d4d4d; font-size: 1.2em; font-weight: 700;display: inline-block; padding: 1em; width: 100%;}
+.listing-categories li a:hover {background-color: #dbdbdb;}
+	.listing-categories li a span {font-weight: 100;}
+
+
+
+.listings .phone-number,.listings .url {display: block;}
+
+@media only screen and (min-width: 1020px) {
+	.listing-categories li a {width: 50%;min-height: 86px; display: block; float: left;}
+}
+
+.about-widget > div {float: left; margin-bottom: 25px; margin-right: 25px;}
+.about-widget > div:nth-child(2n) {margin-right: 0;}

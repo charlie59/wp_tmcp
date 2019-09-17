@@ -1,0 +1,19 @@
+/*
+ Theme Name:     Valenti Child (Ride Texas)
+ Theme URI:      http://themeforest.net/user/cubell
+ Description:    Valenti Child Theme for RideTexas.com
+ Author:         Cubell
+ Author URI:     http://themeforest.net/user/cubell
+ Template:       valenti
+ Version:        1.0
+*/
+
+
+/* =Theme customization starts here. Any CSS code entered here will overwrite the parent's CSS.
+-------------------------------------------------------------- */
+
+
+.tribe-events-calendar thead tr th {background-color: #666;}
+.norm_row {float: none;width: auto!important;
+    text-align: center!important;
+    position: relative!important;}

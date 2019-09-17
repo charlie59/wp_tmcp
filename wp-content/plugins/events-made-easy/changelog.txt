@@ -1,0 +1,1363 @@
+(newer changes: see readme.txt)
+= 1.9.8 (2017/09/28) =
+* Add option to allow overbookings to happen in the admin backend interface when adding/editing a booking
+* Bugfix: make single-char lowercase time-placeholders work again
+* Bugfix: new people were not inserted in EME (copy/paste error ...)
+
+= 1.9.7 (2017/09/27) =
+* Better visual feedback for add/update/delete people and discounts
+* Templates can now indicate a type (meaning: what they can be used for: events, rsvp form, rsvp mail, generic mail). The default is empty, meaning it can be used for anything
+* Formfields can now be called by their name or id in RSVP forms, easier to use ...
+* Rename comment fields so that some plugins don't intercept it anymore (like antispambee does)
+* Bugfix in payment random id select in the database, preveting cancel links from working
+
+= 1.9.5 (2017/09/22) =
+* Ajaxify the add/cancel-booking form
+* Add option paid_status to eme_my_bookings
+* Add payment_datetime field to RSVP overview tables
+* Add an option to send a "registration paid" mail when a payment arrives via a payment gateway or you mark a registration as paid
+* Make 2Checkout actually work ...
+* Currency South African Rand (ZAR) added
+* Add an option to force nl2br conversion for HTML mails, to work around some WP editor weirdness
+* Removed columns modif_date(_gmt) for bookings and locations (and the placeholders #_BOOKING_MODIF*), this greatly simplifies the code ...
+* Added placeholders #_BOOKINGPAYMENTDATE and #_BOOKINGPAYMENTTIME so you can use these in payment-mails
+* Fix EME phone wordpress profile field
+* Make attributes work for locations again
+* Fix a bug that made the offline-payment selection stick in the rsvp settings of an event
+* Remove some css added too much by plugin widget-opts
+
+= 1.9.4 (2017/09/05) =
+* Dynamic price fix
+
+= 1.9.3 (2017/09/02) =
+* #_PAYMENT_URL now contains a random id, a bit safer, the older url will be deprecated after some releases
+* The newsletter will now be sent only to unique emails, no more doubles ...
+* You can now ask for more info based on number of booked seats. See the RSVP section when creating a new event and use #_DYNAMICDATA to show the extra form info wanted in your RSVP form
+* You can also use the placeholder #_DYNAMICDATA to show the entered dynamic data in mails or booking info
+* The dynamic added fields can also influence the price
+* The rsvp placeholder #_FIELDVALUE will show the value as a price if the formfield indicated an extra charge
+* Bookings on a waitinglist can't be paid for or get auto-approved. This wasn't the case but extra checks have been put in place.
+* The option 'Attendees list ignore pending' caused the attendees list to return the pending bookings, not the paid ones
+* Shortcodes eme_attendees and eme_bookings have 2 extra options (to be able to show all/approved/pending and all/paid/unpaid)
+  approval_status (default:0, 1:only pending, 2:only approved)
+  paid_status: (default:0, 1:unpaid, 2:paid)
+* long_events now also works for shortcode eme_events if not using periods
+* Bugfix for weekly selector in recurring events
+* Bugfix for dynamic price update when filling out a discount input field
+* Bugfix for event scope 0000-MM
+* Fixes for not sending pending mails
+
+= 1.9.2 (2017/08/11) =
+* Sending of generic mails and newsletter now uses the mail from name/address as indicated in the Mail settings tab
+  (and as backup the default contact person for events)
+* You can now send a preview mail to an existing person when sending generic mails
+* To make sure no accidental mail to everyone is done, you're now asked to confirm
+* Fix to be able to send HTML mails when sending a generic mail to everyone
+* Tip: you can clear all messages in the mail queue in the Cleanup section
+
+= 1.9.1 (2017/08/10) =
+* Add RSVP form placeholders #_OPT_IN and #_OPT_OUT, so you can ask for massmailing preferences
+* Also add a default option for massmailing preferences
+* Allow calculated discount to be shown in the registration management screens
+* CSS fix
+
+= 1.9.0 (2017/08/03) =
+* Add an option to queue mails and send them in the background
+* Allow mails to be sent to all people that ever registered in EME (don't forget to use queueing)
+* Added a placeholder #_UNSUB_URL for attendee mails, new newsletter feature and new "generic mail sending" feature if you decide to send mails to all people that ever registered
+* Added a placeholder #_UNSUB_CONFIRM_URL, to be used in the new mail option "Unsubscribe email body"
+* Add the possibility to import people into the database, can be used together with the queue mail functionality to send mails for new events ...
+* You can now plan a newsletter to send automatically for upcoming events, or send a mail to all EME people
+* The date of the last automatic reminder sent for a booking can now be shown in the pending booking overview
+* Attendance can be for multi-price events too
+* Allow RSVP cancel cutoff per individual event too
+* Sometimes sending of mail was attempted even if not wanted
+
+= 1.8.9 (2017/06/15) =
+* Make sure mails are send out also when canceling a registration from the frontend if the event doesn't require approval
+* Make sure mails are send out also when updating/denying a registration from the backend if the event doesn't require approval
+* Make google maps work again with 'javascript in the header' setting
+
+= 1.8.8 (2017/06/13) =
+* Attempt to load google api async/defer and still get the map to work reliable on all browsers
+
+= 1.8.7 (2017/06/12) =
+* Fix how the NumberFormatter class is checked for (resulted in a php warning)
+* Only load google maps in the EME admin pages where needed (was still not always the case)
+* Remove a javascript comment setting, was unneeded and might cause troubles with caching/optimizing plugins/themes
+
+= 1.8.6 (2017/06/11) =
+* Fix a function call so it also works with older (unsupported) php versions
+* Please read the changes concerning 1.8.5 too
+
+= 1.8.5 (2017/06/11) =
+* Show warning sign for locations with empty coordinates
+* Render initial map for edit-events correctly again
+* The placeholders #_EVENTPRICE, #_TOTALPRICE, #_CHARGE, #_TOTALDISCOUNT, #_BOOKINGPRICEPERSEAT, #_DYNAMICPRICE (which were already showing the localised price layout) now also show the currency symbol if the NumberFormatter php class is present (which is the case in all newer php versions).
+  An option is created to deactivate this behavior if you don't like it.
+  *** It might be needed to change your templates accordingly to not show multiple times the same currency symbol ***
+* Add #_CURRENCYSYMBOL as placeholder to show the symbol if you need it specifically. This option only works if the php class NumberFormatter is present, which is the case in all newer php versions.
+* If possible, show the currency symbol in booking table, csv and printable outputs and for mails (when using price-related placeholders). Again, see above: this option can be deactivated.
+* The placeholder #_RECURRENCE_DESC now returns a list of comma-separated days in the frontend
+
+= 1.8.4 (2017/05/27) =
+* small bugfix release to fix renamed function in eme_locations.php
+
+= 1.8.3 (2017/05/27) =
+* Allow automatic reminders to be sent (in the cleanup section)
+* More control over sending mails when changing registrations
+* Allow resending pending or approved mail for selected bookings in the rsvp admin screens
+* Revamp the edit-event screen
+* Removed the fb-sync here, there's a separate plugin that does that better
+
+= 1.8.2 (2017/05/18) =
+* Fix a settings error on the map settings page
+
+= 1.8.1 (2017/05/14) =
+* Added placeholders #_AVAILABLEWAITINGLISTSEATS and #_WAITING_LIST_CLOSED, and make #_WAITING_LIST_ACTIVE actually work too
+* Correct template sorting selection when sending mails
+* Add a setting to ignore certificate problems for secure SMTP (some hosting providers need this ...)
+* Remove a redundant end-div tag in the cancel form if the event has already passed
+
+= 1.8.0 (2017/04/23) =
+* Fix for eme_events month scope ranges
+* Allow divs for calendar layout, making the calendar responsive in case you want it too (see the shortcode doc)
+* Stripe payments were twice multiplied by 100, this is fixed now, together with other stripe fixes
+* Make sure the example locations are created correctly for new installations
+* Improvement: the 'No events' message now also has a span and not a div surrounding it, with id 'events-no-events'. Reason: div could interfere with the surrounding layout (if inside a p-tag for example)
+* Waiting list feature implemented, together with some extra placeholders for events (#_WAITING_LIST_ACTIVATED and #_WAITINGLISTSEATS) and for the RSVP mails (#_ON_WAITINGLIST), see the doc
+* Now one can indicate that RSVP formfields can influence the total price, this allows you to create for example "donation fields"
+  or allow people to pay for extra attributes ordered (t-shirt, drinking tickets, ...)
+
+= 1.7.18 (2017/03/28) =
+* Entered custom field values were not correctly shown when editing a booking
+* Make the field_name available in eme_get_answers again, easier for discount codes (so people don't need to change their code)
+
+= 1.7.17 (2017/03/27) =
+* In mails, add newlines carefully, to not disrupt possible html layout
+* Custom field values were empty in the mails
+
+= 1.7.16 (2017/03/26) =
+* BUGFIX BUGFIX BUGFIX!!!
+* People that use custom answer fields and already updated to 1.7.15 should either:
+  * revert to a backup of their database for 1.7.14 and update to 1.7.16, or:
+  * revert to a backup for their answers table (from before 1.7.15) and execute the following query afterwards:
+  ALTER TABLE wp_eme_answers add field_id INT(11) DEFAULT 0;
+  UPDATE wp_eme_answers SET field_id = (select field_id from wp_eme_formfields where field_name = wp_eme_answers.field_name LIMIT 1);
+  ALTER TABLE wp_eme_answers DROP COLUMN 'field_name';
+  (and check if the newly created column field_id contains the correct field id numbers)
+
+(The second method is less intrusive but requires a bit more manual work) 
+You can check if you're impacted by looking at your wp_eme_answers table in mysql and see if the column field_id contains any NULL values
+
+= 1.7.15 (2017/03/24) =
+* Support zero-decimal currencies in Stripe (like JPY)
+* Prevent html-chars for text stuff in rsvp placeholders (again)
+* Widget used a unchecked calendar_day variable in a date string (it couldn't hurt, but attackers try everything and it is not pretty in logfiles)
+* Show "my bookings" more consistently for logged in users
+* Better html-editor usage
+* Removing a custom field will also delete the RSVP answers linked to that field (if any)
+* Since Google Maps require an API key, maps are no longer attempted to be shown if no API key is entered
+* Even more rigurous javascript/html removal from rsvp form input. I already removed all html-tags, but sometimes it might not be enough (no XSS known here, but one never knows)
+* Better error message if a new recurrence contains no events
+* Allow to put a reservation back in pending state
+* Bugfix: when sending mails concerning unpaid bookings, all bookings were mailed (not just the unpaid ones) 
+* Bugfix: location dropdown select was not showing the map anymore
+* Workaround: wordpress allows wrongly encoded chars to pass in their db-functions, so I'm cleaning these out now (usefull for e.g. facebook syncs, that also can pass wrongly encoded chars)
+* Renamed the admin page events-manager to eme-manager
+
+= 1.7.14 (2017/03/02) =
+* Fix cal header days
+
+= 1.7.13 (2017/03/02) =
+* Extra sorting in the bookings admin table
+* Prevent double RSVP submits by disabling the submit button after click
+* Make sure #_FIELDVALUE gets replaced correctly 
+* Formfield types checkbox and radiobox now correctly use "labels" in the generated html (no longer plain html text)
+* Prevent html-chars for text stuff in rsvp placeholders
+* Some formats are allowed to have javascript in them, but it was removed upon save
+* Better edit for existing events/locations
+* Allow to filter by date in the backend for events and bookings
+
+= 1.7.12 (2017/02/14) =
+* Dutch language updates (thanks to Benny De Vuyst)
+* The location placeholders #_PASTEVENTS, #_NEXTEVENTS, #_ALLEVENTS now have an optional parameter so you can decide the sorting order
+  of the events shown. Default is ASC, so e.g.:
+  #_PASTEVENTS{ASC}
+  #_NEXTEVENTS{DESC}
+  More complex ordering can be used too, see the eme_events shortcode for tips
+* Allow the status of the event to be given as an url parameter for the admin list of events, so you can quickly show the list
+  of e.g. draft events:
+  /wp-admin/admin.php?page=eme-manager&status=2
+  (1: public, 2: private, 5: draft)
+* The text "Required field" in the rsvp form can now be customized in the rsvp settings
+* The ical location format for an event can now be customized in the ical settings
+* Bugfix: eme_filters shortcode could skip a month for the month filter
+
+= 1.7.11 (2017/01/21) =
+* Allow to search for location countries too (placeholder FILTER_COUNTRIES added for the eme_filter shortcode layout)
+* The shortcode eme_filterform can now also be used together with the shortcode eme_locations (using the filters FILTER_LOCS, FILTER_TOWNS, FILTER_COUNTRIES)
+* Added API function eme_wordpress_search_locations, to allow you to search for locations (as eme_wordpress_search_events). See the doc
+* Put js as much in the footer as possible, and defer the execution also, to speed up page rendering
+* RSS pubdate was being localised and it should be RFC822 format, this has been corrected now
+* The people table can now be exported, printed and searched like the events table
+* The locations table has been ajaxified too
+* The 'order' option in [eme_events] can now contain own columns you want to order on.
+  The default is "event_start_date ASC, event_start_time ASC, event_name ASC"
+* Try to remove yoast SEO headers from the special page
+* The shortcode eme_if now also accepts "eq" as an alternative for "value" and "ne" as an alternative for "notvalue"
+  This is more in line with the other options (lt, gt, ge, ...)
+
+= 1.7.10 (2016/12/16) =
+* Fixed #_LOCATIONIMAGETHUMBURL
+* Added #_LOCATIONIMAGETHUMBURL{MyCustomSize}
+* Split out mail templates in separate section, so we can easily take the option to send html mails into account and disable the
+  html editor if not needed
+* Fixed some location issues
+
+= 1.7.9 (2016/12/11) =
+* Offline fix
+
+= 1.7.8 (2016/12/10) =
+* Add new discount type "fixed discount per seat"
+* Add offline-payment setting
+* Backwards incompatibility: renamed the multibooking option eme_register_empty_seats to just register_empty_seats
+  (and documented it)
+* Backwards incompatibility: for a multibooking, events that use the attendance option won't store empty seats (the 'no'-answer) unless you use the option register_empty_seats=1 (default=0)
+* The HTML editor is shown for many settings/templates now, more will follow after feedback
+* Add extra fields for location info: address1, address2, city, state, zip, country (the old address field is now address1; the old town field is now city).
+
+= 1.7.7 (2016/11/01) =
+* Make the delete icon for events and discounts actually work again
+* Add option to make captcha case insensitive
+* Make notices permanently dismissable again
+
+= 1.7.6 (2016/10/14) =
+* Added eme_for shortcode, to be able to show certain html multiple times (2 values: min, max, see doc for examples)
+* Bugfix: show the no-longer-allowed-to-book message again if the end-date has passed (not for multi-booking)
+* Bugfix: allow 0-seats for attendance-like events again
+* Bugfix: the extra attributes field for formfields was not showing the correct value when editing the formfield
+* Add the possibility to send a test email via the "Send Mails" page
+* Bugfix: the smtp port setting was not correctly taken into account (always resulting in port 25 being used)
+
+= 1.7.5 (2016/09/14) =
+* Client clock functionality was not working anymore
+* Fix setting 'Age of unpaid pending bookings in minutes'
+* Make captcha work again (although sometimes it worked ... the quirks of php session autostart I guess)
+
+= 1.7.4 (2016/09/13) =
+* Mail was not being sent after payment arrived for autoapproval
+
+= 1.7.3 (2016/09/12) =
+* Moving a registration to another event was not working anymore
+
+= 1.7.2 (2016/09/07) =
+* Make sure mail is sent out when denying a registration
+* Correct the link to RSVP in the Pending registration menu
+* When adding a booking in the backend, don't mark it immediately as paid
+* Add booking ID back to rsvp overview
+
+= 1.7.1 (2016/09/06) =
+* Small fix: make sure payments received via ipn approve the booking if auto-approve is set
+* Improvents in the event overview: you can now click on pending bookings
+
+= 1.7.0 (2016/09/06) =
+* Paging events for the last day of the month failed if the next month has fewer days. E.g. if you're
+  on August 31 and tried to go to the next month via event paging, it would give you October because Sept 31 doesn't exist
+* Added the possibility to send mails after payment notification from payment gateway was received. You just need to set what you want in the regular mail settings page of EME.
+* Added shortcode [eme_holidays], with 1 parameter: the id of the holidays list. Will return a simple html list of your holidays list
+* The event listing in the backend is now ajax based, this will result in much better performance if you have many events
+* Bugfix: typo: payed => paid
+
+= 1.6.26 (2016/08/27) =
+* Fix an php warning
+* For sagepay the extra cost of FirstData was taken, corrected
+* When automatic cleanup of bookings is activated, the payment page will now redirect back to the event
+  if not yet paid and the timer passed, to avoid people to pay for bookings that are no longer in the system
+
+= 1.6.25 (2016/08/27) =
+* Localised prices can contain html entities (weird wp function ...), in e.g. text emails this is of course not desired.
+* The end date selector for recurring events was not working anymore
+* The function eme_wordpress_search (to be used in your search.php, see the FAQ), was not working as it should
+
+= 1.6.23 and 1.6.24 (2016/08/18) =
+* Make sure end date >= start date in the datepicker, easier if you're switching months and so ...
+* Partial update for Swedish (thanks to Magnus Tamelander)
+* re-added some placeholders that were not supposed to be removed
+* dismissable notices were not dismissable at all ...
+
+= 1.6.22 (2016/08/17) =
+* Add email to stripe checkout form
+* Fix a php warning when editing a registration
+* Show lat/long in location overview, easier to detect front-end problems then if the map doesn't show the correct location
+* Finally removed legacy and deprecated placeholders.
+* INCOMPATIBILITY: The pattern for custom formfields is gone and replaced by a more generic attributes field
+  So if you had patterns for a formfield (only possible for the datefield in fact), please re-add these
+* Show that there were mail problems if not all mails went through in the "Send Mail" window
+* Use dismissable admin notices, much prettier... (using a slightly adapted version of collizo4sky's persist-admin-notices-dismissal)
+* Bugfix that prevented correct mails to be sent out for private events after IPN from e.g. paypal arrived
+
+= 1.6.21 (2016/08/02) =
+* Added holidays selection to the widget
+* CSRF Security fix: although I already check the permissions of the persons doing this, and everything is checked afterwards,
+  I now use the wordpress nonce to make sure nobody messes with the form/url contents for events/locations/... .
+  Detected by Securify/Summer of Pwnage/Job Diesveld
+* Remove inserted javascript from not allowed option fields (which is just about anything, except 'eme_html_header','eme_html_barter','eme_payment_form_header_format','eme_payment_form_barter_format','eme_multipayment_form_header_format','eme_multipayment_form_barter_format')
+  This is just an extra precaution, next to the CSRF fix, suggested by Securify/Summer of Pwnage/Job Diesveld
+* Remove javascript from event and location format settings and templates.
+  This is just an extra precaution, next to the CSRF fix, suggested by Securify/Summer of Pwnage/Job Diesveld
+* Make #_ADDBOOKINGFORM_IF_NOT_REGISTERED and #_REMOVEBOOKINGFORM_IF_REGISTERED behave correctly again
+* Multibooking form fix
+* Booking return page was not shown correctly
+
+= 1.6.20 (2016/07/28) =
+* Bugfix in sending mails on first booking
+
+= 1.6.19 (2016/07/28) =
+* Added an option to disable the extra html paragraph tags around notes/excerpts
+* Bugfix for the payment buttons (not only paypal)
+* Fix a php warning for empty discounts, created because the price is now formatted to the locale in wordpress (and can thus not be an empty string, but needs to be a real floating point)
+
+= 1.6.18 (2016/07/24) =
+* You can now add/delete/edit discounts and discount groups in the backend
+* Bugfix: adding bookings in the backend was not working anymore
+* Small bugfix: the payment header/barter format settings were not always taken into account
+
+= 1.6.17 (2016/07/21) =
+* Allow calculated discount to be changed for bookings in the backend
+* Allow dynamic price calculation in the RSVP form (using #_DYNAMICPRICE and a setting to activate it if wanted; for multibooking this placeholder needs to be in the header or barter section)
+* Added booking placeholder #_TOTALDISCOUNT, so you can let people know how much discount they got in the end
+* The price shown (mails, tables, frontend) will now be formatted according to the locale in wordpress. The number of decimals is now an option you can set in the 'Other' section of the EME settings. In the input fields you still need to use the international notation though ...
+* In the template header/barter for multibooking events, you can now also use regular event placeholders. The first event in the multibooking list will be used as source. So you can now use #_LANG, #_CURRENCY, etc ...
+* Add function eme_wordpress_search, makes it easier to use in your theme's search.php
+* Add filter eme_calday_url_class_filter, so you can change the class for calendar day-urls yourself (e.g. for setting "noindex" or so, searchbots don't execute js so the class needs to be added via code)
+* Bugfix: when showing a single event, the external url was not always taken into account
+
+= 1.6.16 (2016/07/13) =
+* Feature: coupon codes can now be case insensitive (new coupon column 'strcase' added, 1: case sensitive, 0: case insensitive)
+* Small bugfix: discount groups couldn't be deleted, this has been fixed
+
+= 1.6.15 (2016/07/12) =
+* Feature: cleanup of unpaid bookings can be scheduled now, and should be working too ...
+* Feature: added discounts (coupon codes) with fixed discount or a percentage, expiration date, limit number of uses, allow different discounts to be entered, (discount groups) and CSV upload of coupons and groups. See the documentation for more.
+* Added placeholder #_RESPFIELD{xx}, with 'xx' being a db field property of a person (like person_id, lastname, firstname, email, phone; ... see events-manager.php, function eme_create_people_table)
+* Added placeholder #_LANG, so now you can use conditional tags, check the lang and then use your own text where you want it. Since conditional tags are possible just about anywhere, this allows for true multilanguage mails, subjects, screen messages etc ...
+* Added event placeholder #_NOEXCERPT, so you can show the rest of the event notes and not the excerpt itself. Together with the other 2 placeholders (#_EXCERPT and #_NOTES) this now gives you full control of what part of the notes you want to show.
+* Updated Mollie API to version 1.6.0
+* Added a setting to bring back the google api key for google maps, and added a separate Maps section in the options.
+* Change: the automatic cleanup of unpaid bookings now works for pending bookings only, so as not to interfere with approved bookings that don't need payment
+* Bugfix: when the difference in seconds was less than a day, recurrent events would happen on the same day even if they start on day 1 and end on day 2
+* Bugfix: when not using permalinks and using "?lang=" in the url, the rsvp submit wasn't working for events
+
+= 1.6.14 (2016/05/26) =
+* Remove deprecated function call get_current_user
+* Added filters to change the scope of the week/month/year filters to your liking: eme_week_scope_filter, eme_month_scope_filter, eme_year_scope_filter
+* Added placeholders #_EVENTFIELD{xx}, #_LOCATIONFIELD{xx}, #_BOOKINGFIELD{xx} and #_ATTENDFIELD{xx} with 'xx' being the name of a field for events, locations, bookings or attendees. This way you can show any info as stored in a respective field (in the db) in your format (can easily replace a number of existing placeholders: #_ATTENDFIRSTNAME, #_ATTENDADDRESS1, #_ATTENDADDRESS2, #_ATTENDCITY, #_ATTENDSTATE, #_ATTENDZIP, #_ATTENDCOUNTRY, #_ATTENDID, #_BOOKINGID, #_RESPFIRSTNAME, #_RESPADDRESS1, #_RESPADDRESS2, #_RESPCITY, #_RESPSTATE, #_RESPZIP, #_RESPCOUNTRY, and more for events and locations.
+* Allow the external url for event/location details to be used directly or not when clicking on event/location details (default: yes, the original behavior)
+* Feature: added option ignore_url to shortcode eme_location, so you can choose to ignore the external url for a single event when using this shortcode
+* Added an option to quote the timezone info in ICAL outputs, since some ICAL clients require that despite the RFC
+* Added new shortcode eme_categories, with optional parameters event_id, eventful, scope, template_id, template_id_header and template_id_barter
+  The format understands placeholders with values like #_CATEGORYFIELD{xx}, with 'xx' being category_id, category_name, description or slug.
+  Also #_CATEGORYURL, so you can create your own links to categories too.
+* Bugfix: fix a uninitialized variable error and also the CSV export in the "Send mail" EME admin page
+* Bugfix: for private events, the auto approval upon payment was not working
+* Bugfix: corrected placeholders #_EVENT_EXTERNAL_REF and #_LOCATION_EXTERNAL_REF
+
+= 1.6.13 (2016/04/12) =
+* Bugfix: event scope "this_year" was not working as expected
+* Bugfix: make sure regular event placeholders get correctly replaced when the option to add the booking id to the custom payment return page is set
+* Bugfix: the event author value was not retained when updating an event
+* Bugfix: when using autocomplete for adding people to an event, the selected lastname included the wp username too, resulting in a new record
+* Added event scope "next_year"
+* Added formfield type "date" (html5 form type), together with the possibility to provide a date pattern
+* Disable the possibility to convert an event to a recurrence if bookings exist for the event, otherwise those bookings would get deleted.
+* For filters/hooks: the booking variable now also contains the payment id, so the functions eme_get_booking_payment_id and eme_get_bookings_payment_id have been removed
+* Also store the ip per booking
+
+= 1.6.12 (2016/02/26) =
+* Better php session handling (and add an option to clean the session upon login/logout)
+* Add an option to select whether or not to immediately show a single event on a calendar day and not an event list if there's only 1 event on that day
+* Use phone number of person logged in (from profile) when showing the phone rsvp field
+* Make sure some chosen defaults for events don't interfere with disabling settings when creating/editing an event
+
+= 1.6.11 (2016/02/12) =
+* Added CSS classes for rsvp success/error/full messages when showing the booking form or the booking result
+* Add conditional tag #_IS_PAYED, which returs '1' if the booking is paid, 0 otherwise. Can be used in the custom payment return page (together with the option "Add booking id to return page info") to create your own text based on payment status
+* Bugfix: not all changes were stored when editing events
+
+= 1.6.10 (2016/02/04) =
+* Bugfix: events without location info were returning blank content when viewing the single event details
+
+= 1.6.9 (2016/02/04) =
+* Bugfix if you used the option to hide rsvp full events (the new sql statement from 1.6.7 was incomplete)
+
+= 1.6.8 (2016/02/04) =
+* Bugfix if you used the option show_recurrent_events_once in the eme_events shortcode (the new sql statement from 1.6.7 was incomplete)
+
+= 1.6.7 (2016/02/03) =
+* Performance improvement when showing the calender by reducing the number of sql statements made
+* Bugfix in the calendar: in some cases all events were selected in the database, resulting in memory problems if you had many events
+
+= 1.6.6 (2016/01/31) =
+* Feature: added braintree and stripe payment gateways
+* Feature: added filter eme_csv_column_filter, so you can change the csv columns to your liking (adding/removing columns ..)
+  Has 3 arguments: csv line (an array with all columns), event (array with all event data), current line number
+
+= 1.6.5 (2016/01/21) =
+* Add the possibility to disable autocomplete for the registration form
+* Added event placeholder #_EXTERNALURL, to show the external url for the event if it has a value
+* Bugfix for locations, preventing a location-filtered calendar to work correctly
+
+= 1.6.4 (2015/12/19) =
+* Improvement: some more cleanup actions added
+* Bugfix: make sure the calendar title tags contain valid escaped chars
+
+= 1.6.3 (2015/12/19) =
+* Feature: added option holiday_id to [eme_calendar], so you can show holiday info in the calendar if wanted
+* Bugfix: captcha fix if code is wrong
+
+= 1.6.2 (2015/12/11) =
+* Feature: added option id to [eme_mybookings], so you can now show only the bookings for the logged in user if you use this in the single event format as:
+  [eme_mybookings id=#_EVENTID]
+* Feature: added #_CANCEL_OWN_LINK (as #_CANCEL_OWN_URL but clickable)
+* Bugfix: if the start and end date are equal and the end time is not set, set it to 23:59:59 and not 00:00:00
+
+= 1.6.1 (2015/12/07) =
+* Bugfix: make captcha work again
+
+= 1.6.0 (2015/12/06) =
+* Feature: you can add holidays to a recurrent list of events, in which case that day will be skipped (no event) when creating/editing the recurrence
+  A list of holidays consists of 1 or more rows of the format YYYY-MM-DD
+* Feature: added option weekdays to the calendar shortcode, so you can select which days of the week you want to show (0-6 as values)
+* Feature: added #_CANCEL_OWN_URL rsvp shortcode, can be used in event lists so you can allow logged in people to just cancel their own booking with
+           a single click, or the event owner/author
+           Difference with #_CANCEL_URL is that #_CANCEL_URL gives the url no matter what (easier for mails, not wp-members and such)
+* Feature: added shortcode [eme_attendees_report_link], generating a csv for the attendees/events (events as rows, dates as columns, attendees as cell entries)
+  Options: - event_template_id (if not given, format is "#_EVENTNAME #_STARTTIME")
+           - attend_template_id (if not given, format is "#_ATTENDFIRSTNAME #_ATTENDLASTNAME")
+           - scope (the scope of events to return, if not given, scope=this_month)
+           - category and notcategory (empty if not given, see the [eme_events] shortcode)
+           - title (title of the link, if not given: "Attendees CSV")
+* Feature: autocomplete is now possible in the frontend rsvp form if you have the correct rights, together with #_CANCEL_OWN_URL this means bookings can totally be managed in the frontend if wanted
+* Improvement: 'Bookings for' was not translated in the printable view
+* Improvement: added partial Hungarian translation, thanks to Márton Jakobey
+* Improvement: for attendance types, if the min. number of seats to book is 1 (so attendance is required), then the yes/no field is now hidden (not for multibookings yet)
+* Improvement: some layout improvements when creating events (concerning the date/time and recurrent info)
+* Bugfix: firstname was not detected as an 'ok' field if it was required and WP membership was required too. Since the value
+  is then readonly, we can ignore the required check then anyway ...
+* Bugfix: for multiprice events, the multibooking form was not rendered because the count of required fields in the formats was wrong
+
+= 1.5.53 (2015/11/17) =
+* Feature: added filters eme_cal_full_yearmonth and eme_cal_small_yearmonth, so you can change the header shown in the full/small calendar
+  Has 3 arguments: current string, selected month, selected year
+* Work around a bug in wordpress date_i18n that doesn't translate everything correctly ...
+
+= 1.5.52 (2015/11/16) =
+* Improvement: added cancel form placeholder #_CANCELCOMMENT and corresponding rsvp placeholder #_RESPCANCELCOMMENT
+  This allows you to show a comment form field when canceling, and to mail that comment to booker and/or contact person
+* Improvement: don't show the payment form if the total price to pay is 0
+* Improvement: show a spinner when switching months in the calendar
+* Improvement: added email filters eme_rsvp_email_text_xxx_filter and eme_rsvp_email_html_xxx_filter with "xxx" being one of:
+  confirmed_body,updated_body,pending_body,denied_body,cancelled_body
+  confirmed_subject,updated_subject,pending_subject,denied_subject,cancelled_subject
+  contact_body,contact_cancelled_body,contact_pending_body
+  contact_subject,contact_cancelled_subject,contact_pending_subject
+* Improvement: renamed eme lang files to events-made-easy, also changed the gettext calls accordingly
+               this will allow to have wordpress language packs in the future
+* Improvement: German language updates, thanks to Joerg Knoerchen
+* Bugfix: when updating a recurrence, the days were set wrong in the edit screen
+* Bugfix: comparing min/max allowed seats was not working in a multiseat setup
+* Bugfix: allow for min=1,max=1 seats for a multiprice event to force exactly 1 seat to be taken in total
+
+= 1.5.51 (2015/10/13) =
+* Bugfix: make sure you can still add categories, templates, formfields
+
+= 1.5.50 (2015/10/12) =
+* Feature: you can now deactive the mail sending for approved and/or pending bookings
+* Feature: add cleanup action for old unpaid bookings
+* Feature: added 3 specific calendar conditional tags: #_IS_STARTDATE, #_IS_ENDDATE, #_IS_NOT_START_OR_END_DATE and a filter eme_cal_format_prefilter
+* Bugfix: if long_events=1 in the eme_calendar shortcode, and the end time was lower than the start time, the last day wasn't shown as eventfull
+* Bugfix: multi-fields in the filterform weren't working
+* Bugfix: excluding multiple categories in the widgets was not working as expected
+* Security fix: fix possible XSS attack vector in the admin pages for templates, categories, formfields and cleanup (thanks to David Sopas)
+
+= 1.5.49 (2015/09/28) =
+* Bugfix: when approving a booking and at the same time setting the paid status, the mail sent out was using the old paid status so #_PAID was wrong
+* Bugfix: fix undefined variable in eme_rsvp.php
+
+= 1.5.48 (2015/09/26) =
+* Feature: you can now move a booking to another event (when updating the booking)
+* Bugfix: when editing a recurrence, the end-days per individual event were set at the end date of the recurrence instead of the correct event end date
+
+= 1.5.47 (2015/09/23) =
+* Feature: added event placeholder #_SINGLE_EVENTPAGE_EVENTID, returns the event id of the single event page currently shown
+* Improvement: add a class to the rsvp form submit button
+* Bugfix: when editing a location, don't translate fields that are multi-language compatible (otherwise you lose the other languages)
+* Bugfix: make sure the calendar monthname is localised again
+
+= 1.5.46 (2015/09/18) =
+* Feature: you can now also set the cancelled and denied mail format per event
+* Bugfix: remove leading 0 for minutes was not working ok
+* Bugfix: event end time was not correct when editing an event with local timeformat in AM/PM notation
+
+= 1.5.45 (2015/09/10) =
+* Bugfix: the payment form was not shown after registration for #_ADDBOOKINGFORM_IF_NOT_REGISTERED
+* Bugfix: entering/updating events showed an error in some cases as the timezone was passed along as an argument
+
+= 1.5.44 (2015/09/09) =
+* Bugfix: the countdown and HOURS/DAYS_TILL_START/END were reversed (negative values shown)
+
+= 1.5.43 (2015/09/09) =
+* Improvement: German language updates, thanks to Joerg Knoerchen
+* Bugfix: take into account wordpress weirdness when setting UTC-like timezones in the preferences ...
+* Bugfix: forgot to initialize colreorder for the datatables, works again now
+
+= 1.5.42 (2015/09/08) =
+* Feature: added placeholders #_EVENT_EXTERNAL_REF and #_LOCATION_EXTERNAL_REF, returning the external reference for an event or location (typically the facebook id)
+* Feature: you can now also select a template in the event list widget
+* Feature: added attendee placeholder #_ATTENDSPACES{xx} to return the number of seats reserved for a specific price for a multi-price event
+* Improvement: use wordpress is_email function to check for valid email addresses
+* Improvement: small visual improvement when showing the username in the registration overview
+* Improvement: also show the CSV export link if there are just pending seats (not approved)
+* Bugfix/improvement: don't set the timezone globally anymore, use class ExpressDate (should help with some time conflicts in other plugins)
+* Bugfix: when updating a registration, the old info was still being shown in the mail sent
+* Bugfix: when showing a calendar day, not always the single event was shown if only 1 event was on that day
+* Bugfix: when showing the booking form, no check was made whether or not enough seats were available in the case of multiprice with a defined multi-minimum too
+* Bugfix: make sure all #_*SPACES placeholders return a number for multi-price values (wasn't the case if the value should be 0)
+* Bugfix: replace possible multibooking placeholders in the payment return page too
+
+= 1.5.41 (2015/7/27) =
+* Feature: added placeholder #_EVENTCATEGORIES_CSS, returning a space-separated list of categories.
+           Also, excluding categories is possible, like in #_EVENTCATEGORIES
+           Also added #_LOCATIONCATEGORIES_CSS
+* Feature: added rsvp placeholders #_RESPNICKNAME, #_RESPNICKNAME and attendee placeholders #_ATTENDNICKNAME and #_ATTENDDISPNAME (displays the nickname or displayname for a booker or attendee if the user is a wordpress user)
+* Feature: add extra header/barter format settings when showing the list of events for a specific category
+* Feature: allow attributes to be text areas now, so you can do more with them
+* Feature: add the option to ignore paypal tax setting in your profile
+* Change: mails with no subject or body will not be sent
+* Bugfix: for some reason, in the older plugin code I added the logic that the excerpt was never to be shown on single event pages. This has been corrected now.
+* Bugfix: add db column 'lang' for the peoples table if missing
+* Bugfix: the booker firstname/lastname was not correctly replaced in the cancel form for WP users
+
+= 1.5.40 (2015/05/31) =
+* Bugfix: when deleting a booking, the extra field answers were deleted before the mail was sent, resulting in some placeholders not being replaced in that mail
+* Bugfix: fix untranslated and unescaped category names when creating/editing events
+* Bugfix: fix edit and update bookings (missing argument for a function)
+
+= 1.5.39 (2015/05/21) =
+* Bugfix: small fix for undefined variable
+
+= 1.5.38 (2015/05/21) =
+* Bugfix: multibooking fix for mails
+* Bugfix: allow firstname to be required too
+
+= 1.5.37 (2015/05/08) =
+* Bugfix: cancel url was not correctly shown (and was also not working for bookings with no price)
+* CSS Bugfix for chrome (the fix got added in 1.3.4 and removed later on):
+  datatable CSS fix so the barter doesn't overlap with the table in some browsers
+* Improvement: German language updates, thanks to Joerg Knoerchen
+
+= 1.5.36 (2015/05/01) =
+* Feature: added Worldpay payment gateway
+* Feature: added event placeholders #_AUTHORNAME, #_AUTHOREMAIL and #_AUTHORPHONE
+* Feature: added event placeholders #_EVENTCREATIONDATE, #_EVENTMODIFDATE, #_EVENTCREATIONTIME, #_EVENTMODIFTIME
+* Feature: added description for categories, together with placeholders #_EVENTCATEGORYDESCRIPTIONS and #_LOCATIONCATEGORYDESCRIPTIONS
+* Feature: added option "approval_status" to shortcode eme_mybookings. Values: 0=all, 1=approved, 2=pending. Default: 0
+* Feature: added function eme_get_person_by_post(), so people can call this to check if somebody is registered without needing to now the internals:
+  $booker = eme_get_person_by_post();
+  if (!empty($booker)) {
+     $already_registered=1;
+  }
+* Feature: now everybody can cancel a booking (even non-wp users) via a special link. Cancel urls in mails and user profile use these links now.
+           The old booking cancel form will be deprecated in the future, as using this link/form is more secure and easier to maintain
+           For this #_CANCEL_LINK and #_CANCEL_URL have been adapted already. And a new placeholder #_CANCEL_CODE has been added that
+           returns the cancel code to be used in the new cancel booking form (to be implemented)
+* Feature: added option ignore_url to shortcode eme_event: in a number of cases (like when using this shortcode in the calendar format for an event entry), the url would case the page to be redirected. Using this, you can ignore that url.
+* Bugfix: when canceling a booking via the cancel url, the mail being sent contained the free spaces info from before the cancel, it was sent too early in the process
+* Bugfix: event placeholders were not being replaced in booking mails (they were replaced in attendee mails)
+* Bugfix: make sure you can require the first name to be completed if wanted
+* Bugfix: a redundant check was made for firstname in multibooking events, so people filling in their last name still received an error that the last name was not filled out
+* Bugfix: some category link fixes
+
+= 1.5.35 =
+* Bugfix: RSVP placeholders in multibooking mails were not being correctly replaced
+
+= 1.5.34 =
+* Bugfix: make #_FIELDVALUE actually work ..
+* Bugfix: show the user display name as lastname if the lastname is empty for a user in forms
+
+= 1.5.33 =
+* Bugfix: in a borderline case new reservations were not possible
+
+= 1.5.32 =
+* Bugfix: make sure the booking recorded message shows, no matter what
+* Workaround: take into account that wordpress sets NULL for empty strings in the database (which it shouldn't)
+
+= 1.5.31 =
+* Bugfix: don't make firstname required for the cancel form too
+
+= 1.5.30 =
+* Bugfix: don't make firstname required when submitting, to preserver backward compatibility
+
+= 1.5.29 =
+* Feature: allow 2Checkout sandbox/test/live modes
+* Feature: added Sage Pay payment gateway
+* Feature: attempt to make the map sizes responsive: width and height can be "%" too, for responsiveness: width should be 100%
+* Feature: added conditional booking placeholder #_IS_MULTIBOOKING again, only returns 1 when actually doing a multi-booking, not when updating/deleting a booking
+* Feature: extra info can be requested for a person: #_LASTNAME (= #_NAME), #_FIRSTNAME, #_ADDRESS1, #_ADDRESS2, #_CITY, #_STATE, #_ZIP, #_COUNTRY
+           also the corresponding booking placeholders are there: #_RESPLASTNAME (= #_RESPNAME), #_RESPFIRSTNAME, ...
+* Feature: added placeholders #_EVENTCSVBOOKINGSLINK and #_EVENTCSVBOOKINGSURL
+* Feature: added conditional event placeholders #_IS_AUTHOR, #_IS_CONTACTPERSON and #_IS_AUTHOR_OR_CONTACTPERSON
+* Feature: allow csv/print/column reorder and column hiding in people, pending bookings, reservations
+* Security improvement: the form message could be altered upon booking, so one could be tricked in executing wrongful html code
+  so a check has been added to make sure that the form message is generated by the system, not a malicious person
+* Bugfix: make the location map show again when editing locations
+* Improvement: German language updates, thanks to Joerg Knoerchen
+* Improvement: autocomplete person info (based on name) when adding new registrations in the backend
+
+= 1.5.28 =
+* Bugfix: make 2checkout work again
+* Bugfix: fix event scopes today--this_week and today--this_week_plus_one
+
+= 1.5.27 =
+* Bugfix: make #_EDITLOCATIONLINK and #_EDITLOCATIONURL actually work ...
+
+= 1.5.26 =
+* Feature: added location placeholders #_EDITLOCATIONLINK and #_EDITLOCATIONURL
+* Feature: added generic "eme html header" and "eme html barter" settings, so you can add javascript in there if wanted without needing to change your theme
+* Bugfix: the 'no events message' was not always being shown
+* Bugfix: fix the double headers-options in EME settings (tab 'Other')
+* Bugfix: datapicker was not being added in the front end (for the monthly filter)
+* Bugfix: load google js via https when needed
+* Improvement: the smtp port setting should not be shown if smtp is not used for sending mails
+
+= 1.5.25 =
+* Feature: added the possibility to add a Bcc address to all outgoing mails
+* Bugfix: Mollie form was not being displayed
+
+= 1.5.24 =
+* Feature: implement a second extra charge option for payment gateways (so you can use a percentage and a fixed amount together)
+* Feature: add Mollie payment gateway
+* Feature: add event placeholder #_MYLOCATIONATT{xx} (see doc)
+* Feature: per payment gateway, you can now customize the button label and the text above/below the button. You can use #_EXTRACHARGE and #_CURRENCY as placeholders, multilanguage ready too. Also, the button can be an image if wanted.
+* Improvement: prevent double click on form submit
+* Improvement: German language updates, thanks to Joerg Knoerchen
+* Bugfix: the setting "Default location list format barter" was overwriting the format header, not barter
+* Bugfix: small template fix when listing the bookings per person
+* Bugfix: eme_mybookings was only replacing 'event' level placeholders once for all bookings
+* Removed old Google Checkout
+
+= 1.5.23 =
+* Bugfix: make client clock checking work again for the calendar
+* Improvement: optimize the inclusion of javascript files the way wordpress likes it most
+
+= 1.5.22 =
+* Bugfix: another function rename that came back to haunt me is fixed
+
+= 1.5.21 =
+* Bugfix: make #_BOOKINGS work again (typo fix)
+
+= 1.5.20 =
+* Feature: added shortcode eme_mybookings with as optional arguments a template_id for header, content and barter, and an option to show future or all bookings
+  [eme_mybookings template_id=3 template_id_header=7 template_id_barter=9 future=0]
+  [eme_mybookings template_id=3 future=1]
+  Will show all bookings for the logged in user, based on the layout given by the templates or by the generic booking list format
+  Also added booking placeholders #_CANCEL_LINK and #_CANCEL_URL, so you can create a link to cancel 1 specific booking too (for future events only)
+  Also: the list of future bookings made is now in the user's profile, with an cancel link
+* Feature: you can now also change the text above/below the payment buttons for a multi-booking form
+* Feature: added filters eme_eval_booking_form_post_filter and eme_eval_multibooking_form_post_filter, which happen just after the POST of the booking form
+  (1 arg: $event for eme_eval_booking_form_post_filter, or $events of eme_eval_multibooking_form_post_filter; containing the event(s) details that are being booked for). The filter eme_eval_booking_form_post_filter differs from eme_eval_booking_form_filter in this sense that this filter happens immediately after the POST, while eme_eval_booking_form_filter happens after the booker has been created already (which is a bit stupid).
+* Feature: added option no_events_message to the shortcode eme_events, so you can adjust the text when there're no events per shortcode usage if wanted
+* Feature: the CSV separator can now be changed in the 'Other' section of the EME settings
+* Bugfix: sometimes when multiple maps were shown (and dependant on the OS used), even multiple calls to microtime() return the same value
+          so as a result some javascript variables had the same name and thus the maps might show the same address
+          This is now fixed by adding a rand() call to the variable names
+* Bugfix: required formfields that were defined as dropdown were not allowed to post "0" as a return value for required fields
+* Bugfix: fix some firstdata issues, thanks to ecoyork
+* Bugfix: when creating recurrent events, the last day was not taken into account
+* Bugfix: show correct number of days in months in the calendar
+* Change: renamed function eme_event_category_url to eme_category_url
+* Change: removed #_IS_MULTIBOOKING placeholder, was not working correctly
+* Improvement: when using custom fields in a form, FIELD{03} and FIELD{3} (thus leading zero's) are now supported. This was already working ok for storing the values, but not for checking the required field values
+* Improvement: when clicking on a calendar day in the small calendar and there's only one event where the external url is set, we now redirect to that url
+* Improvement: #_PHONE and #_COMMENT can now also be used in header/barter parts in a multibooking form
+* Improvement: German language updates, thanks to Joerg Knoerchen
+* Improvement: Dutch language updates, thanks to Herman Boswijk
+
+= 1.5.19 =
+* Feature: rsvp end date/time restriction can now be negative, so you can say "Allow RSVP until -2 days -1 hours before the event starts, indicating the rsvp can go on for 2 days and 1 hour AFTER the event has started. The rsvp end can never go beyond the event end date itself of course.
+* Feature: new scope for events: 'ongoing': only shows ongoing events, for this we try to use the date and time, but it might be incorrect since there's no user timezone info
+* Feature: basic support for qtranslate-X (not fully functional yet, awaiting reply from the qtranslate-x authors)
+* Feature: added placeholders #_APPROVEDSPACES and #_APPROVEDSPACES{xx} (see the doc)
+* Feature: added option eme_register_empty_seats to the shortcode eme_add_multibooking_form: by default it is 0, but if you want to register 0-seats too, set this to 1
+* Feature: an event can now also be designated to take attendances only for bookings, a corresponding conditional tag #_IS_ATTENDANCE has been created as well so you can change messages shown or emails sent
+* Bugfix: the required fields were not being checked in the backend, so browsers not supporting the html5-required tag could input empty custom field info
+* Bugfix: take booking price=0 into account for events that still have a payment gateway configured
+* Bugfix: make simple event paging work again
+* Improvement: German language updates, thanks to Joerg Knoerchen
+
+= 1.5.18 =
+* Feature: added action eme_delete_recurrence_action
+* Feature: allow custom fields also in the header/barter for multi-booking format templates, but use with care: will only work correctly for 'identical' events (events with the same custom fields)
+* Feature: support polylang, but only if the setting 'The language is set from content' is choosen
+* Feature: added filter eme_events_format_prefilter, a initial filter for the events format, in case people want to change anything before the placeholders get replaced. Has 2 arguments: $format and $event
+* Feature: added placeholder #_LOCALE, returning the currently chosen locale. Can be used in multilanguage setups, so you can change content of anything inside an event, location or form based on the locale active at that time (if no language tags are provided by the language plugin you're using)
+* Improvement: support custom translations files in wp-content/languages/ (WP_LANG_DIR setting), so changed translation files are not overwritten when updating EME
+* Bugfix: #_RSVPEND was incorrect
+* Bugfix: if the period was "daily" in the list widget and 2 events were on the same day but a different month, the new month info wasn't shown, making it look as the second event happened in the same month as the first
+* Bugfix: translation url fixes
+* Bugfix: recurrence defined as "start day" was not working ok
+* Code change: small code change to make multi-bookings more wordpress 404-proof
+
+= 1.5.17 =
+* Bugfix: #_RSVPEND was incorrect
+
+= 1.5.16 =
+* Improvement: each category now also has a SEO slug (albeit not editable yet)
+* Incompatibility: the function eme_event_category_url now takes the whole category array as argument (as for events and locations)
+* Incompatibility: the function eme_get_event_categories now returns an assoc array of categories, the old behaviour is renamed to a new function eme_get_event_category_names 
+* Bugfix: make sure the booking cancel form work again
+
+= 1.5.15 =
+* Improvement: allow username/email to be changed when doing a new registration via the backend and WP membership is required for an event
+* Bugfix: the new filters eme_rsvp_email_body_text_filter and eme_rsvp_email_body_html_filter were not taken into account (missing underscore)
+* Bugfix: the end date/time placeholder #@[a-z] were being replaced correctly, but the '@' remained too
+
+= 1.5.14 =
+* Bugfix: make sure initial date for new events and recurrences is the current date, not 1970 ...
+
+= 1.5.13 =
+* Bugfix: for events with no defined contact person, I tried to get the admin email but used a multisite function for it (which doesn't seem to be defined if you don't activate multisite)
+* Bugfix: fix sending of mail for normal registrations (typo fixes)
+
+= 1.5.12 =
+* Bugfix: use php 5.3 notation for arrays, not everybody uses php 5.4 ...
+
+= 1.5.11 =
+* Bugfix: not all mails were being sent out correctly
+
+= 1.5.10 =
+* Feature: support qtranslate plus, next to qtranslate and mqtranslate
+* Feature: added new filters eme_rsvp_email_body_text_filter and eme_rsvp_email_body_html_filter to be able to change the mail body just before it is sent
+* Incompatibility: removed the per-user date format settings, was getting too confusing for coding up different formats for backend and frontend date formatting, while the generic WP settings should be used anyway
+* Incompatibility: renamed eme_email_filter to eme_email_obfuscate_filter
+* Improvement: try to use admin info when no other contact info is present for an event (can happen after using the frontent submit form)
+* Bugfix: better use of function strtotime to take Daylight Saving Time into account (not all days have 24 hours)
+* Bugfix: there's a bug for the cancel-mails and placeholders due to the fact that I first delete the booking before sending the mail (otherwise the number of free seats in the mail can be wrong), but because of that the placeholders can't be replaced anymore since the booking no longer exists. This has been fixed by getting the booking info before doing anything and handing that info to the function that does the mail sending (and not letting that function get the booking info anymore, since it might already been deleted)
+
+= 1.5.9 =
+* Bugfix: the unique nbr for bookings only got generated when online payment was being selected too, now it gets generated if the total booking price >0
+
+= 1.5.8 =
+* Feature: added 2 new scopes: relative-Xd--YYYY-MM-DD (end YYYY-MM-DD, start X days before that) and YYYY-MM-DD--relative+Xd (start YYYY-MM-DD, end X days past that)
+* Feature: added monthly range select in filter form: use #_FILTER_MONTHRANGE in the filter format and fields=monthrange in the eme_filterform shortcode
+* Feature: the shortcode eme_add_multibooking_form now also supports category_id as a parameter, to select all events for a single category
+* Doc: documented the template_id option for the shortcode eme_filterform, as the template is preferred before the fields option
+* Bugfix: first day of week in the datepicker is a integer, not a string. Putting a string created mangled day headers in the datepicker.
+
+= 1.5.7 =
+* Feature: first day of week is now also respected in the datepicker
+
+= 1.5.6 =
+* Feature: added 2 new filters to influence CSV output: eme_csv_header_filter and eme_csv_barter_filter
+  Both take 1 parameter ($event) and should return an array (representing columns in the csv output in the header or barter)
+  Can be used to add extra info at the top or bottom of the CSV output
+* Feature: new event placeholder #_RECURRENCE_NBR, returns the sequence number of an event in a recurrence series (first event is 1, second is 2, etc ...)
+  Also added conditional tags #_IS_FIRST_RECURRENCE and #_IS_LAST_RECURRENCE
+* Feature: the RSVP cut-off date/time can now also be done based on the end-date of the event, not just the start-date
+* Feature: add a generic option to disable server-side required field checks when submitting a RSVP form
+* Improvement: renamed #_RECURRENCEDESC to #_RECURRENCE_DESC for conformity (the old one is still possible)
+* Bugfix: the unique number for payments should be calculated based on the payment ID, not the booking ID anymore.
+* Bugfix: small html correction in EME admin interface, tab Payments
+* Bugfix: fix some 'notcategory' behaviour for the eme_events shortcode
+* Bugfix: the optional choosen template got lost when switching months in the full calendar
+* Bugfix: the mail for cancellation was sent before the cancellation was done, resulting in wrong number of spaces free/reserved in the cancellation mail
+* Bugfix: better 24h-timeformat notation detection
+* Bugfix: better value escaping with ESC when using conditional tags
+* Bugfix: use correct headers when sending html-mail via wp_mail function
+
+= 1.5.5 =
+* Bugfix: featured image for locations wasn't working anymore
+* Bugfix: show the map when editing an existing event with a known location
+* Bugfix: fix a JS error when looking at the list of events
+
+= 1.5.4 =
+* Bugfix: account for the fact that a WP setting might be never changed, and thus just be empty in case of booleans
+
+= 1.5.3 =
+* Feature: new hook eme_ipn_action (1 parameter: $booking), executed after successfull IPN
+           Hint: get the event from the booking id by using this: $event = eme_get_event_by_booking_id($booking['booking_id']);
+* Feature: added placeholders #_PENDINGSPACES and #_PENDINGSPACES{xx} (see the doc)
+* Improvement: added conditional shortcodes eme_if7 till eme_if15 (some people really want these ...)
+* Bugfix: #_PAYMENT_URL was no longer replaced correctly
+* Bugfix: First Data payment button was not being generated correctly
+
+= 1.5.2 =
+* Bugfix: multiple categories in widgets still contained an error, tested ok now
+
+= 1.5.1 =
+* Bugfix: multiple categories in widgets wasn't working
+* Bugfix: removing a location wasn't working
+
+= 1.5.0 =
+* Incompatible change: due to some changes in the code, 2 CSS id's changed too: no longer using a container id but using a real css class name:
+  #eme_global_map img becomes .eme_global_map
+  #eme_locations_list becomes .eme_locations_list
+* Feature: added template functionality to the calendar as well (new option template_id to the shortcode eme_calendar, for templating entries in the full calendar)
+* Feature: support tls when sending mail via smtp by prepending 'tls://' to the hostname (typically for port 587) 
+* Feature: new placeholders #_HOURS_TILL_START and #_HOURS_TILL_END
+* Feature: new shortcode eme_add_multibooking_form that lets you use either a comma-seperated list of event id’s or a recurrence id for which you want to do multiple bookings in one go. It also has a template id for the header, entry and barter of the form list. More info in the doc.
+* Feature: new rsvp placeholder #_MULTIBOOKING_DETAILS_TEMPLATE{xx} (with xx a template id): parses the template for each booking in a multibooking scenario, all regular booking and event placeholders can be used in the template
+* Feature: new rsvp placeholder #_MULTIBOOKING_TOTALPRICE (the total price of all bookings in a multibooking scenario)
+* Feature: new rsvp placeholder #_MULTIBOOKING_SEATS (the total seats of all bookings in a multibooking scenario)
+* Feature: new rsvp placeholder #_IS_MULTIBOOKING (conditional tag you can use in rsvp mails)
+* Feature: new event placeholder #_EVENTATT, taking 2 arguments: eventid and attribute key. This allows to get the non-default value for an attribute from another event. E.g, for eventid 3 and attribute "my_att": #_EVENTATT{3}{my_att}
+* Feature: added the possibility to define an extra charge when paying via a payment gateway. Also added an extra rsvp placeholder so you can show the extra cost being added per payment gateway: #_CHARGE{google}, #_CHARGE{fdgg}, #_CHARGE{2co}, #_CHARGE{paypal}, #_CHARGE{webmoney}
+* Feature: now more than one global map can be shown on the same page
+* Feature: added event placeholders #_STARTDATE, #_STARTTIME, #_ENDDATE and #_ENDTIME, resulting in a easy way to get the start/end date and time for the event in the current WP settings format, without needed to use the other possible date/time placeholders
+* Feature: 2 new event scopes: ++YYYY-MM-DD (all events starting later than YYYY-MM-DD) and --YYYY-MM-DD (all events ending before YYYY-MM-DD)
+* Feature: mail subjects for the contact person can now also be changed in the settings
+* Feature: you can now select multiple categories in the widget. Multiple selected categories will be OR'd together (see the events placeholder)
+* Feature: added new filter eme_event_preupdate_filter, taking place just before the event is updated in the DB (the update companion of eme_event_preinsert_filter)
+* Feature: added a global option to ignore pending users when using the #_ATTENDEES or #_BOOKINGS placeholders.
+* Feature: you can now also send mails about a new event to all WP users, or to all WP users that did not yet register
+* Improvement: better image selection code for the featured image (since WP doesn't play nice with the 'insert from url', I needed to remove this)
+* Improvement: show the compact bookings table only when not editing a recurrence
+* Bugfix: eme_locations shortcode wasn't showing anything for option eventful=1
+* Bugfix: First Data setting was not being saved when selecting it as payment method for an event
+* Bugfix: added FDGG lib (First Data lib, was missing)
+* Bugfix: take into account lonely CR's when creating the javascript balloon text
+* Bugfix: when updating an event, the end time was not allowed to be equal to the start time
+* Bugfix: corrected contact_person as option for eme_rss_link (and documented it)
+* Bugfix: the shortcode eme_location used the wrong default format (should be the one specified in the settings called "Default single location page format")
+
+= 1.4.6 =
+* Feature: added an option to hide past events (on a day-basis, not hour) in the calendar
+* Feature: added an option to hide events (from lists and calendar) which RSVP registration period has already ended
+* Feature: added #_FIELDVALUE{xx} to get the formfield value (can be used in the registration form, in #_BOOKINGS and RSVP mails)
+* Bugfix: using custom fields and/or html when re-sending mails didn't work as expected
+* Improvement: Italian language updates, thanks to Gianluca Granero
+* Improvement: Ukranian language updates, thanks to Michael Yunat (michael.yunat@gmail.com, see also http://www.iphostmonitor.com )
+* Improvement: updated Italian translation, tx to Antonio Venneri
+
+= 1.4.5 =
+* Feature: added placeholders #_EVENTPRINTBOOKINGSLINK and #_EVENTPRINTBOOKINGSURL, showing either a link or just the URL to the printable bookings list, if you have the correct permissions
+* Improvement: if people enter field tags for multi-value custom fields, check that the number of tags is the same as the number of values
+* Bugfix: empty custom field tags were not correctly handled
+* Bugfix: make sure the day-hover title in the calendar no longer contains html
+* Bugfix: 24H format placeholders shouldn't return seconds, was never the case but got added in 1.3.0
+* Bugfix: for the detection of required fields for the RSVP form, I didn't take into account the fact that you can now use templates for the form so the required field detection failed
+
+= 1.4.4 =
+* Feature: added placeholders #_12HSTARTTIME_NOLEADINGZERO and #_12HENDTIME_NOLEADINGZERO
+* Feature: added filter eme_eval_booking_filter, doing evaluations before the person is entered in the db. One parameter: $event. And $_POST can be used too of course.
+* Feature: added #_BOOKINGPRICEPERSEAT and #_BOOKINGPRICEPERSEAT{xx} rsvp placeholders, to return the end-price per booked seat (either normally or for multiprice for the indicated price category). The filter eme_insert_rsvp_action is taken into account, so the end-price includes anything you do with it (including discounts)
+* Feature: subjects of mails being send to bookers is now also customizable and multi-lang ready
+* Feature: you can now delete "unused" people (people without bookings, can happen if you delete old events)
+* Feature: you can now select a template for mail message and body when sending after-mails, and for many format settings when creating/editing an event
+* Feature: added an option to no longer show the RSVP form after a successful booking
+* Improvement: a little more polite bad-boy message
+* Improvement: renamed an eme option, no big deal
+* Improvement: all RSVP prices are now showing as floating point, with 2 digits behind the "."
+* Bugfix: removing a person and his booking info left orphaned answers, cleaning those now
+* Bugfix: when using the #_PAYMENT_URL in an email, all works ok but a php warning was shown (third variable for a function not initialized). Fixed
+* Bugfix: when deleting 1 template, all were deleted.
+
+= 1.4.3 =
+* Bugfix: the filter eme_eval_booking_form_filter was called too early, causing the second argument to be empty
+* Bugfix: the captcha isn't taken into account when adding a booking via admin backend, but it prevented adding a booking then
+
+= 1.4.2 =
+* Bugfix: some undef values fixed
+* Bugfix: make the default use the new notation too for captchas (for new installations)
+* Bugfix: the frontend submission plugin has been updated to account for new jquery timeentry plugin too
+
+= 1.4.1 =
+* Bugfix: fixed a bug with a undefined var, preventing activation of the plugin for new installations
+* Bugfix: for plugin deletion, the tables were not deleted for multisite blogs
+
+= 1.4.0 =
+* Feature: more consistent notation for placeholders, see http://www.e-dynamics.be/wordpress/?p=51559
+* Feature: people page can now do merging of bookings, show all bookings per person and allows person editing
+* Feature: RSS feed now shows html (no maps or forms), as does all other parts of wordpress do
+* Feature: use language selected at booking time for sending mail concerning the booking or the attendee
+* Feature: the cancel registration form can now also be formatted (also per event if wanted)
+* Feature: locations can now also be duplicated
+* Feature: added field tags to form fields, these are shown to the booker and are (m)qtranslate-compatible
+* Bugfix: don't show the captcha when showing the booking form in the admin backend, it was ignored but still it's best not to confuse people
+* Bugfix: if the current day had an event, the calendar didn't show the eventfull class
+* Bugfix: don't match "[...]"  for location placeholders, solved more generically by the new placeholders notation feature.
+* Bugfix: show weekday initials only again for small calendar format
+* Bugfix: the wordpress nonce was being outputted too much times. Although the fields are hidden, it's not good to do so.
+* Bugfix: when inserting or updating a booking, the action hook was executed before the answers for extra fields were stored in the db
+* Improvement: the events database now gets updated upon first site visit (admin or not), so no more deactivate/reactivate action needed
+* Improvement: when the events page setting changes, the SEO rules are flushed, so no more deactivate/reactivate action needed
+* Improvement: code dedup for locations page
+* Improvement: show a warning if a custom field requires a value but it was left empty
+
+= 1.3.4 =
+* Feature: when doing the "quick" deny for registrations while editing an event, no mails were being sent. There's now a general option in the Mail section that allows you to change that.
+* Bugfix: make #_ADDBOOKINGFORM_IF_NOT_REGISTERED and #_REMOVEBOOKINGFORM_IF_REGISTERED work again
+* Bugfix: added a CSS to the datatables when showing events, so the barter div following it is moved when the table grows or shrinks
+* Bugfix: adding shortcodes to event details resulted in bad headers when using the setting "extra html headers" with placeholders like #_EXCERPT, and also gave problems for conditional tags
+
+= 1.3.3 =
+* Feature: you can now send html-mails for RSVP messages if wanted
+* Bugfix: make the booking removal work again when in the event edit-window
+* Bugfix: make start of month correct again in new calendar code
+
+= 1.3.2 =
+* Bugfix: remove some abiguous placeholder matching and correct the newly introduced image dimensions
+
+= 1.3.1 =
+* Improvement: add width and height to thumb images, just in case the resized versions don't exist
+* Bugfix: make #_LOCATIONNAME work again
+* Bugfix: calendar days with a single digit didn't show the events
+* Bugfix: the booking recorded format may contain html, but was being sanitized
+
+= 1.3.0 =
+* Feature: add/edit booking is now all possible from the backend, and when editing all custom fields show as well
+* Feature: added template functionality to the filter form as well (new option template_id to the shortcode eme_filterform)
+* Feature: added option 'show_recurrent_events_once' to the shortcode eme_events to show recurrent events only once. Remember that people will only see a normal event unless you add recurrent info to it using the placeholder #_RECURRENCEDESC
+* Feature: added placeholder #_EVENTCATEGORYIDS, returning the different category id's for an event. Not really usefull, unless you use the shortcode [eme_events category=#_EVENTCATEGORYIDS] inside a single event format, resulting in a list of events in the same categories as the one being viewed.
+* Feature: use jquery datatables in the backend for event and bookings, makes it easier to search, sort, ... 
+* Improvement: doing a javascript post after a booking add/delete to prevent double actions when refreshing the page, also avoids using global variables
+* Improvement: German language updates, thanks to Wolfgang Löster
+* Improvement: extra antispam measurements
+* Behaviour change: make it possible for start and end date+time to be exactly the same
+* Bugfix: cleanup function shouldn't change recurrences with specific days, since those "end date" is 0
+* Major code rewrite in progress
+
+= 1.2.9 =
+* Feature: added the possibility to define a return page for payment succes or failure, with event and/or booking placeholders
+* Feature: added placeholder #_RSVPEND that will show the date+time end of the registration period
+* Feature: added conditional placeholder #_IS_RSVP_ENDED, returns 1 if the registration period has passed
+* Feature: retain all filled in values if RSVP form validation proved wrong
+* Improvement: show an admin warning if the special events page is not ok
+* Improvement: German and Italian language updates, thanks to Stephan Oberarzbacher
+* Bugfix: make location attributes actually work
+* Bugfix: also deal with RESPNAME, RESPEMAIL, ... in the registration form format
+* Bugfix: the payment page was not shown for the placeholder #_ADDBOOKINGFORM_IF_NOT_REGISTERED after booking was done
+* Bugfix: fix double inclusion of eme_settings.php in uninstall.php, so uninstall works now
+
+= 1.2.8 =
+* Feature: added new filter eme_categories_filter, executed when searching for the categories (e.g. when creating an event). With this, you can e.g. limit the categories shown when creating an event or location or ... . Has one parameter: array of categories.
+* Bugfix: make rsvp form work again (copy/paste error fix)
+
+= 1.2.7 =
+* Bugfix: let shortcodes in booking and attendees lists be replaced at the end, so conditionals can be used there as well.
+
+= 1.2.6 =
+* Feature: added width/height as optional parameters to shortcode eme_location_map
+* Feature: added radiobox, 'radiobox vertical', 'checkbox' and 'checkbox vertical' as new formfield types
+* Feature: added attributes for locations as well, and all templates are also searched for attribute definitions
+* Feature: event notes can now contain all event placeholders as well, when activating the new option called 'Enable placeholders in event notes'. This
+  changes old behavior, so by default it is disabled
+* Improvement: make IS_REGISTERED work for all logged in users, not just when requiring WP membership for rsvp
+* Bugfix: fix layout for location list (the default format setting was being ignored)
+* Bugfix: some template header/barter fixes for attendee and booking lists
+* Bugfix: make [eme_location] work again
+
+= 1.2.5 =
+* Feature: the payment form showing the buttons can now be customized in the EME settings, Payment section. The same placeholders as for bookings can be used.
+  You can format the section above and below the payment buttons and everything is surrounded by CSS tags as well.
+* Feature: max and min amount of seats to book for one booking can now also be used for multiprice events (multi-compatible)
+* Feature: added option template_id to shortcode eme_single_event
+* Feature: added shortcode eme_location, with location id as argument, and optional a template_id for content:
+  [eme_location id=1 template_id=3]
+* Feature: added shortcodes eme_bookings and eme_attendees, with event id as argument, and optional a template_id for header, content and barter
+  [eme_attendees id=1 template_id=3 template_id_header=7 template_id_barter=9]
+* Feature: added placeholder #_IS_MULTIDAY. Returns 1 if the event start date is different from the end date, 0 otherwise.
+* Feature: added placeholder #_BOOKINGID for rsvp mails and booking info, in case you want to share the booking id
+* Feature: added new filter eme_add_currencies, so you can add extra currencies to the list. Be aware that not all payment portals support all currencies.
+  Example: to add Ghanaian Cedi (GHS) to the list of currencies, add the following to your theme's functions.php:
+
+  function my_eme_add_currencies($currencies){
+      $currencies['GHS'] = 'Ghanaian Cedi';
+      return $currencies;
+  }
+  add_filter('eme_add_currencies','my_eme_add_currencies');
+
+* Improvement: unified shortcode names:
+
+  events_calendar             ==>   eme_calendar
+  events_list                 ==>   eme_events
+  display_single_event        ==>   eme_event
+  events_page                 ==>   eme_events_page
+  events_rss_link             ==>   eme_rss_link
+  events_ical_link            ==>   eme_ical_link
+  events_countdown            ==>   eme_countdown
+  events_filterform           ==>   eme_filterform
+  events_if                   ==>   eme_if
+  events_if2                  ==>   eme_if2
+  events_if3                  ==>   eme_if3
+  events_if4                  ==>   eme_if4
+  events_if5                  ==>   eme_if5
+  events_if6                  ==>   eme_if6
+  locations_map               ==>   eme_locations_map
+  display_single_location     ==>   eme_location_map
+  events_locations            ==>   eme_locations
+  events_add_booking_form     ==>   eme_add_booking_form
+  events_delete_booking_form  ==>   eme_delete_booking_form
+  
+  The old names are still valid, but will disappear from the doc
+
+* Bugfix: make sure that relative protocol urls (no http: or https:) are used for google api's in the admin backend
+* Bugfix: in the event edit window, the ajax method for removing rsvp's wasn't working anymore
+* Bugfix: some plugins add the lang info to the home_url, remove it so we don't get into trouble or add it twice
+* Bugfix: booking placeholders are also possible for the 'booking ok' message
+* Bugfix: only show location info in the ical feed if there's actually a location
+* Bugfix: ical fix for multiday allday events (they ended a day too soon)
+* Bugfix: use str_replace for replacing placeholders, to avoid issues with replacement strings containing $13 (preg_replace interprets those as backreferences)
+* Bugfix: the booking price is now shown correctly as floating point, not just integer
+* Bugfix: correct the placeholder replacement sequence for attendees and bookings
+* Bugfix: #ESC_NOTES was not working
+
+= 1.2.4 =
+* Bugfix: prevent double header/barter appearance in event lists
+
+= 1.2.3 =
+* Bugfix: prevent double header/barter appearance in event lists
+
+= 1.2.2 =
+* Fixed a small bug I introduced in 1.2.1 + better detection for sending mail for auto-approval
+
+= 1.2.1 =
+* Feature: added conditional tags #_IS_MULTISEAT and #_IS_ALLDAY
+* Feature: add template_id_header and template_id_barter for events_list and events_locations shortcodes, so you can also use templates for the headers and barters
+* Improvement: make #_IS_REGISTERED also work even when the option "Require WP membership for registration" is not checked, of course you still need to be logged in as a WP user for it to work.
+* Bugfix: the template format field was too small in the database, limiting the number of characters
+* Bugfix: booking list should show a single number for booked seats for multiseat events when asked for
+* Bugfix: send approval mail also for auto-approve events upon payment
+* Bugfix: events_locations shortcode no longer listed all locations (typo in 1.2.0 caused this)
+
+= 1.2.0 =
+* Feature: multi-seat events are now possible: the same as multiprice events, but now you can limit the number of seats per price category if wanted
+* Feature: format templates can now be created and used in the events_list and events_locations shortcodes as follows:
+  [events_list template_id=3]
+  This renders the use of the 'format' parameter obsolete and is more powerfull as it allows conditional tags inside the format template.
+* Feature: recurrence is now also possible on specific days, not just a pattern
+* Feature: maptype for google maps can be defined in the settings for global and individual maps (Roadmap, Satellite, Hybrid or Terrain)
+* Feature: added event placeholders #_TOTALSEATSxx, #_AVAILABLESEATSxx and #_BOOKEDSEATSxx to show seat info per seat category
+* Improvement: remove some unneeded caching in the EME admin section.
+* Improvement: Dutch language update, thanks to Guido
+* Improvement: show which required fields are missing when filling out a rsvp form
+* Bugfix: better all-day indication in ical
+* Bugfix: make #_TOTALPRICE and #_TOTALPRICExx also work for "Booking mails" reminders
+* Bugfix: jump to RSVP confirmation message upon successfull registration
+* Bugfix: better matching rules for #_CATEGORIES with include/exclude categories
+* Bugfix: all day event fix
+
+= 1.1.6 =
+* Improvement: #_MAP and #_DIRECTIONS for an event are only replaced/shown if the event is linked to a location
+* Bugfix: forgot to escape the forward slash, so some placeholders might have resulted in errors
+
+= 1.1.5 =
+* Bugfix: better regex replacement for replacing placeholders
+
+= 1.1.4 =
+* Feature: added 'First Data Global Gateway Connect 2.0' payment gateway implementation
+* Feature: new option: consider pending registrations as available seats for new bookings (meaning: ignore pending registrations for new rsvp's)
+* Feature: implemented feature request "Automatic Approval after Payment is received", optional per event
+* Feature: all day events can now be indicated as such
+* Feature: placeholder #_TOTALPRICEx added for mail formats (with x being a number: gives the total price to pay per price for multiprice events: the amount of spaces booked times the specific price of the multiprice event)
+* Feature: added a facebook import function when creating a new event. Thanks to Tom Chubb and Jashwant Singh Chaudhary.
+* Feature: some themes result in weird behaviour because they use the_content filters, resulting in loops or unwanted content replacement. Added a setting against possible loop protection.
+* Feature: RSS pubdate can now also be the event start time
+* Feature: separate format for ICAL entries
+* Feature: zoom factor can be changed for the global or individual maps
+* Feature: added new filter eme_event_preinsert_filter, taking place just before the event is inserted in the DB
+* Feature: added 2 placeholder options to #_CATEGORIES and #_LINKEDCATEGORIES to include/exclude categories. To be used like this:
+     #_CATEGORIES[1,3][] ==> this will get all categories for the event, but only show cat 1 or 3
+     #_CATEGORIES[][1,3] ==> this will get all categories for the event, but not show cat 1 or 3
+* Feature: added option to define image size for placeholders #_EVENTIMAGETHUMB and #_EVENTIMAGETHUMBURL, to be used as:
+  #_EVENTIMAGETHUMB[MyCustomSize] or #_EVENTIMAGETHUMBURL[MyCustomSize], where "MyCustomSize" is a custom size either known to wordpress or defined in your
+  functions.php via the function add_image_size()
+* Feature: the events_if shortcode now also supports "le" (lower than or equal to) and "ge" (greater than or equal to) comparisons
+* Feature: new filter eme_eval_booking_form_filter, so you can create your own eval rules for a booking
+* Feature: make #_SPACESxx also work in RSVP info, next to #_RESPSPACES
+* Feature: new hook eme_update_rsvp_action, executed when updating booking info
+* Bugfix: correct escaping of characters for ical format
+* Bugfix: better regex replacement for replacing placeholders
+* Bugfix: make sure URL's created by placeholders aren't touched by wordpress anymore
+* Bugfix: when specifying a location by latitude and longitude, town and address are not needed
+* Bugfix: fix a JS error on some admin pages
+* Bugfix: the multiprice array was not correctly initialized, causing troubles if you used #_SEATSx form fields that were out of order
+* Improvement: shortcodes [add_booking_form] and [delete_booking_form] now properly return the generated html instead of echoing it, and also return empty if rsvp not active
+* Improvement: events_list header/barter can now also contain shortcodes, usefull for conditional tags. Idem for locations.
+* Improvement: json is limited in size we only return what's needed in the javascript
+* Improvement: booking date/time info is now visible in the backend registration pages
+* Improvement: add image thumb url to the ical feed if present
+* Improvement: the day difference function now returns a negative value as well, the countdown and DAYS_TILL* placeholders can take advantage of this
+* Improvement: use the WP time setting for new/edit events as well when trying to detect 12 or 24 hour notation
+* Code improvement: added event_properties to stop needing to change the event database table all the time. Ideal for new event properties.
+
+= 1.1.3 =
+* Feature: added #_HTML5_PHONE and #_HTML5_EMAIL to indicate you want the html5 input type field for phone and/or email
+  So you can use e.g. #_HTML5_PHONE or #REQ_HTML5_PHONE and the result will be: the html5 tel-type field for phone, and required if #REQ used.
+  Other html5 input types will be added.
+* Feature: events_if4, events_if5 and events_if6 added
+* Feature: support wp_mail as a method of sending mail, allowing other plugins to work on the mail as well via the existing wp_mail hooks and filters
+* Feature: added placeholder #_LINKEDCATEGORIES: creates a link per category for the corresponding event, linking to a list of future events for that category
+* Feature: new option 'title' for the shortcode events_rss_link, so the title can be given a specific name
+* Feature: you can now exclude categories in the widget list and calendar as well, and in the regular shortcode events_calendar also with the new option 'notcategory'
+* Feature: events_ical_link shortcode now also supports the options scope (default: future), author, contact_person and notcategory
+* Feature: added placeholder #_EVENTIMAGETHUMB, to show a thumbnail of a featured image, so you can e.g. show a thumbnail of a featured image instead of the whole image. The size can be choosen in the EME settings (panel 'Other'), by default it is 'thumbnail' size.
+* Feature: added placeholder #_EVENTIMAGETHUMBURL, to get just the url to the thumbnail. Also added #_LOCATIONIMAGETHUMB and #_LOCATIONIMAGETHUMBURL
+* Improvement: mail sending is by default enabled for new installations
+* Improvement: upon auto-update, the DB version of EME is now also checked and a DB update is done if needed
+* Improvement: the 'No events' message now also has a div surrounding it, with div-id 'events-no-events'
+* Improvement: extra plugin events-made-easy-frontend-submit now also uses AM/PM or 24 hours notation based on site preferences
+* Bugfix: html encapsulated in RSS feed was needlessly escaped inside a CDATA section
+* Bugfix: multiprice bookings were reset to "1" if the first booking was 0 upon approval
+* Bugfix: default selected town was always the first town when using [events_filterform]
+* Bugfix: make sure the correct scheme is used for admin_url
+* Bugfix: the generated ical link didn't take the author or contact person into account
+* Bugfix: the calendar links now take into account all options for contact person, categories etc ...
+* Bugfix: fix class warnings in extra plugin events-made-easy-frontend-submit
+* Bugfix: the featured image for locations was not retained after you re-edit and save the location without changing the image
+* Bugfix: url-encoded strings in the format argument of the [events_list] shortcode were not being interpreted
+* Bugfix: remove use of deprecated wordpress functions get_userdatabylogin and wpdb::escape
+
+= 1.1.2 =
+* Feature: new placeholder #_RESPSPACESxx for bookings, to indicate the bookings per price for multiprice events
+* Feature: new placeholders #_BOOKINGCREATIONTIME and #_BOOKINGMODIFTIME for bookings list
+* Feature: ability to use attributes and conditional tags in registration form added
+* Feature: added conditional tag #_IS_MULTIPRICE
+* Feature: location_id argument in shortcodes now supports 'none' to indicate no location
+* Feature: query string eme_town (+SEO) has been added, so only events for a specific town are shown. Not really sure how I'll use it, but it's there ...
+* Improvement: updated Italian translation, tx to Antonio Venneri
+* Improvement: updated German translation, tx to Daniel Rohde-Kage
+* Improvement: every column in the print preview for bookings now has a class, so you can CSS style it
+* Change: placeholders #_RESPSPACES and #_RESPCOMMENT now preferred for bookings
+* Bugfix: the 'Booking recorded html Format' setting for a single event was not being saved
+* Bugfix: the div for a required field should have a class, not an id
+* Bugfix: don't show a link to a month without events (occured if on the last day of the month an event was booked)
+* Bugfix: better sanitize RSS feed by using CDATA
+
+= 1.1.1 =
+* Feature: new placeholder #_PAYMENT_URL for bookings, in case you want people to be able to pay later on, or for reminders
+* Feature: you can now select paid/unpaid and pending status when sending mails, good for sending reminders for payments etc ...
+* Feature: you can now specify the latitude/longitude of a location if wanted, overriding the detected values
+* Feature: you can now specify the cut-off hours for RSVP as well
+* Bugfix: make qtranslate work again (one-liner fix)
+* Bugfix: make ical work correctly with server timezone included
+* Bugfix: wpdb prepare doesn't use correct backticks for column names, resulting in multisite issues (I tried to use the correct prepare syntax in 1.1.0)
+* Improvement: only include the datepicker locale if it exist (like in 1.0.18), and take into account 2-letter locales again if the full locale doesn't exist
+
+= 1.1.0 =
+* Feature: multiprice events are now possible (see wordpress site for explanation: price and booked seats need to be seperated by "||"). Also, for multiprice events, the min number of seats to book is always 0
+* Feature: you can now send mails to all attendees for an event in the admin backend. This functionality has it's own access right settings as well.
+* Feature: revamped the edit/add event interface: you can now use wordpress 'screen options' in the admin page to decide which parts to show and in what sequence
+* Feature: added the possibility to use a print stylesheet called eme_print.css in your theme style dir
+* Feature: shortcode events_ical_link now has 3 extra options: scope, author and contact_person
+* Feature: the creation and modif date can now be shown for the bookings list (when using #_BOOKINGS) via 2 new placeholders: #_BOOKINGCREATIONDATE and #_BOOKINGMODIFDATE
+* Improvement: the price for each event is stored per booking now, so if the price changes afterwards it doesn't affect the booking in question
+* Improvement: ical format includes the timezone now
+* Improvement: #ESC_ATT and #URL_ATT are now also recognized when looking for attributes definitions
+* Improvement: the CSV export didn't show the paid status
+* Improvement: when editing a single event, delete buttons to edit the event and/or recurrence are now there (and asked for confirmation)
+* Improvement: when trying to view a non-existing location, now also a 404 is returned (as for events)
+* Improvement: in the backend, you can now choose wether or not mails are being sent when approving or changing registrations
+* Bugfix: for recurrent events, the wanted date/time format was not being taken into account when being shown in the admin interface or when using #_RECURRENTDESC
+* Bugfix: #_EVENTDETAILS has never been working (#_NOTES and #_DETAILS did work ok)
+* Bugfix: according to http://codex.wordpress.org/Plugin_API/Action_Reference/wp_print_styles: wp_print_styles should not be used to enqueue styles or scripts on the front page. Use wp_enqueue_scripts instead.
+* Bugfix: when converting a single event into a recurrence, the featured image was not kept
+* Bugfix: English has 24-hour format, plus a jquery datepicker correction
+
+= 1.0.18 =
+* Improvement: the booking list format (used with #_BOOKINGS) now also supports #ESC_* for placeholders, so you can safely use shortcodes (like conditional tags) inside it
+* Bugfix: make drop down postbox expanding work again
+
+= 1.0.17 =
+* Feature: added support for paypal encrypted button
+* Bugfix: url_decode should be urldecode
+* Bugfix: remove remaining occurences of eme_upload_event_picture()
+
+= 1.0.16 =
+* Feature: for events and locations, the featured image now uses the WP media gallery
+* Feature: Webmoney support added
+* Feature: rss and ical shortcodes now support a location id, to limit events shown to a specific location
+* Feature: a little extra for more WPML support (added, but not guaranteed)
+* Feature: added #_IS_REGISTERED conditional tag, returns 1 if WP user has already registered for the event, 0 otherwise
+* Improvement: you can now activate SMTP debugging if you have issues when sending mail via SMTP
+* Improvement: the booking format now also can use #_PAYED to show the paid status
+* Improvement: ability to set default currency, price and "Require approval for registration"
+* Improvement: the "Allow RSVP until" can now also be given a default value
+* Improvement: the week/month/year scopes in [events_filterform] now show the text 'select week/month/year' by default.
+* Bugfix: when creating/editing an event, location creation is now also being checked for access rights
+
+= 1.0.15 =
+* Improvement: more options for shortcodes that were booleans with 0 or 1 have now true/false support too
+* Bugfix: the page title for single location pages was not being set correctly
+
+= 1.0.14 =
+* Feature: new parameters "show_events" (default:0) and "show_locations" (default:1) for shortcode [locations_map], allows to show a list of events corresponding to the locations on the map
+* Improvement: the "Required field" text has a div-id surrounding it now, so you can change the look of it as wanted using CSS
+* Improvement: removed deprecated wp_tiny_mce as editor and solved some php warnings (and moved the minimum required version up to 3.3)
+* Improvement: a number of options for shortcodes were booleans with 0 or 1, now we added true/false support too
+
+= 1.0.13 =
+* Feature: integrated 2Checkout. Instant Notification is also possible, but you have to specify the url in your 2Checkout account. The value for this will be shown in the EME settings.
+* Feature: integrated Google Checkout, but no automatic payment handling since that requires client certificates. And for Google Checkout to work, the price must be in dollars or pounds (identical to your google wallet account, otherwise it will fail)
+* Feature/Bugfix: the paypal class didn't really support the business ID, should work now
+* Feature: added event scope "today--this_week_plus_one" so you can show the beginning of next week as well
+* Improvement: revamped the admin settings interface, it was getting too much for one page so I switched to tabs
+* Improvement: don't depend on wp-admin/ajax.php anymore, so as to better support https
+* Improvement: use google maps https if the page is https as well 
+
+= 1.0.12 =
+* Bugfix: the participant info was not correctly replaced in mails sent
+* Bugfix: make paypal work via https and HTTP/1.1
+* Bugfix: the CSS classes in the calendar indicating the weekday were wrong for days in the previous/next month
+
+= 1.0.11 =
+* Bugfix release: the list of participants was not shown anymore
+
+= 1.0.10 =
+* Feature: added #_BOOKINGS placeholder (+ customizable bookings format)
+* Feature: added #_FIELNAMExx to get the formfield name (can be used in the registration form, in #_BOOKINGS and RSVP mails)
+* Feature: added shortcodes [events_add_booking_form] and [events_delete_booking_form] (with 'id' as parameter: the id of the event)
+           This way you can have normal pages for events (using the url option), but still show the booking form as well
+* Bugfix: make qtranslate work again
+* Bugfix: the CSV export and print of custom fields was not being alligned properly
+* Bugfix: allow empty contact phone
+* Extra: updated Dutch translation, thanks to Peter Goldstein
+
+= 1.0.9 =
+* Feature: added #_DAYS_TILL_START and #_DAYS_TILL_END placeholders
+* Bugfix: the full calendar was showing month 0 of the year 0 if the option "use client clock" was used
+* Extra: when denying registrations, confirmation is now being asked
+* Extra: updated Dutch translation, thanks to Peter Goldstein
+* Extra: some warning for the capability 'List events'
+
+= 1.0.8 =
+* Bugfix: apparently some WP update changed the capability checking worked, so the code to get all caps has been updated
+* Bugfix: custom (per event) event_registration_pending_email_body was not working
+* Bugfix: fix a WP php notice for wp_enqueue_script: it should be called from within other wp_* calls, not directly. So I added it to the callback for add_action('wp_enqueue_scripts')
+* Bugfix: fix typo with acl for "Edit events"
+* Extra: the admin backend will now use a new date_format setting in the user's profile (if present) for all dates shown
+
+= 1.0.7 =
+* Feature: placeholder #_EDITEVENTURL added, gives you just the link to the admin page for editing the event
+* Feature: added a setting to wether or not show the event creation/modification date as PubDate info in the in the events RSS feed
+* Bugfix: calendar navigation now also respects the qtranslate language if permalinks are enabled
+* Bugfix: filter forms now also respects the qtranslate language
+* Bugfix: if phone or comment was defined as a required field, the booking was not working
+* Bugfix: fix wrong call to event_rul(), must be eme_event_url(), bug added in changeset 649391
+* Bugfix: [events_countdown] shortcode was not working as expected
+* Extra: Added error if image upload fails
+
+= 1.0.6 =
+* Feature: extra registration field info can now also be mailed, using #_FIELDS as a placeholder in mail formats
+* Feature: event SEO links now also take into account the qtranslate language if present
+* Feature: added extra capability to just list events, so people with no edit cap can still do e.g. CSV exports. All your event admins would need this cap as well, otherwise the menu will not show.
+* Feature: preview added for draft events
+* Bugfix: the results for custom fields were not shown in the printable overview or the CSV export
+* Bugfix: the table for answers had a wrong index (primary), which resulted in only the first custom field to be stored in it
+* Extra: added Danish translation, thanks to Torben Bendixen
+* Extra: updated Dutch translation, thanks to Peter Goldstein
+
+= 1.0.5 =
+* Feature: forms are customizable now, although extra defined fields can be viewed/exported but not changed in the admin backend (and is qtranslate compatible)
+* Feature: contact person mails for cancellations and approvals are now customizable
+* Feature: submit button for registration form is now qtranslate compatible
+* Bugfix: make html title work correctly for locations too
+* Bugfix: the html anchor was not always being shown for RSVP
+* Bugfix: email body and subject can now contain qtranslate calls as well (code got removed when changing the plugin name)
+* Bugfix: corrected and added some sql prepare statements
+* Extra: give all RSVP forms a name and a html id
+* Extra: give full day events a CSS class in the calendar (eme-calendar-day-event)
+* Extra: some RSS readers don't like it when an empty feed without items is returned, so we add a dummy item then
+
+= 1.0.4 =
+* Bugfix: again better the_content filter recursion detection, so it should now work ok with Arras theme, Pagelines, TwentyEleven and hopefully all other ones.
+* Bugfix: this_year and paging was not working ok due to a php bug
+
+= 1.0.3 =
+* Bugfix: scope=this_year was not working
+* Bugfix: better the_content filter recursion detection, so it should now work ok with Arras theme and using page-include plugins inside event content
+* Bugfix: removing a booking in the event edit window via ajax was no longer working
+* Bugfix: #_EVENTIMAGEURL was not being replaced correctly
+* Bugfix: the available number of seats can be <0 if more than one booking happened at the same time and people fill in things slowly ...
+* Bugfix: events spanning multiple months were not correctly shown in the calendar or list
+* Bugfix: some 'this_week' scopes did not take the start day of the week preference into account
+* Bugfix: RSS needs "<category>" and not "<categories>" as valid tag
+* Feature: the html title of a single event or location can now also be formatted
+* Feature: new conditional tag #_IS_ONGOING_EVENT
+* Extra: Romanian language added, thanks to Web Geek Science (http://webhostinggeeks.com/)
+
+= 1.0.2 =
+* Feature: placeholders #_TOTALSPACES and #_TOTALSEATS added (gives the total amount of spaces for an event)
+* Feature: placeholder #_TOTALPRICE added for mail formats (gives the total price to pay: the amount of spaces booked times the price of the event)
+* Feature: placeholder #_RECURRENCEDESC added, shows the recurrence info for an event like it does in the admin backend
+* Feature: events can now also have a featured image, like locations, resulting also in 2 new placeholders: #_EVENTIMAGE and #_EVENTIMAGEURL
+* Feature: location list formatting is now possible in the settings, when using the shortcode [events_locations], as it was already for [events_list]
+* Feature: each day in the calendar now also has the short day name as an extra class
+* Feature: list widget now also can choose to show ongoing events or not
+* Feature: made the message 'Your booking has been recorded' formattable
+* Feature: scope=Nd--Md, to get the events from day N in the past/future till day M in the past/future (eg. scope=-3d--2d , scope=0d--3d)
+* Feature: initial state for a new event can now be set in the settings page
+* Feature: new access right setting for publish events
+* Extra: included the plugin events-made-easy-frontend-submit, see the dir extras/plugins/events-made-easy-frontend-submit
+* Extra: if the end date is empty, it will always be the start date now. If you want to check if they are equal, use conditional tags
+* Extra: French translation updated, thanks to Philippe Lambotte
+* Bugfix: typo fix in eme_events.php influencing location showing
+* Bugfix: typo fix in eme_events.php for a jquery statement
+* Bugfix: when adding a registration via the backend and approval was required, the registered person would get a pending message although it was already approved
+* Bugfix: #_USER_RESERVEDSPACES wasn't working correctly for the attendees format setting
+* Bugfix: location title was not qtranslate-ready in the [events_location] shortcode
+* Bugfix: better retreiving of new booker info, should resolve the booker being empty in some cases
+* Bugfix: datepicker images were not in svn
+* Bugfix: list widget was behaving incorrectly for the author option
+* Bugfix: when clicking on calendar day and there's only 1 event, only show the event content directly if the event doesn't point to an external url
+* Bugfix: the booking form was still shown for fully booked events if the max number of seats to book was not defined
+* Bugfix: typo fix in the admin edit location pages
+* Bugfix: #_PLAIN_CONTACTEMAIL was being replaced by empty string in mails
+
+= 1.0.1 =
+* Bugfix: fix replacement in menu for page title by events title when viewing a single event
+* Bugfix: fixed a closing-div tag, preventing the rich html-editor to appear sometimes for locations
+
+= 1.0.0 =
+* Feature: added options 'category' and 'notcategory' to the shortcode [events_filterform], so you can choose to only show specific categories or exclude certain categories from the select box
+* Feature: all location placeholders can now be used inside events (those that make sense of course). In order to make a distinction among event and location placeholders with the same name, some have been deprecated (see below)
+* Feature: the end time can now be the same as the start time, so you can test on this to not show end date/time info (for eg. events without end)
+* Feature: each booking now has a unique bank transfer number for belgian transfers, the placeholder "#_TRANSFER_NBR_BE97" can be used in booking mails
+* Improvement: when adding a registration in the backend, you can now only choose from events that have RSVP activated
+* Improvement: when the setting "Max number of spaces to book" is empty, it is now ignored so unlimited number of attendees is now possible
+* Improvement/fix: price can be a decimal number as well
+* Improvement: make sure the Settings page can be reached if something is not correct with the security settings
+* Improvement: make sure the first event of an recurrent series is used to get the info from
+* Improvement: for location formatting, #_IMAGE has been deprecated in favor of #_LOCATIONIMAGE
+* Improvement: for location formatting, #_IMAGEURL has been deprecated in favor of #_LOCATIONIMAGEURL
+* Improvement: for location formatting, #_DESCRIPTION has been deprecated in favor of #_LOCATIONDETAILS
+* Improvement: for location formatting, #_CATEGORIES has been deprecated in favor of #_LOCATIONCATEGORIES
+* Improvement: for event formatting, #_NOTES, #_DETAILS and #_DESCRIPTION have been deprecated in favor of #_EVENTDETAILS
+* Improvement: for event formatting, #_CATEGORIES has been deprecated in favor of #_EVENTCATEGORIES
+* Improvement: the html header now only shows the event name, and not the whole single event title format string
+* Improvement: some rsvp info remains entered now if the user enters a wrong captcha
+* Improvement: updated German translation (thanks to Jorgo Ananiadis)
+* Improvement: locations are now also sorted alphabetically when using the eventfull option
+* Improvement: email body text can now contain qtranslate calls as well
+* Improvement: the paypal form now also shows that the registration was successfull
+* Improvement: the RSS feed now includes the pubDate field for each event (value is the creation or modification date of the event)
+* API change: eme_insert_recurrent_event renamed to eme_db_insert_recurrence (old function exists for backwards compatibility)
+* API change: eme_update_recurrence renamed to eme_db_update_recurrence (old function exists for backwards compatibility)
+* API change: function eme_db_update_event now takes the event_id as the second parameter (you can still use the where-array method directly, made it backwards compatible)
+* API change: function eme_email_rsvp_booking now only takes booking_id as the first parameter and the action as the second
+* Bugfix: attributes weren't taken into account for the new email formats pending, cancelled, denied
+* Bugfix: the filtering threw an error when selecting multiple items
+* Bugfix: the attendee list didn't return the correct number of booked seats
+* Bugfix: for the filter form, the selected items were not highlighted upon submit
+* Bugfix: true and 1 now work as value for the options full and long_events
+* Bugfix: array in hook eme_update_event_action missed event_id and event_author
+* Bugfix: typo: payed => paid
+* Bugfix: the widget update refused anything different than future, past or all for scope
+* Bugfix: number of events can now be 0 in the widget
+* Bugfix: attribute values were not sanitized
+* Bugfix: if the booked seats were 0, the pending screen wouldn't show the booking
+* Bugfix: the capability for adding events in draft wasn't working ok
+* Bugfix: when paypal was active, rsvp field validation results were ignored
+* Bugfix: ampersand character in event title breaks RSS feed
+* Bugfix: make sure that we apply the the_content filter only once
